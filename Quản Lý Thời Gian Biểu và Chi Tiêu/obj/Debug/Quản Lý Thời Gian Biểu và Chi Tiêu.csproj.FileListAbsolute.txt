@@ -1,0 +1,11 @@
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\bin\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.exe.config
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\bin\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.exe
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\bin\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.pdb
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.csproj.AssemblyReference.cache
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormLogin.resources
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormMain.resources
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties.Resources.resources
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.csproj.GenerateResource.cache
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.csproj.CoreCompileInputs.cache
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.exe
+C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.pdb

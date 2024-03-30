@@ -1,0 +1,6 @@
+﻿Nguyen,36
+Tin,87
+Mike,10
+Hung,20
+Hiep,40
+TinBui,30/04/2004
