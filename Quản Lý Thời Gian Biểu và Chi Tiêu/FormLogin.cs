@@ -47,7 +47,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         //Phương thức đọc file tài khoản (accounts) - Kiểm tra thông tin xác thực
         private bool CheckCredentials(string username, string password)
         {
-            string filePath = "C:\\Users\\NGUYEN\\source\\repos\\Quản Lý Thời Gian Biểu và Chi Tiêu\\Quản Lý Thời Gian Biểu và Chi Tiêu\\resources\\accounts.txt";
+            string filePath = "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Quản Lý Thời Gian Biểu và Chi Tiêu\\resources\\accounts.txt";
             try
             {
                 if (File.Exists(filePath))
@@ -96,7 +96,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                 try
                 {
                     // Đường dẫn đến tệp tin, khi sử dụng ký tự @, không cần escape các ký tự \ trong chuỗi đường dẫn
-                    string filePath = @"C:\Users\NGUYEN\source\repos\Quản Lý Thời Gian Biểu và Chi Tiêu\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\accounts.txt";
+                    string filePath = @"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\accounts.txt";
                     // Mở tệp tin để ghi
                     using (StreamWriter sw = File.AppendText(filePath))
                     {

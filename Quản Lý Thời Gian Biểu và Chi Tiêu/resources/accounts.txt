@@ -4,3 +4,4 @@ Mike,10
 Hung,20
 Hiep,40
 TinBui,30/04/2004
+Minh,60
