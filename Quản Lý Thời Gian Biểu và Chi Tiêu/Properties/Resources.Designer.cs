@@ -123,9 +123,29 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap isRobotImg {
+            get {
+                object obj = ResourceManager.GetObject("isRobotImg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap LogoApp {
             get {
                 object obj = ResourceManager.GetObject("LogoApp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap Nen {
+            get {
+                object obj = ResourceManager.GetObject("Nen", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

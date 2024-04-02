@@ -22,29 +22,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             InitializeComponent();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-            string username = txtUser.Text;
-            string password = txtPassWord.Text;
-            bool isAuthenticated = CheckCredentials(username, password);
-            if (isAuthenticated)
-            {
-                MessageBox.Show("Đăng nhập thành công!");
-                this.Hide();
-                FormMain frmMain = new FormMain();
-                frmMain.ShowDialog();
-                this.Close();
-            }
-            else if (txtUser.Text == "" || txtPassWord.Text == "")
-                MessageBox.Show("Tài khoản hoặc mật khẩu để trống", "Lỗi!!!", MessageBoxButtons.OK);
-            else
-            {
-                MessageBox.Show("Không đúng tên người dùng / mật khẩu!!!", "Lỗi!!!", MessageBoxButtons.OK);
-                txtUser.Focus();
-            }
-        }
-
-        //Phương thức đọc file tài khoản (accounts) - Kiểm tra thông tin xác thực
+        //Phương thức đọc file tài khoản (accounts) có tồn tại hay không
         private bool CheckCredentials(string username, string password)
         {
             string filePath = "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Quản Lý Thời Gian Biểu và Chi Tiêu\\resources\\accounts.txt";
@@ -75,10 +53,29 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             return false; // Không tìm thấy tài khoản hoặc mật khẩu
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string username = txtUser.Text;
+            string password = txtPassWord.Text;
+            bool isAuthenticated = CheckCredentials(username, password);
+            if (isAuthenticated)
+            {
+                MessageBox.Show("Đăng nhập thành công!");
+                this.Hide();
+                FormMain frmMain = new FormMain();
+                frmMain.ShowDialog();
+                this.Close();
+            }
+            else if (txtUser.Text == "" || txtPassWord.Text == "")
+                MessageBox.Show("Tài khoản hoặc mật khẩu để trống", "Lỗi!!!", MessageBoxButtons.OK);
+            else
+            {
+                MessageBox.Show("Không đúng tên người dùng / mật khẩu!!!", "Lỗi!!!", MessageBoxButtons.OK);
+                txtUser.Focus();
+            }
+        }
+
         //Ghi file tài khoản và mật khẩu ghi đăng kí (Sign Up)
-
-
-
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             string username = txtUser.Text;
@@ -101,9 +98,12 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                     using (StreamWriter sw = File.AppendText(filePath))
                     {
                         // Ghi tên người dùng và mật khẩu vào tệp tin
-                        sw.WriteLine(/*"\n" + */username + "," + password);
+                        sw.WriteLine("\n" + username + "," + password);
                     }
-                    MessageBox.Show("Đăng kí tài khoản thành công, mời bạn đăng nhập ứng dụng", "Thông báo", MessageBoxButtons.OK);
+                    this.Hide();
+                    IsRobot robot = new IsRobot();
+                    robot.ShowDialog();
+                    this.Close();           
                 }
                 catch (Exception ex)
                 {
@@ -112,7 +112,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }           
         }
 
-        //Thay đổi ảnh mật khẩu hiện và ẩn
+        //Phương thức thay đổi ảnh mật khẩu hiện và ẩn
         private void ChangeEyeImage()
         {
             if (isEyeOpen)
@@ -140,10 +140,11 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         {
             MessageBox.Show("Vui lòng liên hệ hỗ trợ qua email: " +
                 "nguyen.hochi2004@gmail.com\n" +
-                "Hoặc liên hệ qua hot line: 0332636829", "Help", MessageBoxButtons.OKCancel);
+                "Hoặc liên hệ qua hot line: 0332636829", "Help", MessageBoxButtons.OK);
         }
 
-        //Css
+        //CSS
+        // in nghiêng ô quên mk khi hover
         private void lbQuenMK_MouseHover(object sender, EventArgs e)
         {
             lbQuenMK.Font = new Font(lbQuenMK.Font, FontStyle.Underline);
@@ -154,6 +155,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             lbQuenMK.Font = new Font(lbQuenMK.Font, FontStyle.Italic);
         }
 
+        //Hover vào có màu ở ô Đăng nhập
         private void txtUser_MouseDown(object sender, MouseEventArgs e)
         {
             txtUser.BackColor = Color.LightGreen;
@@ -164,6 +166,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             txtUser.BackColor = Color.White;
         }
 
+        //Hover vào có màu ở ô Mật khẩu
         private void txtPassWork_MouseDown(object sender, MouseEventArgs e)
         {
             txtPassWord.BackColor = Color.LightGreen;

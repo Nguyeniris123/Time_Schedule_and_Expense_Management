@@ -217,7 +217,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Crimson;
-            this.BackgroundImage = global::Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties.Resources.BackgroundImg;
+            this.BackgroundImage = global::Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties.Resources.Nen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(695, 450);
             this.Controls.Add(this.lbCauNoi);
