@@ -10,7 +10,6 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
-{
     public partial class FormMain : Form
     {
         public FormMain()
@@ -74,7 +73,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-        
+        //nhấn vào Log out để ra màn hình đăng nhập
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -83,9 +82,35 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             this.Close();
         }
 
+        //Nhấn Exit để đóng app
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
+
+        private void picAvatar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            //set tiêu đề
+            openFile.Title = "Mở ảnh đại diện";
+            //check điều kiện lọc file
+            openFile.Filter = "File anh|*.jpg;|All file|*.*";
+            //check xem người dùng đã chọn file hay chưa
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                picAvatar.Image = Image.FromFile(openFile.FileName);
+            }
+        }
+
+        // thêm row cho bảng thời khoá biểu khi form dc load
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 29; i++)
+            {
+                gridBangThoiKhoaBieu.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
+            }
+        }
+
+       
     }
 }

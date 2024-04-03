@@ -35,6 +35,8 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -112,6 +114,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="resources\accounts.txt" />
+    <None Include="resources\Avater.jpg" />
     <None Include="resources\Nen.jpg" />
     <None Include="resources\isRobotImg.jpg" />
     <None Include="resources\BackgroundImg2.jpg" />
