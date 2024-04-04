@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
-namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
+namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu 
+{
     public partial class FormMain : Form
     {
-        public FormMain()
-        {
+    private SoundPlayer music; // thuộc tính để lưu nhạc
+    public FormMain()
+        {           
             InitializeComponent();
         }
 
@@ -76,16 +80,133 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         //nhấn vào Log out để ra màn hình đăng nhập
         private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            FormLogin login = new FormLogin();
-            login.ShowDialog();
-            this.Close();
+            DialogResult traLoi;
+            traLoi = MessageBox.Show("Bạn có chắc muốn về màn hình Login không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (traLoi == DialogResult.OK) 
+            {
+                this.Hide();
+                FormLogin login = new FormLogin();
+                login.ShowDialog();
+                this.Close();
+            }
+            
         }
 
         //Nhấn Exit để đóng app
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            DialogResult traLoi;
+            traLoi = MessageBox.Show("Bạn có chắc muốn thoát ứng dụng không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (traLoi == DialogResult.OK)
+            {
+                Application.Exit();
+            }            
+        }
+
+        private void playSoundToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Kiểm tra nếu âm thanh đã được khởi tạo trước đó
+                if (music != null)
+                {
+                    // Dừng phát âm thanh nếu đang phát
+                    music.Stop();
+                    // Giải phóng tài nguyên
+                    music.Dispose();
+                }
+
+                // Khởi tạo SoundPlayer với đường dẫn tới tệp âm thanh
+                music = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
+
+                // Phát âm thanh
+                music.Play();
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ (ví dụ: hiển thị thông báo cho người dùng)
+                MessageBox.Show("Lỗi khi phát âm thanh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void stopSoundToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Kiểm tra nếu âm thanh đã được khởi tạo trước đó
+                if (music != null)
+                {
+                    // Dừng phát âm thanh nếu đang phát
+                    music.Stop();
+                    // Giải phóng tài nguyên
+                    music.Dispose();
+                }
+
+                // Khởi tạo SoundPlayer với đường dẫn tới tệp âm thanh
+                music = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
+
+                // Phát âm thanh
+                music.Stop();
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ (ví dụ: hiển thị thông báo cho người dùng)
+                MessageBox.Show("Lỗi khi phát âm thanh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //âm thanh được dừng khi form đóng
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            music.Stop();
+        }
+
+        private void SaveToTextFile(DataGridView dataGridView, string filePath)
+        {
+            try
+            {
+                using (StreamWriter writer = new StreamWriter(filePath))
+                {
+                    // Ghi tiêu đề cột
+                    for (int i = 0; i < dataGridView.Columns.Count; i++)
+                    {
+                        writer.Write(dataGridView.Columns[i].HeaderText);
+                        if (i < dataGridView.Columns.Count - 1) //kiểm tra xem cột hiện tại có phải là cột cuối cùng của DataGridView hay không
+                            writer.Write("\t\t\t\t\t\t");
+                    }
+                    writer.WriteLine();
+
+                    // Ghi dữ liệu từ các dòng
+                    foreach (DataGridViewRow row in dataGridView.Rows)
+                    {
+                        for (int i = 0; i < dataGridView.Columns.Count; i++)
+                        {
+                            writer.Write(row.Cells[i].Value);
+                            if (i < dataGridView.Columns.Count - 1)
+                                writer.Write("\t\t\t\t\t\t");
+                        }
+                        writer.WriteLine();
+                    }
+                }
+                MessageBox.Show("Lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Text files (*.txt)|*.txt|File pdf|*.pdf |All files (*.*)|*.*";
+            saveFileDialog.FilterIndex = 1; //Xác định chỉ số của bộ lọc mặc định được chọn trong danh sách các bộ lọc
+            saveFileDialog.RestoreDirectory = true; //Khôi phục thư mục hiện tại khi hộp thoại đóng lại
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                SaveToTextFile(gridBangThoiKhoaBieu, saveFileDialog.FileName);
+            }
         }
 
         private void picAvatar_Click(object sender, EventArgs e)
@@ -111,6 +232,13 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-       
+        private void btnTaiKhoanNganHang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
+
+
     }
 }

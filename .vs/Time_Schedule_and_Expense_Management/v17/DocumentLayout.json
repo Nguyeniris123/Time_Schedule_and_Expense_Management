@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu.csproj|c:\\users\\nguyen\\time_schedule_and_expense_management\\qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu.csproj|solutionrelative:qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu.csproj|C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu.csproj|solutionrelative:qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormMain.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormMain.cs",
+              "RelativeDocumentMoniker": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormMain.cs",
+              "ToolTip": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormMain.cs",
+              "RelativeToolTip": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormMain.cs",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAwwNYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T15:11:04.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormMain.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormMain.cs",
+              "RelativeDocumentMoniker": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormMain.cs",
+              "ToolTip": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormMain.cs [Design]",
+              "RelativeToolTip": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormMain.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-02T15:09:21.215Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
