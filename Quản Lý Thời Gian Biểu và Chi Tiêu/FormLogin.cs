@@ -60,7 +60,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             bool isAuthenticated = CheckCredentials(username, password);
             if (isAuthenticated)
             {
-                MessageBox.Show("Đăng nhập thành công!");
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo");
                 this.Hide();
                 FormMain frmMain = new FormMain();
                 frmMain.ShowDialog();

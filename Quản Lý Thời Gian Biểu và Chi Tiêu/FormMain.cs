@@ -88,8 +88,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                 FormLogin login = new FormLogin();
                 login.ShowDialog();
                 this.Close();
-            }
-            
+            }        
         }
 
         //Nhấn Exit để đóng app
@@ -161,6 +160,22 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             music.Stop();
         }
 
+        private void contentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Vui lòng liên hệ qua hot Line: 092193213\n" +
+                "hoặc qua email sau: nguyen.hochi2004@gmail.com", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            gridBangThoiKhoaBieu.Rows.Clear();
+            for (int i = 1; i <= 29; i++)
+            {
+                gridBangThoiKhoaBieu.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
+            }
+        }
+
         private void SaveToTextFile(DataGridView dataGridView, string filePath)
         {
             try
@@ -172,7 +187,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                     {
                         writer.Write(dataGridView.Columns[i].HeaderText);
                         if (i < dataGridView.Columns.Count - 1) //kiểm tra xem cột hiện tại có phải là cột cuối cùng của DataGridView hay không
-                            writer.Write("\t\t\t\t\t\t");
+                            writer.Write("\t");
                     }
                     writer.WriteLine();
 
@@ -183,7 +198,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                         {
                             writer.Write(row.Cells[i].Value);
                             if (i < dataGridView.Columns.Count - 1)
-                                writer.Write("\t\t\t\t\t\t");
+                                writer.Write("\t");
                         }
                         writer.WriteLine();
                     }
@@ -209,6 +224,13 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
+
+
+
+
+
+
+
         private void picAvatar_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
@@ -232,13 +254,45 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
+        //mở form các tài khoản ngân hàng
         private void btnTaiKhoanNganHang_Click(object sender, EventArgs e)
-        {
-
+        {  
+            FormTaiKhoan f = new FormTaiKhoan();
+            f.TopLevel = false;
+            this.Controls.Add(f); // Thêm form con vào các điều khiển của form cha
+            f.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
+            f.BringToFront(); // Đưa form con lên phía trước
+            f.Show(); // Hiển thị form con
         }
 
-        
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {          
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog.FilterIndex = 1; // mặc định chọn đuôi .txt
 
-
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    gridBangThoiKhoaBieu.Rows.Clear();
+                    string filePath = openFileDialog.FileName;
+                    // Đọc dữ liệu từ tệp và hiển thị trên DataGridView
+                    string[] lines = File.ReadAllLines(filePath);
+                    // Bỏ qua dòng đầu tiên
+                    lines = lines.Skip(1).ToArray();
+                    foreach (string line in lines)
+                    {
+                        string[] data = line.Split('\t'); // Giả sử dữ liệu được phân tách bằng tab (\t)
+                        gridBangThoiKhoaBieu.Rows.Add(data);
+                    }
+                    MessageBox.Show("Đã mở tệp thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi mở tệp: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+        }
     }
 }
