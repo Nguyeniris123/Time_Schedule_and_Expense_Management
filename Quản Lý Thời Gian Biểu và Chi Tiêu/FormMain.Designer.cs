@@ -70,7 +70,6 @@
             this.lbHoTen = new System.Windows.Forms.Label();
             this.lbId = new System.Windows.Forms.Label();
             this.TaskBar = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.btnTaiKhoanNganHang = new System.Windows.Forms.Button();
             this.btnTaiChinh = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -424,7 +423,6 @@
             // 
             this.TaskBar.BackColor = System.Drawing.Color.SpringGreen;
             this.TaskBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TaskBar.Controls.Add(this.button3);
             this.TaskBar.Controls.Add(this.btnTaiKhoanNganHang);
             this.TaskBar.Controls.Add(this.btnTaiChinh);
             this.TaskBar.Controls.Add(this.label1);
@@ -437,21 +435,11 @@
             this.TaskBar.Size = new System.Drawing.Size(138, 411);
             this.TaskBar.TabIndex = 4;
             // 
-            // button3
-            // 
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Location = new System.Drawing.Point(23, 280);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(91, 21);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // btnTaiKhoanNganHang
             // 
             this.btnTaiKhoanNganHang.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTaiKhoanNganHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiKhoanNganHang.Location = new System.Drawing.Point(23, 330);
+            this.btnTaiKhoanNganHang.Location = new System.Drawing.Point(25, 295);
             this.btnTaiKhoanNganHang.Name = "btnTaiKhoanNganHang";
             this.btnTaiKhoanNganHang.Size = new System.Drawing.Size(91, 21);
             this.btnTaiKhoanNganHang.TabIndex = 6;
@@ -463,7 +451,7 @@
             // 
             this.btnTaiChinh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTaiChinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiChinh.Location = new System.Drawing.Point(25, 232);
+            this.btnTaiChinh.Location = new System.Drawing.Point(24, 246);
             this.btnTaiChinh.Name = "btnTaiChinh";
             this.btnTaiChinh.Size = new System.Drawing.Size(91, 21);
             this.btnTaiChinh.TabIndex = 5;
@@ -641,7 +629,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.DataGridView gridBangThoiKhoaBieu;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnTaiKhoanNganHang;
         private System.Windows.Forms.Button btnTaiChinh;
         private System.Windows.Forms.ToolStripMenuItem soundsToolStripMenuItem;
