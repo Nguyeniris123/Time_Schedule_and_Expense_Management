@@ -60,6 +60,12 @@
     <Compile Include="FormMain.Designer.cs">
       <DependentUpon>FormMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormTaiChinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTaiChinh.Designer.cs">
+      <DependentUpon>FormTaiChinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormTaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormMain.resx">
       <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTaiChinh.resx">
+      <DependentUpon>FormTaiChinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTaiKhoan.resx">
       <DependentUpon>FormTaiKhoan.cs</DependentUpon>

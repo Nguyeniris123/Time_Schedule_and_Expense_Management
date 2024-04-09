@@ -11,3 +11,4 @@ C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Bi�
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.exe
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.pdb
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormTaiKhoan.resources
+C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormTaiChinh.resources

@@ -294,5 +294,15 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                 }
             }
         }
+
+        private void btnTaiChinh_Click(object sender, EventArgs e)
+        {
+            FormTaiChinh f = new FormTaiChinh();    
+            f.TopLevel = false;
+            this.Controls.Add(f); // Thêm form con vào các điều khiển của form cha
+            f.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
+            f.BringToFront(); // Đưa form con lên phía trước
+            f.Show(); // Hiển thị form con
+        }
     }
 }
