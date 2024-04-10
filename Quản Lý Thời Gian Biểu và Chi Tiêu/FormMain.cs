@@ -186,7 +186,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                     for (int i = 0; i < dataGridView.Columns.Count; i++)
                     {
                         writer.Write(dataGridView.Columns[i].HeaderText);
-                        if (i < dataGridView.Columns.Count - 1) //kiểm tra xem cột hiện tại có phải là cột cuối cùng của DataGridView hay không
+                        if (i < dataGridView.Columns.Count - 1)
                             writer.Write("\t");
                     }
                     writer.WriteLine();

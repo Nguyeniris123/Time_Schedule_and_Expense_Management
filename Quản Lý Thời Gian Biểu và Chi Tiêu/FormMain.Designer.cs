@@ -94,12 +94,6 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem,
-            this.editToolStripMenuItem,
-            this.settingToolStripMenuItem,
-            this.helpToolStripMenuItem,
-            this.logOutToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(845, 24);
@@ -478,7 +472,7 @@
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.LightYellow;
+            this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Transparent;
             // 
             // splitContainer1.Panel2
             // 

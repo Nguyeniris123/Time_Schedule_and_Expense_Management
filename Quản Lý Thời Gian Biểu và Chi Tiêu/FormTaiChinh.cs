@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -24,6 +25,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             cbNguonTien2.SelectedIndex = 1;
             cbNguonTien3.SelectedIndex = 2;
             cbNguonTien4.SelectedIndex = 3;
+            cbMucDich_36_Nguyen.SelectedIndex = 0;
         }
 
         private void txtNguonTien1_KeyPress(object sender, KeyPressEventArgs e)
@@ -105,17 +107,42 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
 
         private void btnThem_36_Nguyen_Click(object sender, EventArgs e)
         {
+            //kiểm tra nguồn tiền có nhập ko
+            if (string.IsNullOrEmpty(txtNguonTien1.Text) ||
+                string.IsNullOrEmpty(txtNguonTien2.Text) ||
+                string.IsNullOrEmpty(txtNguonTien3.Text) ||
+                string.IsNullOrEmpty(txtNguonTien4.Text) ||
+                string.IsNullOrEmpty(txtSoTien_36_Nguyen.Text))
+            {
+                MessageBox.Show("Vui lòng điền đầy đủ thông tin chi tiêu.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return; // Dừng lại nếu có ô TextBox nào đó trống
+            }
+
             // Lấy thông tin từ các điều khiển nhập liệu
+            int nguonTien1_36_nguyen = int.Parse(txtNguonTien1.Text);
+            int nguonTien2_36_nguyen = int.Parse(txtNguonTien2.Text);
+            int nguonTien3_36_nguyen = int.Parse(txtNguonTien3.Text);
+            int nguonTien4_36_nguyen = int.Parse(txtNguonTien4.Text);
+            int tongTien_36_Nguyen = int.Parse(txtTong.Text);
+
             string mucDich = cbMucDich_36_Nguyen.Text;
-            decimal soTien = decimal.Parse(txtSoTien_36_Nguyen.Text); // Chuyển đổi về kiểu decimal (hoặc int tùy theo yêu cầu)
+            int soTien = int.Parse(txtSoTien_36_Nguyen.Text); // Chuyển đổi về kiểu decimal (hoặc int)
+            
             DateTime ngayThucHien = dateTimeChiTieu_36_Nguyen.Value;
             string moTa = richTextBoxChiTiet_36_Nguyen.Text;
 
-            // Tạo một chuỗi để hiển thị trong ListBox
-            string item = $"{mucDich} - {soTien.ToString("C")} - {ngayThucHien.ToShortDateString()} - {moTa}";
+            //Tính tiền còn lại
+            txtTong.Text = String.Format("{0}", tongTien_36_Nguyen - soTien);
+            int tongTienConLai_36_Nguyen = tongTien_36_Nguyen - soTien;
+
+            // Tạo một chuỗi để hiển thị trong ListBox, .ToString("C") là để thêm đ vào sau tiền
+            string item = $"Tổng tiền: {tongTien_36_Nguyen.ToString("C")} - " +
+                $"Nguồn tiền: {nguonTien1_36_nguyen.ToString("C")}, {nguonTien2_36_nguyen.ToString("C")}, {nguonTien3_36_nguyen.ToString("C")}, {nguonTien4_36_nguyen.ToString("C")} - " +
+                $"{mucDich} - Số tiền chi: {soTien.ToString("C")} - {ngayThucHien.ToShortDateString()} - {moTa} - " +
+                $"Còn lại: {tongTienConLai_36_Nguyen.ToString("C")}";
 
             // Thêm mục vào ListBox
-            listBoxChiTieu_36_Nguyen.Items.Add(item);
+            listBoxChiTieu_36_Nguyen.Items.Add(item);          
 
             // Xóa nội dung của các TextBox sau khi thêm vào ListBox
             txtSoTien_36_Nguyen.Clear();

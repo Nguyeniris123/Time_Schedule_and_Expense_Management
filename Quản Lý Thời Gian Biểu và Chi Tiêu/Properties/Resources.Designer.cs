@@ -66,6 +66,10 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties {
         ///Hiep,30
         ///Nguyen,36
         ///
+        ///
+        ///Tin,40
+        ///
+        ///Mike,567
         ///.
         /// </summary>
         public static string accounts {
@@ -99,26 +103,6 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties {
         public static System.Drawing.Bitmap BackgroundImg {
             get {
                 object obj = ResourceManager.GetObject("BackgroundImg", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap BackgroundImg1 {
-            get {
-                object obj = ResourceManager.GetObject("BackgroundImg1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        public static System.Drawing.Bitmap BackgroundImg2 {
-            get {
-                object obj = ResourceManager.GetObject("BackgroundImg2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

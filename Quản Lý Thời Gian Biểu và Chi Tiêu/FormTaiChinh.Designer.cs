@@ -292,6 +292,7 @@
             this.listBoxChiTieu_36_Nguyen.BackColor = System.Drawing.Color.LightSteelBlue;
             this.listBoxChiTieu_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBoxChiTieu_36_Nguyen.FormattingEnabled = true;
+            this.listBoxChiTieu_36_Nguyen.HorizontalScrollbar = true;
             this.listBoxChiTieu_36_Nguyen.Location = new System.Drawing.Point(368, 214);
             this.listBoxChiTieu_36_Nguyen.Name = "listBoxChiTieu_36_Nguyen";
             this.listBoxChiTieu_36_Nguyen.Size = new System.Drawing.Size(433, 249);

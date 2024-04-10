@@ -136,8 +136,6 @@
     <None Include="resources\Avater.jpg" />
     <None Include="resources\Nen.jpg" />
     <None Include="resources\isRobotImg.jpg" />
-    <None Include="resources\BackgroundImg2.jpg" />
-    <None Include="resources\BackgroundImg1.jpg" />
     <None Include="resources\BackgroundImg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
