@@ -21,158 +21,43 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             InitializeComponent();
         }
 
-        //FontDialog menu
-        private void fontsEditToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FontDialog dlg = new FontDialog();
-            dlg.ShowEffects = true;
-            //dlg.ShowColor = true;
-            dlg.ShowApply = true;
-            if (dlg.ShowDialog() == DialogResult.OK)
-            {
-                // Lặp qua tất cả các control trong Form
-                foreach (Control control in this.Controls)
-                {
-                    // Thay đổi font cho mỗi control là Label, Button, TextBox, v.v.
-                    control.Font = dlg.Font;
-                }
-            }
-        }
-
-        //ColorDialog menu
-        private void fontsColorToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ColorDialog dlg = new ColorDialog();
-            dlg.FullOpen = true;    // Cho phép hiển thị tất cả các màu sắc
-            if (dlg.ShowDialog() == DialogResult.OK)
-            {
-                foreach (Control control in this.Controls)
-                {
-                    control.ForeColor = dlg.Color;
-                }
-            }
-        }
-
-        private void backControlToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ColorDialog dlg = new ColorDialog();
-            dlg.FullOpen = true;
-            if (dlg.ShowDialog() == DialogResult.OK)
-            {
-                foreach (Control control in this.Controls)
-                {
-                    control.BackColor = dlg.Color;
-                }
-            }
-        }
-
-        private void backFormToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ColorDialog dlg = new ColorDialog();
-            dlg.FullOpen = true; // Cho phép hiển thị tất cả các màu sắc
-            if (dlg.ShowDialog() == DialogResult.OK)
-            {
-                // Gán màu được chọn từ ColorDialog cho màu nền của Form
-                this.BackColor = dlg.Color;
-            }
-        }
-
-        //nhấn vào Log out để ra màn hình đăng nhập
-        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult traLoi;
-            traLoi = MessageBox.Show("Bạn có chắc muốn về màn hình Login không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (traLoi == DialogResult.OK) 
-            {
-                this.Hide();
-                FormLogin login = new FormLogin();
-                login.ShowDialog();
-                this.Close();
-            }        
-        }
-
-        //Nhấn Exit để đóng app
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            DialogResult traLoi;
-            traLoi = MessageBox.Show("Bạn có chắc muốn thoát ứng dụng không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (traLoi == DialogResult.OK)
-            {
-                Application.Exit();
-            }            
-        }
-
-        private void playSoundToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Kiểm tra nếu âm thanh đã được khởi tạo trước đó
-                if (music != null)
-                {
-                    // Dừng phát âm thanh nếu đang phát
-                    music.Stop();
-                    // Giải phóng tài nguyên
-                    music.Dispose();
-                }
-
-                // Khởi tạo SoundPlayer với đường dẫn tới tệp âm thanh
-                music = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
-
-                // Phát âm thanh
-                music.Play();
-            }
-            catch (Exception ex)
-            {
-                // Xử lý ngoại lệ (ví dụ: hiển thị thông báo cho người dùng)
-                MessageBox.Show("Lỗi khi phát âm thanh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        private void stopSoundToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Kiểm tra nếu âm thanh đã được khởi tạo trước đó
-                if (music != null)
-                {
-                    // Dừng phát âm thanh nếu đang phát
-                    music.Stop();
-                    // Giải phóng tài nguyên
-                    music.Dispose();
-                }
-
-                // Khởi tạo SoundPlayer với đường dẫn tới tệp âm thanh
-                music = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
-
-                // Phát âm thanh
-                music.Stop();
-            }
-            catch (Exception ex)
-            {
-                // Xử lý ngoại lệ (ví dụ: hiển thị thông báo cho người dùng)
-                MessageBox.Show("Lỗi khi phát âm thanh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
-        //âm thanh được dừng khi form đóng
-        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
-        {
-            music.Stop();
-        }
-
-        private void contentsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Vui lòng liên hệ qua hot Line: 092193213\n" +
-                "hoặc qua email sau: nguyen.hochi2004@gmail.com", "Thông báo",
-                MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        //Menu-------------------------------------------------------------
+        private void newToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             gridBangThoiKhoaBieu.Rows.Clear();
             for (int i = 1; i <= 29; i++)
             {
                 gridBangThoiKhoaBieu.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
+            }
+        }
+
+        private void openToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog.FilterIndex = 1; // mặc định chọn đuôi .txt
+
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    gridBangThoiKhoaBieu.Rows.Clear();
+                    string filePath = openFileDialog.FileName;
+                    // Đọc dữ liệu từ tệp và hiển thị trên DataGridView
+                    string[] lines = File.ReadAllLines(filePath);
+                    // Bỏ qua dòng đầu tiên
+                    lines = lines.Skip(1).ToArray();
+                    foreach (string line in lines)
+                    {
+                        string[] data = line.Split('\t'); // Giả sử dữ liệu được phân tách bằng tab (\t)
+                        gridBangThoiKhoaBieu.Rows.Add(data);
+                    }
+                    MessageBox.Show("Đã mở tệp thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi mở tệp: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -211,7 +96,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Text files (*.txt)|*.txt|File pdf|*.pdf |All files (*.*)|*.*";
@@ -224,13 +109,159 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
+        //Nhấn Exit để đóng app
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            DialogResult traLoi;
+            traLoi = MessageBox.Show("Bạn có chắc muốn thoát ứng dụng không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (traLoi == DialogResult.OK)
+            {
+                Application.Exit();
+            }
+        }
+
+        //FontDialog menu
+        private void fontEditToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FontDialog dlg = new FontDialog();
+            dlg.ShowEffects = true;
+            //dlg.ShowColor = true;
+            dlg.ShowApply = true;
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                // Lặp qua tất cả các control trong Form
+                foreach (Control control in this.Controls)
+                {
+                    // Thay đổi font cho mỗi control là Label, Button, TextBox, v.v.
+                    control.Font = dlg.Font;
+                }
+            }
+        }
+
+        //ColorDialog menu
+        private void fontColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog dlg = new ColorDialog();
+            dlg.FullOpen = true;    // Cho phép hiển thị tất cả các màu sắc
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                foreach (Control control in this.Controls)
+                {
+                    control.ForeColor = dlg.Color;
+                }
+            }
+        }
+
+        private void formColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog dlg = new ColorDialog();
+            dlg.FullOpen = true; // Cho phép hiển thị tất cả các màu sắc
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                // Gán màu được chọn từ ColorDialog cho màu nền của Form
+                this.BackColor = dlg.Color;
+            }
+        }
+
+        private void controlColorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ColorDialog dlg = new ColorDialog();
+            dlg.FullOpen = true;
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                foreach (Control control in this.Controls)
+                {
+                    control.BackColor = dlg.Color;
+                }
+            }
+        }
+
+        //Phát nhạc
+        private void playToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Kiểm tra nếu âm thanh đã được khởi tạo trước đó
+                if (music != null)
+                {
+                    // Dừng phát âm thanh nếu đang phát
+                    music.Stop();
+                    // Giải phóng tài nguyên
+                    music.Dispose();
+                }
+
+                // Khởi tạo SoundPlayer với đường dẫn tới tệp âm thanh
+                music = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
+
+                // Phát âm thanh
+                music.Play();
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ (ví dụ: hiển thị thông báo cho người dùng)
+                MessageBox.Show("Lỗi khi phát âm thanh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //Dừng nhạc
+        private void stopToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Kiểm tra nếu âm thanh đã được khởi tạo trước đó
+                if (music != null)
+                {
+                    // Dừng phát âm thanh nếu đang phát
+                    music.Stop();
+                    // Giải phóng tài nguyên
+                    music.Dispose();
+                }
+
+                // Khởi tạo SoundPlayer với đường dẫn tới tệp âm thanh
+                music = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
+
+                // Phát âm thanh
+                music.Stop();
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ (ví dụ: hiển thị thông báo cho người dùng)
+                MessageBox.Show("Lỗi khi phát âm thanh: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        //âm thanh được dừng khi form đóng
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            music.Stop();
+        }
+
+        //nhấn vào Log out để ra màn hình đăng nhập
+        private void logOutToolStripMenuItem_36_Nguyen_Click(object sender, EventArgs e)
+        {
+            DialogResult traLoi;
+            traLoi = MessageBox.Show("Bạn có chắc muốn về màn hình Login không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (traLoi == DialogResult.OK)
+            {
+                this.Hide();
+                FormLogin login = new FormLogin();
+                login.ShowDialog();
+                this.Close();
+            }
+        }
+
+        //help content
+        private void contentsToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Vui lòng liên hệ qua hot Line: 092193213\n" +
+                "hoặc qua email sau: nguyen.hochi2004@gmail.com", "Thông báo",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
 
 
 
-
-
-
+        //Main form---------------------------------------------------------------
         private void picAvatar_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFile = new OpenFileDialog();
@@ -265,36 +296,6 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             f.Show(); // Hiển thị form con
         }
 
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {          
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-            openFileDialog.FilterIndex = 1; // mặc định chọn đuôi .txt
-
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
-            {
-                try
-                {
-                    gridBangThoiKhoaBieu.Rows.Clear();
-                    string filePath = openFileDialog.FileName;
-                    // Đọc dữ liệu từ tệp và hiển thị trên DataGridView
-                    string[] lines = File.ReadAllLines(filePath);
-                    // Bỏ qua dòng đầu tiên
-                    lines = lines.Skip(1).ToArray();
-                    foreach (string line in lines)
-                    {
-                        string[] data = line.Split('\t'); // Giả sử dữ liệu được phân tách bằng tab (\t)
-                        gridBangThoiKhoaBieu.Rows.Add(data);
-                    }
-                    MessageBox.Show("Đã mở tệp thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi khi mở tệp: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
-
         private void btnTaiChinh_Click(object sender, EventArgs e)
         {
             FormTaiChinh f = new FormTaiChinh();    
@@ -304,5 +305,9 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             f.BringToFront(); // Đưa form con lên phía trước
             f.Show(); // Hiển thị form con
         }
+
+
+
+
     }
 }

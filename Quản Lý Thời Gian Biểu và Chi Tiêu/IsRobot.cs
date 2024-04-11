@@ -37,7 +37,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         {
             if(panIsRobot.Bounds.Contains(picIsRobot.Bounds))
             {
-                MessageBox.Show("Đăng kí tài khoản thành công, mời bạn đăng nhập ứng dụng", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Đăng kí tài khoản thành công, mời bạn đăng nhập ứng dụng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 FormLogin login = new FormLogin();
                 login.ShowDialog();

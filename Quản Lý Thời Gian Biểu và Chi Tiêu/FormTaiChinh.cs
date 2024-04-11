@@ -161,7 +161,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn một mục để xóa", "Lỗi");
+                MessageBox.Show("Vui lòng chọn một mục để xóa", "Lỗi", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
             }
         }
 
@@ -178,7 +178,6 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                         writer.WriteLine(item.ToString());
                     }
                 }
-
                 MessageBox.Show("Xuất ListBox thành công vào tệp " + filePath, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
@@ -194,7 +193,6 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             if (saveFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string filePath = saveFileDialog.FileName;
-
                 // Gọi phương thức xuất ListBox
                 xuatGhiFile(filePath, listBoxChiTieu_36_Nguyen);
             }

@@ -60,17 +60,17 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             bool isAuthenticated = CheckCredentials(username, password);
             if (isAuthenticated)
             {
-                MessageBox.Show("Đăng nhập thành công!", "Thông báo");
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
                 FormMain frmMain = new FormMain();
                 frmMain.ShowDialog();
                 this.Close();
             }
             else if (txtUser.Text == "" || txtPassWord.Text == "")
-                MessageBox.Show("Tài khoản hoặc mật khẩu để trống", "Lỗi!!!", MessageBoxButtons.OK);
+                MessageBox.Show("Tài khoản hoặc mật khẩu để trống", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
-                MessageBox.Show("Không đúng tên người dùng / mật khẩu!!!", "Lỗi!!!", MessageBoxButtons.OK);
+                MessageBox.Show("Không đúng tên người dùng / mật khẩu!!!", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUser.Focus();
             }
         }
@@ -83,11 +83,11 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             bool isAuthenticated = CheckCredentials(username, password);
             if (isAuthenticated)
             {
-                MessageBox.Show("Tài khoản đã tồn tại", "Lỗi", MessageBoxButtons.OK);
+                MessageBox.Show("Tài khoản đã tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }        
             else if (txtUser.Text == "" || txtPassWord.Text == "")
-                MessageBox.Show("Tài khoản hoặc mật khẩu để trống", "Lỗi!!!", MessageBoxButtons.OK);
+                MessageBox.Show("Tài khoản hoặc mật khẩu để trống", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
                 try
@@ -140,7 +140,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         {
             MessageBox.Show("Vui lòng liên hệ hỗ trợ qua email: " +
                 "nguyen.hochi2004@gmail.com\n" +
-                "Hoặc liên hệ qua hot line: 0332636829", "Help", MessageBoxButtons.OK);
+                "Hoặc liên hệ qua hot line: 0332636829", "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         //CSS
