@@ -133,6 +133,10 @@
   <ItemGroup>
     <Content Include="resources\accounts.txt" />
     <Content Include="resources\autumn-july.wav" />
+    <None Include="resources\gioiThieuCake.jpg" />
+    <None Include="resources\cake.png" />
+    <None Include="resources\cake.bmp" />
+    <None Include="resources\laisuatall.png" />
     <None Include="resources\Avater.jpg" />
     <None Include="resources\Nen.jpg" />
     <None Include="resources\isRobotImg.jpg" />

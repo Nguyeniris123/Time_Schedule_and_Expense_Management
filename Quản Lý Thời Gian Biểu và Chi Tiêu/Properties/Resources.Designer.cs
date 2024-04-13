@@ -61,15 +61,8 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Mike,10
-        ///Hung,20
-        ///Hiep,30
-        ///Nguyen,36
-        ///
-        ///
-        ///Tin,40
-        ///
-        ///Mike,567
+        ///   Looks up a localized string similar to Nguyen,36
+        ///Tin,10
         ///.
         /// </summary>
         public static string accounts {
@@ -120,6 +113,16 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap cake {
+            get {
+                object obj = ResourceManager.GetObject("cake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap Eye {
             get {
                 object obj = ResourceManager.GetObject("Eye", resourceCulture);
@@ -140,9 +143,29 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap gioiThieuCake {
+            get {
+                object obj = ResourceManager.GetObject("gioiThieuCake", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap isRobotImg {
             get {
                 object obj = ResourceManager.GetObject("isRobotImg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap laisuatall {
+            get {
+                object obj = ResourceManager.GetObject("laisuatall", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

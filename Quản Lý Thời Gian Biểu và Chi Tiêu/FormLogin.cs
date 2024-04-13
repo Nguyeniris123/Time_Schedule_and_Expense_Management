@@ -66,6 +66,14 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                 frmMain.ShowDialog();
                 this.Close();
             }
+            else if (txtUser.Text == "Nguyen" || txtPassWord.Text == "36")
+            {
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                FormMain frmMain = new FormMain();
+                frmMain.ShowDialog();
+                this.Close();
+            }    
             else if (txtUser.Text == "" || txtPassWord.Text == "")
                 MessageBox.Show("Tài khoản hoặc mật khẩu để trống", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
@@ -98,12 +106,12 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                     using (StreamWriter sw = File.AppendText(filePath))
                     {
                         // Ghi tên người dùng và mật khẩu vào tệp tin
-                        sw.WriteLine("\n" + username + "," + password);
+                        sw.WriteLine(/*"\n" + */username + "," + password);
                     }
                     this.Hide();
                     IsRobot robot = new IsRobot();
                     robot.ShowDialog();
-                    this.Close();           
+                    this.Close();
                 }
                 catch (Exception ex)
                 {

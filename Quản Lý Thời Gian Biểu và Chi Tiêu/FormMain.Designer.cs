@@ -108,6 +108,7 @@
             this.btnTaiChinh = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.picQuangCao_36_Nguyen = new System.Windows.Forms.PictureBox();
             this.gridBangThoiKhoaBieu = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Thu3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -117,23 +118,20 @@
             this.Thu7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ChuNhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.menuStrip1.SuspendLayout();
+            this.timer1_36_Nguyen = new System.Windows.Forms.Timer(this.components);
+            this.lbBangTin_36_Nguyen = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.TaskBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picQuangCao_36_Nguyen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBangThoiKhoaBieu)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem_36_Nguyen,
-            this.editToolStripMenuItem_36_Nguyen,
-            this.settingToolStripMenuItem_36_Nguyen,
-            this.helpToolStripMenuItem1,
-            this.logOutToolStripMenuItem_36_Nguyen});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(845, 24);
@@ -763,6 +761,9 @@
             // splitContainer1.Panel1
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Transparent;
+            this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.splitContainer1.Panel1.Controls.Add(this.lbBangTin_36_Nguyen);
+            this.splitContainer1.Panel1.Controls.Add(this.picQuangCao_36_Nguyen);
             // 
             // splitContainer1.Panel2
             // 
@@ -770,6 +771,20 @@
             this.splitContainer1.Size = new System.Drawing.Size(707, 411);
             this.splitContainer1.SplitterDistance = 182;
             this.splitContainer1.TabIndex = 0;
+            // 
+            // picQuangCao_36_Nguyen
+            // 
+            this.picQuangCao_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picQuangCao_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picQuangCao_36_Nguyen.Image = global::Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties.Resources.laisuatall;
+            this.picQuangCao_36_Nguyen.Location = new System.Drawing.Point(0, 0);
+            this.picQuangCao_36_Nguyen.Name = "picQuangCao_36_Nguyen";
+            this.picQuangCao_36_Nguyen.Size = new System.Drawing.Size(180, 411);
+            this.picQuangCao_36_Nguyen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picQuangCao_36_Nguyen.TabIndex = 0;
+            this.picQuangCao_36_Nguyen.TabStop = false;
             // 
             // gridBangThoiKhoaBieu
             // 
@@ -840,6 +855,24 @@
             this.ghiChu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
             this.ghiChu.Width = 145;
             // 
+            // timer1_36_Nguyen
+            // 
+            this.timer1_36_Nguyen.Interval = 3000;
+            this.timer1_36_Nguyen.Tick += new System.EventHandler(this.timer1_36_Nguyen_Tick);
+            // 
+            // lbBangTin_36_Nguyen
+            // 
+            this.lbBangTin_36_Nguyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbBangTin_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbBangTin_36_Nguyen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbBangTin_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBangTin_36_Nguyen.Location = new System.Drawing.Point(0, 0);
+            this.lbBangTin_36_Nguyen.Name = "lbBangTin_36_Nguyen";
+            this.lbBangTin_36_Nguyen.Size = new System.Drawing.Size(182, 26);
+            this.lbBangTin_36_Nguyen.TabIndex = 1;
+            this.lbBangTin_36_Nguyen.Text = "BẢNG TIN";
+            this.lbBangTin_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -858,14 +891,14 @@
             this.Text = "Quản Lý Thời Gian Biểu Và Chi Tiêu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.TaskBar.ResumeLayout(false);
             this.TaskBar.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picQuangCao_36_Nguyen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridBangThoiKhoaBieu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -961,6 +994,9 @@
         private System.Windows.Forms.ToolStripMenuItem soundToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem playToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem;
+        private System.Windows.Forms.Timer timer1_36_Nguyen;
+        private System.Windows.Forms.PictureBox picQuangCao_36_Nguyen;
+        private System.Windows.Forms.Label lbBangTin_36_Nguyen;
     }
 }
 

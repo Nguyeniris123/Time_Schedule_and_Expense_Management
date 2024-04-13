@@ -15,10 +15,19 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
 {
     public partial class FormMain : Form
     {
-    private SoundPlayer music; // thuộc tính để lưu nhạc
-    public FormMain()
+        private SoundPlayer music; // thuộc tính để lưu nhạc
+        private int currentImageIndex_36_Nguyen = 0;
+        private List<Image> images = new List<Image>(); // Danh sách các ảnh cần thay đổi
+        public FormMain()
         {           
             InitializeComponent();
+            // Thêm các ảnh vào danh sách
+            images.Add(Properties.Resources.cake);
+            images.Add(Properties.Resources.gioiThieuCake);
+            images.Add(Properties.Resources.laisuatall);
+
+            // Bắt đầu đếm thời gian sau mỗi 3 giây
+            timer1_36_Nguyen.Start();
         }
 
         //Menu-------------------------------------------------------------
@@ -306,8 +315,20 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             f.Show(); // Hiển thị form con
         }
 
+        private void timer1_36_Nguyen_Tick(object sender, EventArgs e)
+        {
+            // Kiểm tra nếu đã đến ảnh cuối cùng trong danh sách, quay lại ảnh đầu tiên
+            if (currentImageIndex_36_Nguyen == images.Count - 1)
+            {
+                currentImageIndex_36_Nguyen = 0;
+            }
+            else
+            {
+                currentImageIndex_36_Nguyen++;
+            }
 
-
-
+            // Hiển thị ảnh tương ứng trong Panel
+            picQuangCao_36_Nguyen.Image = images[currentImageIndex_36_Nguyen];
+        }
     }
 }
