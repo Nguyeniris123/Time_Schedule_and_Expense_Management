@@ -46,7 +46,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
             else
             {
-                MessageBox.Show("Vui lòng nhập dữ liệu trước khi thêm vào danh sách", "Lỗi");
+                MessageBox.Show("Vui lòng nhập dữ liệu trước khi thêm vào danh sách", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -63,7 +63,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
             else
             {
-                MessageBox.Show("Vui lòng chọn một mục để xóa", "Lỗi");
+                MessageBox.Show("Vui lòng chọn một mục để xóa", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

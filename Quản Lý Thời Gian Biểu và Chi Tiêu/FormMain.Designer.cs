@@ -31,6 +31,38 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
+            this.saveToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
+            this.printToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPreviewToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
+            this.cutToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
+            this.selectAllToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.settinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontEditToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontColorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.formColorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.controlColorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.soundToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.playToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
+            this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -108,6 +140,7 @@
             this.btnTaiChinh = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.lbBangTin_36_Nguyen = new System.Windows.Forms.Label();
             this.picQuangCao_36_Nguyen = new System.Windows.Forms.PictureBox();
             this.gridBangThoiKhoaBieu = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -119,7 +152,7 @@
             this.ChuNhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timer1_36_Nguyen = new System.Windows.Forms.Timer(this.components);
-            this.lbBangTin_36_Nguyen = new System.Windows.Forms.Label();
+            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.TaskBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -132,11 +165,265 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem1,
+            this.editToolStripMenuItem1,
+            this.settinToolStripMenuItem,
+            this.helpToolStripMenuItem2,
+            this.logOutToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(845, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // fileToolStripMenuItem1
+            // 
+            this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem2,
+            this.openToolStripMenuItem2,
+            this.toolStripSeparator12,
+            this.saveToolStripMenuItem2,
+            this.toolStripSeparator13,
+            this.printToolStripMenuItem2,
+            this.printPreviewToolStripMenuItem2,
+            this.toolStripSeparator14,
+            this.exitToolStripMenuItem2});
+            this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
+            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem1.Text = "&File";
+            // 
+            // newToolStripMenuItem2
+            // 
+            this.newToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem2.Image")));
+            this.newToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.newToolStripMenuItem2.Name = "newToolStripMenuItem2";
+            this.newToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem2.Text = "&New";
+            this.newToolStripMenuItem2.Click += new System.EventHandler(this.newToolStripMenuItem2_Click);
+            // 
+            // openToolStripMenuItem2
+            // 
+            this.openToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem2.Image")));
+            this.openToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem2.Name = "openToolStripMenuItem2";
+            this.openToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem2.Text = "&Open";
+            this.openToolStripMenuItem2.Click += new System.EventHandler(this.openToolStripMenuItem2_Click);
+            // 
+            // toolStripSeparator12
+            // 
+            this.toolStripSeparator12.Name = "toolStripSeparator12";
+            this.toolStripSeparator12.Size = new System.Drawing.Size(177, 6);
+            // 
+            // saveToolStripMenuItem2
+            // 
+            this.saveToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem2.Image")));
+            this.saveToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem2.Name = "saveToolStripMenuItem2";
+            this.saveToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem2.Text = "&Save";
+            this.saveToolStripMenuItem2.Click += new System.EventHandler(this.saveToolStripMenuItem2_Click);
+            // 
+            // toolStripSeparator13
+            // 
+            this.toolStripSeparator13.Name = "toolStripSeparator13";
+            this.toolStripSeparator13.Size = new System.Drawing.Size(177, 6);
+            // 
+            // printToolStripMenuItem2
+            // 
+            this.printToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem2.Image")));
+            this.printToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem2.Name = "printToolStripMenuItem2";
+            this.printToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.printToolStripMenuItem2.Text = "&Print";
+            // 
+            // printPreviewToolStripMenuItem2
+            // 
+            this.printPreviewToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem2.Image")));
+            this.printPreviewToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printPreviewToolStripMenuItem2.Name = "printPreviewToolStripMenuItem2";
+            this.printPreviewToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.printPreviewToolStripMenuItem2.Text = "Print Pre&view";
+            // 
+            // toolStripSeparator14
+            // 
+            this.toolStripSeparator14.Name = "toolStripSeparator14";
+            this.toolStripSeparator14.Size = new System.Drawing.Size(177, 6);
+            // 
+            // exitToolStripMenuItem2
+            // 
+            this.exitToolStripMenuItem2.Name = "exitToolStripMenuItem2";
+            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem2.Text = "E&xit";
+            this.exitToolStripMenuItem2.Click += new System.EventHandler(this.exitToolStripMenuItem2_Click);
+            // 
+            // editToolStripMenuItem1
+            // 
+            this.editToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem2,
+            this.redoToolStripMenuItem2,
+            this.toolStripSeparator15,
+            this.cutToolStripMenuItem2,
+            this.copyToolStripMenuItem2,
+            this.pasteToolStripMenuItem2,
+            this.toolStripSeparator16,
+            this.selectAllToolStripMenuItem2});
+            this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
+            this.editToolStripMenuItem1.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem1.Text = "&Edit";
+            // 
+            // undoToolStripMenuItem2
+            // 
+            this.undoToolStripMenuItem2.Name = "undoToolStripMenuItem2";
+            this.undoToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.undoToolStripMenuItem2.Text = "&Undo";
+            // 
+            // redoToolStripMenuItem2
+            // 
+            this.redoToolStripMenuItem2.Name = "redoToolStripMenuItem2";
+            this.redoToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.redoToolStripMenuItem2.Text = "&Redo";
+            // 
+            // toolStripSeparator15
+            // 
+            this.toolStripSeparator15.Name = "toolStripSeparator15";
+            this.toolStripSeparator15.Size = new System.Drawing.Size(119, 6);
+            // 
+            // cutToolStripMenuItem2
+            // 
+            this.cutToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem2.Image")));
+            this.cutToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cutToolStripMenuItem2.Name = "cutToolStripMenuItem2";
+            this.cutToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.cutToolStripMenuItem2.Text = "Cu&t";
+            // 
+            // copyToolStripMenuItem2
+            // 
+            this.copyToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem2.Image")));
+            this.copyToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.copyToolStripMenuItem2.Name = "copyToolStripMenuItem2";
+            this.copyToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.copyToolStripMenuItem2.Text = "&Copy";
+            // 
+            // pasteToolStripMenuItem2
+            // 
+            this.pasteToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem2.Image")));
+            this.pasteToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.pasteToolStripMenuItem2.Name = "pasteToolStripMenuItem2";
+            this.pasteToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.pasteToolStripMenuItem2.Text = "&Paste";
+            // 
+            // toolStripSeparator16
+            // 
+            this.toolStripSeparator16.Name = "toolStripSeparator16";
+            this.toolStripSeparator16.Size = new System.Drawing.Size(119, 6);
+            // 
+            // selectAllToolStripMenuItem2
+            // 
+            this.selectAllToolStripMenuItem2.Name = "selectAllToolStripMenuItem2";
+            this.selectAllToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
+            this.selectAllToolStripMenuItem2.Text = "Select &All";
+            // 
+            // settinToolStripMenuItem
+            // 
+            this.settinToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fontToolStripMenuItem,
+            this.colorToolStripMenuItem1,
+            this.soundToolStripMenuItem1});
+            this.settinToolStripMenuItem.Name = "settinToolStripMenuItem";
+            this.settinToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
+            this.settinToolStripMenuItem.Text = "Setting";
+            // 
+            // fontToolStripMenuItem
+            // 
+            this.fontToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fontEditToolStripMenuItem1,
+            this.fontColorToolStripMenuItem1});
+            this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
+            this.fontToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
+            this.fontToolStripMenuItem.Text = "Font";
+            // 
+            // fontEditToolStripMenuItem1
+            // 
+            this.fontEditToolStripMenuItem1.Name = "fontEditToolStripMenuItem1";
+            this.fontEditToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
+            this.fontEditToolStripMenuItem1.Text = "Font Edit";
+            this.fontEditToolStripMenuItem1.Click += new System.EventHandler(this.fontEditToolStripMenuItem1_Click);
+            // 
+            // fontColorToolStripMenuItem1
+            // 
+            this.fontColorToolStripMenuItem1.Name = "fontColorToolStripMenuItem1";
+            this.fontColorToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
+            this.fontColorToolStripMenuItem1.Text = "Font Color";
+            this.fontColorToolStripMenuItem1.Click += new System.EventHandler(this.fontColorToolStripMenuItem1_Click);
+            // 
+            // colorToolStripMenuItem1
+            // 
+            this.colorToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.formColorToolStripMenuItem1,
+            this.controlColorToolStripMenuItem1});
+            this.colorToolStripMenuItem1.Name = "colorToolStripMenuItem1";
+            this.colorToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
+            this.colorToolStripMenuItem1.Text = "Color";
+            // 
+            // formColorToolStripMenuItem1
+            // 
+            this.formColorToolStripMenuItem1.Name = "formColorToolStripMenuItem1";
+            this.formColorToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
+            this.formColorToolStripMenuItem1.Text = "Form Color";
+            this.formColorToolStripMenuItem1.Click += new System.EventHandler(this.formColorToolStripMenuItem1_Click);
+            // 
+            // controlColorToolStripMenuItem1
+            // 
+            this.controlColorToolStripMenuItem1.Name = "controlColorToolStripMenuItem1";
+            this.controlColorToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
+            this.controlColorToolStripMenuItem1.Text = "Control Color";
+            this.controlColorToolStripMenuItem1.Click += new System.EventHandler(this.controlColorToolStripMenuItem1_Click);
+            // 
+            // soundToolStripMenuItem1
+            // 
+            this.soundToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playToolStripMenuItem1,
+            this.stopToolStripMenuItem1});
+            this.soundToolStripMenuItem1.Name = "soundToolStripMenuItem1";
+            this.soundToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
+            this.soundToolStripMenuItem1.Text = "Sound";
+            // 
+            // playToolStripMenuItem1
+            // 
+            this.playToolStripMenuItem1.Name = "playToolStripMenuItem1";
+            this.playToolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
+            this.playToolStripMenuItem1.Text = "Play";
+            this.playToolStripMenuItem1.Click += new System.EventHandler(this.playToolStripMenuItem1_Click);
+            // 
+            // stopToolStripMenuItem1
+            // 
+            this.stopToolStripMenuItem1.Name = "stopToolStripMenuItem1";
+            this.stopToolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
+            this.stopToolStripMenuItem1.Text = "Stop";
+            this.stopToolStripMenuItem1.Click += new System.EventHandler(this.stopToolStripMenuItem1_Click);
+            // 
+            // helpToolStripMenuItem2
+            // 
+            this.helpToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripSeparator17});
+            this.helpToolStripMenuItem2.Name = "helpToolStripMenuItem2";
+            this.helpToolStripMenuItem2.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem2.Text = "&Help";
+            this.helpToolStripMenuItem2.Click += new System.EventHandler(this.helpToolStripMenuItem2_Click);
+            // 
+            // toolStripSeparator17
+            // 
+            this.toolStripSeparator17.Name = "toolStripSeparator17";
+            this.toolStripSeparator17.Size = new System.Drawing.Size(177, 6);
+            // 
+            // logOutToolStripMenuItem1
+            // 
+            this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
+            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(60, 20);
+            this.logOutToolStripMenuItem1.Text = "Log out";
+            this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
             // 
             // fileToolStripMenuItem_36_Nguyen
             // 
@@ -161,7 +448,6 @@
             this.newToolStripMenuItem1.Name = "newToolStripMenuItem1";
             this.newToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.newToolStripMenuItem1.Text = "&New";
-            this.newToolStripMenuItem1.Click += new System.EventHandler(this.newToolStripMenuItem1_Click);
             // 
             // openToolStripMenuItem1
             // 
@@ -170,7 +456,6 @@
             this.openToolStripMenuItem1.Name = "openToolStripMenuItem1";
             this.openToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.openToolStripMenuItem1.Text = "&Open";
-            this.openToolStripMenuItem1.Click += new System.EventHandler(this.openToolStripMenuItem1_Click);
             // 
             // toolStripSeparator6
             // 
@@ -184,7 +469,6 @@
             this.saveToolStripMenuItem1.Name = "saveToolStripMenuItem1";
             this.saveToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.saveToolStripMenuItem1.Text = "&Save";
-            this.saveToolStripMenuItem1.Click += new System.EventHandler(this.saveToolStripMenuItem1_Click);
             // 
             // toolStripSeparator7
             // 
@@ -217,7 +501,6 @@
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
             this.exitToolStripMenuItem1.Size = new System.Drawing.Size(143, 22);
             this.exitToolStripMenuItem1.Text = "E&xit";
-            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // editToolStripMenuItem_36_Nguyen
             // 
@@ -310,14 +593,12 @@
             this.fontEditToolStripMenuItem.Name = "fontEditToolStripMenuItem";
             this.fontEditToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.fontEditToolStripMenuItem.Text = "Font edit";
-            this.fontEditToolStripMenuItem.Click += new System.EventHandler(this.fontEditToolStripMenuItem_Click);
             // 
             // fontColorToolStripMenuItem
             // 
             this.fontColorToolStripMenuItem.Name = "fontColorToolStripMenuItem";
             this.fontColorToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.fontColorToolStripMenuItem.Text = "Font color";
-            this.fontColorToolStripMenuItem.Click += new System.EventHandler(this.fontColorToolStripMenuItem_Click);
             // 
             // colorToolStripMenuItem
             // 
@@ -333,14 +614,12 @@
             this.formColorToolStripMenuItem.Name = "formColorToolStripMenuItem";
             this.formColorToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.formColorToolStripMenuItem.Text = "Form color";
-            this.formColorToolStripMenuItem.Click += new System.EventHandler(this.formColorToolStripMenuItem_Click);
             // 
             // controlColorToolStripMenuItem
             // 
             this.controlColorToolStripMenuItem.Name = "controlColorToolStripMenuItem";
             this.controlColorToolStripMenuItem.Size = new System.Drawing.Size(144, 22);
             this.controlColorToolStripMenuItem.Text = "Control color";
-            this.controlColorToolStripMenuItem.Click += new System.EventHandler(this.controlColorToolStripMenuItem_Click);
             // 
             // soundToolStripMenuItem
             // 
@@ -356,14 +635,12 @@
             this.playToolStripMenuItem.Name = "playToolStripMenuItem";
             this.playToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.playToolStripMenuItem.Text = "Play";
-            this.playToolStripMenuItem.Click += new System.EventHandler(this.playToolStripMenuItem_Click);
             // 
             // stopToolStripMenuItem
             // 
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
             this.stopToolStripMenuItem.Size = new System.Drawing.Size(98, 22);
             this.stopToolStripMenuItem.Text = "Stop";
-            this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
             // 
             // helpToolStripMenuItem1
             // 
@@ -380,7 +657,6 @@
             this.contentsToolStripMenuItem1.Name = "contentsToolStripMenuItem1";
             this.contentsToolStripMenuItem1.Size = new System.Drawing.Size(122, 22);
             this.contentsToolStripMenuItem1.Text = "&Contents";
-            this.contentsToolStripMenuItem1.Click += new System.EventHandler(this.contentsToolStripMenuItem1_Click);
             // 
             // toolStripSeparator11
             // 
@@ -398,7 +674,6 @@
             this.logOutToolStripMenuItem_36_Nguyen.Name = "logOutToolStripMenuItem_36_Nguyen";
             this.logOutToolStripMenuItem_36_Nguyen.Size = new System.Drawing.Size(60, 20);
             this.logOutToolStripMenuItem_36_Nguyen.Text = "Log out";
-            this.logOutToolStripMenuItem_36_Nguyen.Click += new System.EventHandler(this.logOutToolStripMenuItem_36_Nguyen_Click);
             // 
             // fileToolStripMenuItem
             // 
@@ -772,11 +1047,25 @@
             this.splitContainer1.SplitterDistance = 182;
             this.splitContainer1.TabIndex = 0;
             // 
+            // lbBangTin_36_Nguyen
+            // 
+            this.lbBangTin_36_Nguyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbBangTin_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbBangTin_36_Nguyen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbBangTin_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBangTin_36_Nguyen.Location = new System.Drawing.Point(0, 0);
+            this.lbBangTin_36_Nguyen.Name = "lbBangTin_36_Nguyen";
+            this.lbBangTin_36_Nguyen.Size = new System.Drawing.Size(182, 26);
+            this.lbBangTin_36_Nguyen.TabIndex = 1;
+            this.lbBangTin_36_Nguyen.Text = "BẢNG TIN";
+            this.lbBangTin_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // picQuangCao_36_Nguyen
             // 
             this.picQuangCao_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.picQuangCao_36_Nguyen.BackColor = System.Drawing.Color.LightCyan;
             this.picQuangCao_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.picQuangCao_36_Nguyen.Image = global::Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties.Resources.laisuatall;
             this.picQuangCao_36_Nguyen.Location = new System.Drawing.Point(0, 0);
@@ -860,19 +1149,6 @@
             this.timer1_36_Nguyen.Interval = 3000;
             this.timer1_36_Nguyen.Tick += new System.EventHandler(this.timer1_36_Nguyen_Tick);
             // 
-            // lbBangTin_36_Nguyen
-            // 
-            this.lbBangTin_36_Nguyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.lbBangTin_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbBangTin_36_Nguyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbBangTin_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBangTin_36_Nguyen.Location = new System.Drawing.Point(0, 0);
-            this.lbBangTin_36_Nguyen.Name = "lbBangTin_36_Nguyen";
-            this.lbBangTin_36_Nguyen.Size = new System.Drawing.Size(182, 26);
-            this.lbBangTin_36_Nguyen.TabIndex = 1;
-            this.lbBangTin_36_Nguyen.Text = "BẢNG TIN";
-            this.lbBangTin_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -891,6 +1167,8 @@
             this.Text = "Quản Lý Thời Gian Biểu Và Chi Tiêu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormMain_Load);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.TaskBar.ResumeLayout(false);
             this.TaskBar.PerformLayout();
@@ -997,6 +1275,38 @@
         private System.Windows.Forms.Timer timer1_36_Nguyen;
         private System.Windows.Forms.PictureBox picQuangCao_36_Nguyen;
         private System.Windows.Forms.Label lbBangTin_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
+        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem printPreviewToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
+        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
+        private System.Windows.Forms.ToolStripMenuItem settinToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem fontEditToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem fontColorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem formColorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem controlColorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem soundToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem playToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem1;
     }
 }
 

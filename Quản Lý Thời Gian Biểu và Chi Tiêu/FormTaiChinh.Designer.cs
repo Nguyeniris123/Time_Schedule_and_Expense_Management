@@ -103,9 +103,10 @@
             // 
             this.lbNguonTien1_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbNguonTien1_36_Nguyen.AutoSize = true;
+            this.lbNguonTien1_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNguonTien1_36_Nguyen.Location = new System.Drawing.Point(19, 65);
             this.lbNguonTien1_36_Nguyen.Name = "lbNguonTien1_36_Nguyen";
-            this.lbNguonTien1_36_Nguyen.Size = new System.Drawing.Size(68, 13);
+            this.lbNguonTien1_36_Nguyen.Size = new System.Drawing.Size(80, 13);
             this.lbNguonTien1_36_Nguyen.TabIndex = 2;
             this.lbNguonTien1_36_Nguyen.Text = "Nguồn tiền 1";
             // 
@@ -113,9 +114,10 @@
             // 
             this.lbNguonTien2_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbNguonTien2_36_Nguyen.AutoSize = true;
+            this.lbNguonTien2_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNguonTien2_36_Nguyen.Location = new System.Drawing.Point(230, 65);
             this.lbNguonTien2_36_Nguyen.Name = "lbNguonTien2_36_Nguyen";
-            this.lbNguonTien2_36_Nguyen.Size = new System.Drawing.Size(68, 13);
+            this.lbNguonTien2_36_Nguyen.Size = new System.Drawing.Size(80, 13);
             this.lbNguonTien2_36_Nguyen.TabIndex = 4;
             this.lbNguonTien2_36_Nguyen.Text = "Nguồn tiền 2";
             // 
@@ -150,9 +152,10 @@
             // 
             this.lbNguonTien3_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbNguonTien3_36_Nguyen.AutoSize = true;
+            this.lbNguonTien3_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNguonTien3_36_Nguyen.Location = new System.Drawing.Point(433, 65);
             this.lbNguonTien3_36_Nguyen.Name = "lbNguonTien3_36_Nguyen";
-            this.lbNguonTien3_36_Nguyen.Size = new System.Drawing.Size(68, 13);
+            this.lbNguonTien3_36_Nguyen.Size = new System.Drawing.Size(80, 13);
             this.lbNguonTien3_36_Nguyen.TabIndex = 6;
             this.lbNguonTien3_36_Nguyen.Text = "Nguồn tiền 3";
             // 
@@ -187,9 +190,10 @@
             // 
             this.lbNguonTien4_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.lbNguonTien4_36_Nguyen.AutoSize = true;
+            this.lbNguonTien4_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNguonTien4_36_Nguyen.Location = new System.Drawing.Point(638, 65);
             this.lbNguonTien4_36_Nguyen.Name = "lbNguonTien4_36_Nguyen";
-            this.lbNguonTien4_36_Nguyen.Size = new System.Drawing.Size(68, 13);
+            this.lbNguonTien4_36_Nguyen.Size = new System.Drawing.Size(80, 13);
             this.lbNguonTien4_36_Nguyen.TabIndex = 8;
             this.lbNguonTien4_36_Nguyen.Text = "Nguồn tiền 4";
             // 
@@ -289,7 +293,7 @@
             // listBoxChiTieu_36_Nguyen
             // 
             this.listBoxChiTieu_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.listBoxChiTieu_36_Nguyen.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.listBoxChiTieu_36_Nguyen.BackColor = System.Drawing.Color.SpringGreen;
             this.listBoxChiTieu_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBoxChiTieu_36_Nguyen.FormattingEnabled = true;
             this.listBoxChiTieu_36_Nguyen.HorizontalScrollbar = true;
@@ -387,34 +391,40 @@
             // btnThem_36_Nguyen
             // 
             this.btnThem_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnThem_36_Nguyen.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnThem_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThem_36_Nguyen.Location = new System.Drawing.Point(225, 409);
             this.btnThem_36_Nguyen.Name = "btnThem_36_Nguyen";
             this.btnThem_36_Nguyen.Size = new System.Drawing.Size(86, 37);
             this.btnThem_36_Nguyen.TabIndex = 26;
             this.btnThem_36_Nguyen.Text = "Thêm";
-            this.btnThem_36_Nguyen.UseVisualStyleBackColor = true;
+            this.btnThem_36_Nguyen.UseVisualStyleBackColor = false;
             this.btnThem_36_Nguyen.Click += new System.EventHandler(this.btnThem_36_Nguyen_Click);
             // 
             // btnXoa_36_Nguyen
             // 
             this.btnXoa_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnXoa_36_Nguyen.BackColor = System.Drawing.Color.GreenYellow;
+            this.btnXoa_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa_36_Nguyen.Location = new System.Drawing.Point(123, 409);
             this.btnXoa_36_Nguyen.Name = "btnXoa_36_Nguyen";
             this.btnXoa_36_Nguyen.Size = new System.Drawing.Size(86, 37);
             this.btnXoa_36_Nguyen.TabIndex = 27;
             this.btnXoa_36_Nguyen.Text = "Xoá";
-            this.btnXoa_36_Nguyen.UseVisualStyleBackColor = true;
+            this.btnXoa_36_Nguyen.UseVisualStyleBackColor = false;
             this.btnXoa_36_Nguyen.Click += new System.EventHandler(this.btnXoa_36_Nguyen_Click);
             // 
             // btnXuatDanhSach_36_Nguyen
             // 
             this.btnXuatDanhSach_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnXuatDanhSach_36_Nguyen.BackColor = System.Drawing.Color.LightBlue;
+            this.btnXuatDanhSach_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXuatDanhSach_36_Nguyen.Location = new System.Drawing.Point(22, 409);
             this.btnXuatDanhSach_36_Nguyen.Name = "btnXuatDanhSach_36_Nguyen";
             this.btnXuatDanhSach_36_Nguyen.Size = new System.Drawing.Size(86, 37);
             this.btnXuatDanhSach_36_Nguyen.TabIndex = 28;
             this.btnXuatDanhSach_36_Nguyen.Text = "Xuất File";
-            this.btnXuatDanhSach_36_Nguyen.UseVisualStyleBackColor = true;
+            this.btnXuatDanhSach_36_Nguyen.UseVisualStyleBackColor = false;
             this.btnXuatDanhSach_36_Nguyen.Click += new System.EventHandler(this.btnXuatDanhSach_36_Nguyen_Click);
             // 
             // FormTaiChinh

@@ -31,7 +31,74 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //Menu-------------------------------------------------------------
-        private void newToolStripMenuItem1_Click(object sender, EventArgs e)
+
+        
+
+
+
+
+        //Main form---------------------------------------------------------------
+        private void picAvatar_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFile = new OpenFileDialog();
+            //set tiêu đề
+            openFile.Title = "Mở ảnh đại diện";
+            //check điều kiện lọc file
+            openFile.Filter = "File anh|*.jpg;|All file|*.*";
+            //check xem người dùng đã chọn file hay chưa
+            if (openFile.ShowDialog() == DialogResult.OK)
+            {
+                picAvatar.Image = Image.FromFile(openFile.FileName);
+            }
+        }
+
+        // thêm row cho bảng thời khoá biểu khi form dc load
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 29; i++)
+            {
+                gridBangThoiKhoaBieu.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
+            }
+        }
+
+        //mở form các tài khoản ngân hàng
+        private void btnTaiKhoanNganHang_Click(object sender, EventArgs e)
+        {  
+            FormTaiKhoan f = new FormTaiKhoan();
+            f.TopLevel = false;
+            this.Controls.Add(f); // Thêm form con vào các điều khiển của form cha
+            f.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
+            f.BringToFront(); // Đưa form con lên phía trước
+            f.Show(); // Hiển thị form con
+        }
+
+        private void btnTaiChinh_Click(object sender, EventArgs e)
+        {
+            FormTaiChinh f = new FormTaiChinh();    
+            f.TopLevel = false;
+            this.Controls.Add(f); // Thêm form con vào các điều khiển của form cha
+            f.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
+            f.BringToFront(); // Đưa form con lên phía trước
+            f.Show(); // Hiển thị form con
+        }
+
+        private void timer1_36_Nguyen_Tick(object sender, EventArgs e)
+        {
+            // Kiểm tra nếu đã đến ảnh cuối cùng trong danh sách, quay lại ảnh đầu tiên
+            if (currentImageIndex_36_Nguyen == images.Count - 1)
+            {
+                currentImageIndex_36_Nguyen = 0;
+            }
+            else
+            {
+                currentImageIndex_36_Nguyen++;
+            }
+
+            // Hiển thị ảnh tương ứng trong Panel
+            picQuangCao_36_Nguyen.Image = images[currentImageIndex_36_Nguyen];
+        }
+
+        private void newToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             gridBangThoiKhoaBieu.Rows.Clear();
             for (int i = 1; i <= 29; i++)
@@ -40,7 +107,9 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-        private void openToolStripMenuItem1_Click(object sender, EventArgs e)
+
+        //Mở bảng grid tkb mới
+        private void openToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
@@ -105,7 +174,8 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-        private void saveToolStripMenuItem1_Click(object sender, EventArgs e)
+        //Lưu bảng thời khoá biểu thành txt
+        private void saveToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
             saveFileDialog.Filter = "Text files (*.txt)|*.txt|File pdf|*.pdf |All files (*.*)|*.*";
@@ -119,7 +189,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //Nhấn Exit để đóng app
-        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             DialogResult traLoi;
             traLoi = MessageBox.Show("Bạn có chắc muốn thoát ứng dụng không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -130,7 +200,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //FontDialog menu
-        private void fontEditToolStripMenuItem_Click(object sender, EventArgs e)
+        private void fontEditToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             FontDialog dlg = new FontDialog();
             dlg.ShowEffects = true;
@@ -148,7 +218,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //ColorDialog menu
-        private void fontColorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void fontColorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ColorDialog dlg = new ColorDialog();
             dlg.FullOpen = true;    // Cho phép hiển thị tất cả các màu sắc
@@ -161,7 +231,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-        private void formColorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void formColorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ColorDialog dlg = new ColorDialog();
             dlg.FullOpen = true; // Cho phép hiển thị tất cả các màu sắc
@@ -172,7 +242,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-        private void controlColorToolStripMenuItem_Click(object sender, EventArgs e)
+        private void controlColorToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             ColorDialog dlg = new ColorDialog();
             dlg.FullOpen = true;
@@ -186,7 +256,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //Phát nhạc
-        private void playToolStripMenuItem_Click(object sender, EventArgs e)
+        private void playToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -213,7 +283,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //Dừng nhạc
-        private void stopToolStripMenuItem_Click(object sender, EventArgs e)
+        private void stopToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             try
             {
@@ -246,7 +316,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //nhấn vào Log out để ra màn hình đăng nhập
-        private void logOutToolStripMenuItem_36_Nguyen_Click(object sender, EventArgs e)
+        private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             DialogResult traLoi;
             traLoi = MessageBox.Show("Bạn có chắc muốn về màn hình Login không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
@@ -260,75 +330,11 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //help content
-        private void contentsToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void helpToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Vui lòng liên hệ qua hot Line: 092193213\n" +
                 "hoặc qua email sau: nguyen.hochi2004@gmail.com", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
-
-
-
-
-        //Main form---------------------------------------------------------------
-        private void picAvatar_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFile = new OpenFileDialog();
-            //set tiêu đề
-            openFile.Title = "Mở ảnh đại diện";
-            //check điều kiện lọc file
-            openFile.Filter = "File anh|*.jpg;|All file|*.*";
-            //check xem người dùng đã chọn file hay chưa
-            if (openFile.ShowDialog() == DialogResult.OK)
-            {
-                picAvatar.Image = Image.FromFile(openFile.FileName);
-            }
-        }
-
-        // thêm row cho bảng thời khoá biểu khi form dc load
-        private void FormMain_Load(object sender, EventArgs e)
-        {
-            for (int i = 1; i <= 29; i++)
-            {
-                gridBangThoiKhoaBieu.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
-            }
-        }
-
-        //mở form các tài khoản ngân hàng
-        private void btnTaiKhoanNganHang_Click(object sender, EventArgs e)
-        {  
-            FormTaiKhoan f = new FormTaiKhoan();
-            f.TopLevel = false;
-            this.Controls.Add(f); // Thêm form con vào các điều khiển của form cha
-            f.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
-            f.BringToFront(); // Đưa form con lên phía trước
-            f.Show(); // Hiển thị form con
-        }
-
-        private void btnTaiChinh_Click(object sender, EventArgs e)
-        {
-            FormTaiChinh f = new FormTaiChinh();    
-            f.TopLevel = false;
-            this.Controls.Add(f); // Thêm form con vào các điều khiển của form cha
-            f.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
-            f.BringToFront(); // Đưa form con lên phía trước
-            f.Show(); // Hiển thị form con
-        }
-
-        private void timer1_36_Nguyen_Tick(object sender, EventArgs e)
-        {
-            // Kiểm tra nếu đã đến ảnh cuối cùng trong danh sách, quay lại ảnh đầu tiên
-            if (currentImageIndex_36_Nguyen == images.Count - 1)
-            {
-                currentImageIndex_36_Nguyen = 0;
-            }
-            else
-            {
-                currentImageIndex_36_Nguyen++;
-            }
-
-            // Hiển thị ảnh tương ứng trong Panel
-            picQuangCao_36_Nguyen.Image = images[currentImageIndex_36_Nguyen];
         }
     }
 }

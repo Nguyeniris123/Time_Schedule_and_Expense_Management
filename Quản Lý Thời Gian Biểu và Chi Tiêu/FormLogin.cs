@@ -66,7 +66,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                 frmMain.ShowDialog();
                 this.Close();
             }
-            else if (txtUser.Text == "Nguyen" || txtPassWord.Text == "36")
+            else if (txtUser.Text == "Nguyen" && txtPassWord.Text == "36")
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();

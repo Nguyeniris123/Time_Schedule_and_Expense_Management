@@ -16,8 +16,8 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FormLogin());
-            Application.Run(new FormMain());
+            Application.Run(new FormLogin());
+            //Application.Run(new FormMain());
             //Application.Run(new FormTaiKhoan());
         }
     }
