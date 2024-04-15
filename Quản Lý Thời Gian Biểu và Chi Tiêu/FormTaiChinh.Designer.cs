@@ -62,7 +62,7 @@
             // 
             this.lbTieuDeTaiChinh_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.lbTieuDeTaiChinh_36_Nguyen.AutoSize = true;
-            this.lbTieuDeTaiChinh_36_Nguyen.BackColor = System.Drawing.Color.SpringGreen;
+            this.lbTieuDeTaiChinh_36_Nguyen.BackColor = System.Drawing.Color.Yellow;
             this.lbTieuDeTaiChinh_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbTieuDeTaiChinh_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTieuDeTaiChinh_36_Nguyen.Location = new System.Drawing.Point(330, 9);
@@ -231,6 +231,7 @@
             this.txtNguonTien1.Name = "txtNguonTien1";
             this.txtNguonTien1.Size = new System.Drawing.Size(159, 20);
             this.txtNguonTien1.TabIndex = 9;
+            this.txtNguonTien1.Text = "0";
             this.txtNguonTien1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtNguonTien1.TextChanged += new System.EventHandler(this.txtNguonTien1_TextChanged);
             this.txtNguonTien1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien1_KeyPress);
@@ -242,6 +243,7 @@
             this.txtNguonTien4.Name = "txtNguonTien4";
             this.txtNguonTien4.Size = new System.Drawing.Size(159, 20);
             this.txtNguonTien4.TabIndex = 10;
+            this.txtNguonTien4.Text = "0";
             this.txtNguonTien4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtNguonTien4.TextChanged += new System.EventHandler(this.txtNguonTien4_TextChanged);
             this.txtNguonTien4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien4_KeyPress);
@@ -253,6 +255,7 @@
             this.txtNguonTien3.Name = "txtNguonTien3";
             this.txtNguonTien3.Size = new System.Drawing.Size(159, 20);
             this.txtNguonTien3.TabIndex = 11;
+            this.txtNguonTien3.Text = "0";
             this.txtNguonTien3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtNguonTien3.TextChanged += new System.EventHandler(this.txtNguonTien3_TextChanged);
             this.txtNguonTien3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien3_KeyPress);
@@ -264,6 +267,7 @@
             this.txtNguonTien2.Name = "txtNguonTien2";
             this.txtNguonTien2.Size = new System.Drawing.Size(159, 20);
             this.txtNguonTien2.TabIndex = 12;
+            this.txtNguonTien2.Text = "0";
             this.txtNguonTien2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtNguonTien2.TextChanged += new System.EventHandler(this.txtNguonTien2_TextChanged);
             this.txtNguonTien2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien2_KeyPress);
@@ -293,7 +297,7 @@
             // listBoxChiTieu_36_Nguyen
             // 
             this.listBoxChiTieu_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.listBoxChiTieu_36_Nguyen.BackColor = System.Drawing.Color.SpringGreen;
+            this.listBoxChiTieu_36_Nguyen.BackColor = System.Drawing.Color.PaleGreen;
             this.listBoxChiTieu_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBoxChiTieu_36_Nguyen.FormattingEnabled = true;
             this.listBoxChiTieu_36_Nguyen.HorizontalScrollbar = true;
@@ -347,6 +351,7 @@
             this.txtSoTien_36_Nguyen.Size = new System.Drawing.Size(140, 20);
             this.txtSoTien_36_Nguyen.TabIndex = 21;
             this.txtSoTien_36_Nguyen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSoTien_36_Nguyen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTien_36_Nguyen_KeyPress);
             // 
             // dateTimeChiTieu_36_Nguyen
             // 

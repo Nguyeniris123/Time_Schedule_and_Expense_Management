@@ -140,6 +140,7 @@
             this.btnTaiChinh = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.lbDateTime_36_Nguyen = new System.Windows.Forms.Label();
             this.lbBangTin_36_Nguyen = new System.Windows.Forms.Label();
             this.picQuangCao_36_Nguyen = new System.Windows.Forms.PictureBox();
             this.gridBangThoiKhoaBieu = new System.Windows.Forms.DataGridView();
@@ -151,7 +152,8 @@
             this.Thu7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ChuNhat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.timer1_36_Nguyen = new System.Windows.Forms.Timer(this.components);
+            this.timerImg_36_Nguyen = new System.Windows.Forms.Timer(this.components);
+            this.timerDateTime_36_Nguyen = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.TaskBar.SuspendLayout();
@@ -198,7 +200,7 @@
             this.newToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem2.Image")));
             this.newToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem2.Name = "newToolStripMenuItem2";
-            this.newToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.newToolStripMenuItem2.Text = "&New";
             this.newToolStripMenuItem2.Click += new System.EventHandler(this.newToolStripMenuItem2_Click);
             // 
@@ -207,35 +209,35 @@
             this.openToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem2.Image")));
             this.openToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem2.Name = "openToolStripMenuItem2";
-            this.openToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.openToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.openToolStripMenuItem2.Text = "&Open";
             this.openToolStripMenuItem2.Click += new System.EventHandler(this.openToolStripMenuItem2_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(140, 6);
             // 
             // saveToolStripMenuItem2
             // 
             this.saveToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem2.Image")));
             this.saveToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem2.Name = "saveToolStripMenuItem2";
-            this.saveToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.saveToolStripMenuItem2.Text = "&Save";
             this.saveToolStripMenuItem2.Click += new System.EventHandler(this.saveToolStripMenuItem2_Click);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(140, 6);
             // 
             // printToolStripMenuItem2
             // 
             this.printToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem2.Image")));
             this.printToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem2.Name = "printToolStripMenuItem2";
-            this.printToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.printToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.printToolStripMenuItem2.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem2
@@ -243,18 +245,18 @@
             this.printPreviewToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem2.Image")));
             this.printPreviewToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem2.Name = "printPreviewToolStripMenuItem2";
-            this.printPreviewToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.printPreviewToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.printPreviewToolStripMenuItem2.Text = "Print Pre&view";
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(140, 6);
             // 
             // exitToolStripMenuItem2
             // 
             this.exitToolStripMenuItem2.Name = "exitToolStripMenuItem2";
-            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
             this.exitToolStripMenuItem2.Text = "E&xit";
             this.exitToolStripMenuItem2.Click += new System.EventHandler(this.exitToolStripMenuItem2_Click);
             // 
@@ -416,7 +418,7 @@
             // toolStripSeparator17
             // 
             this.toolStripSeparator17.Name = "toolStripSeparator17";
-            this.toolStripSeparator17.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator17.Size = new System.Drawing.Size(57, 6);
             // 
             // logOutToolStripMenuItem1
             // 
@@ -994,26 +996,28 @@
             // 
             // btnTaiKhoanNganHang
             // 
+            this.btnTaiKhoanNganHang.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnTaiKhoanNganHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTaiKhoanNganHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiKhoanNganHang.Location = new System.Drawing.Point(25, 295);
+            this.btnTaiKhoanNganHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiKhoanNganHang.Location = new System.Drawing.Point(8, 295);
             this.btnTaiKhoanNganHang.Name = "btnTaiKhoanNganHang";
-            this.btnTaiKhoanNganHang.Size = new System.Drawing.Size(91, 21);
+            this.btnTaiKhoanNganHang.Size = new System.Drawing.Size(120, 29);
             this.btnTaiKhoanNganHang.TabIndex = 6;
             this.btnTaiKhoanNganHang.Text = "Ngân hàng";
-            this.btnTaiKhoanNganHang.UseVisualStyleBackColor = true;
+            this.btnTaiKhoanNganHang.UseVisualStyleBackColor = false;
             this.btnTaiKhoanNganHang.Click += new System.EventHandler(this.btnTaiKhoanNganHang_Click);
             // 
             // btnTaiChinh
             // 
+            this.btnTaiChinh.BackColor = System.Drawing.Color.LavenderBlush;
             this.btnTaiChinh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTaiChinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiChinh.Location = new System.Drawing.Point(24, 246);
+            this.btnTaiChinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiChinh.Location = new System.Drawing.Point(8, 242);
             this.btnTaiChinh.Name = "btnTaiChinh";
-            this.btnTaiChinh.Size = new System.Drawing.Size(91, 21);
+            this.btnTaiChinh.Size = new System.Drawing.Size(120, 29);
             this.btnTaiChinh.TabIndex = 5;
             this.btnTaiChinh.Text = "Tài chính";
-            this.btnTaiChinh.UseVisualStyleBackColor = true;
+            this.btnTaiChinh.UseVisualStyleBackColor = false;
             this.btnTaiChinh.Click += new System.EventHandler(this.btnTaiChinh_Click);
             // 
             // label1
@@ -1037,6 +1041,7 @@
             // 
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Transparent;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.splitContainer1.Panel1.Controls.Add(this.lbDateTime_36_Nguyen);
             this.splitContainer1.Panel1.Controls.Add(this.lbBangTin_36_Nguyen);
             this.splitContainer1.Panel1.Controls.Add(this.picQuangCao_36_Nguyen);
             // 
@@ -1047,15 +1052,28 @@
             this.splitContainer1.SplitterDistance = 182;
             this.splitContainer1.TabIndex = 0;
             // 
+            // lbDateTime_36_Nguyen
+            // 
+            this.lbDateTime_36_Nguyen.BackColor = System.Drawing.Color.DodgerBlue;
+            this.lbDateTime_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbDateTime_36_Nguyen.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lbDateTime_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDateTime_36_Nguyen.Location = new System.Drawing.Point(0, 371);
+            this.lbDateTime_36_Nguyen.Name = "lbDateTime_36_Nguyen";
+            this.lbDateTime_36_Nguyen.Size = new System.Drawing.Size(182, 40);
+            this.lbDateTime_36_Nguyen.TabIndex = 2;
+            this.lbDateTime_36_Nguyen.Text = "Thời gian";
+            this.lbDateTime_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // lbBangTin_36_Nguyen
             // 
-            this.lbBangTin_36_Nguyen.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.lbBangTin_36_Nguyen.BackColor = System.Drawing.Color.Chartreuse;
             this.lbBangTin_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lbBangTin_36_Nguyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbBangTin_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBangTin_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbBangTin_36_Nguyen.Location = new System.Drawing.Point(0, 0);
             this.lbBangTin_36_Nguyen.Name = "lbBangTin_36_Nguyen";
-            this.lbBangTin_36_Nguyen.Size = new System.Drawing.Size(182, 26);
+            this.lbBangTin_36_Nguyen.Size = new System.Drawing.Size(182, 40);
             this.lbBangTin_36_Nguyen.TabIndex = 1;
             this.lbBangTin_36_Nguyen.Text = "BẢNG TIN";
             this.lbBangTin_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1078,6 +1096,8 @@
             // gridBangThoiKhoaBieu
             // 
             this.gridBangThoiKhoaBieu.AllowUserToOrderColumns = true;
+            this.gridBangThoiKhoaBieu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridBangThoiKhoaBieu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.gridBangThoiKhoaBieu.BackgroundColor = System.Drawing.Color.LightYellow;
             this.gridBangThoiKhoaBieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridBangThoiKhoaBieu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -1142,12 +1162,15 @@
             this.ghiChu.HeaderText = "Ghi chú";
             this.ghiChu.Name = "ghiChu";
             this.ghiChu.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Programmatic;
-            this.ghiChu.Width = 145;
             // 
-            // timer1_36_Nguyen
+            // timerImg_36_Nguyen
             // 
-            this.timer1_36_Nguyen.Interval = 3000;
-            this.timer1_36_Nguyen.Tick += new System.EventHandler(this.timer1_36_Nguyen_Tick);
+            this.timerImg_36_Nguyen.Interval = 3000;
+            this.timerImg_36_Nguyen.Tick += new System.EventHandler(this.timerImg_36_Nguyen_Tick);
+            // 
+            // timerDateTime_36_Nguyen
+            // 
+            this.timerDateTime_36_Nguyen.Tick += new System.EventHandler(this.timerDateTime_36_Nguyen_Tick);
             // 
             // FormMain
             // 
@@ -1272,7 +1295,7 @@
         private System.Windows.Forms.ToolStripMenuItem soundToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem playToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem;
-        private System.Windows.Forms.Timer timer1_36_Nguyen;
+        private System.Windows.Forms.Timer timerImg_36_Nguyen;
         private System.Windows.Forms.PictureBox picQuangCao_36_Nguyen;
         private System.Windows.Forms.Label lbBangTin_36_Nguyen;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
@@ -1307,6 +1330,8 @@
         private System.Windows.Forms.ToolStripMenuItem soundToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem playToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem1;
+        private System.Windows.Forms.Label lbDateTime_36_Nguyen;
+        private System.Windows.Forms.Timer timerDateTime_36_Nguyen;
     }
 }
 

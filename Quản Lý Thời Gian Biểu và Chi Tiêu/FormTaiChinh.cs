@@ -61,6 +61,8 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                 e.Handled = true;
             }
         }
+
+
         private void txtNguonTien1_TextChanged(object sender, EventArgs e)
         {
             tinhTong();
@@ -79,6 +81,14 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         private void txtNguonTien4_TextChanged(object sender, EventArgs e)
         {
             tinhTong();
+        }
+
+        private void txtSoTien_36_Nguyen_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void tinhTong()
@@ -119,21 +129,21 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
 
             // Lấy thông tin từ các điều khiển nhập liệu
-            int nguonTien1_36_nguyen = int.Parse(txtNguonTien1.Text);
-            int nguonTien2_36_nguyen = int.Parse(txtNguonTien2.Text);
-            int nguonTien3_36_nguyen = int.Parse(txtNguonTien3.Text);
-            int nguonTien4_36_nguyen = int.Parse(txtNguonTien4.Text);
-            int tongTien_36_Nguyen = int.Parse(txtTong.Text);
+            decimal nguonTien1_36_nguyen = decimal.Parse(txtNguonTien1.Text);
+            decimal nguonTien2_36_nguyen = decimal.Parse(txtNguonTien2.Text);
+            decimal nguonTien3_36_nguyen = decimal.Parse(txtNguonTien3.Text);
+            decimal nguonTien4_36_nguyen = decimal.Parse(txtNguonTien4.Text);
+            decimal tongTien_36_Nguyen = decimal.Parse(txtTong.Text);
 
             string mucDich = cbMucDich_36_Nguyen.Text;
-            int soTien = int.Parse(txtSoTien_36_Nguyen.Text); // Chuyển đổi về kiểu decimal (hoặc int)
+            decimal soTien = decimal.Parse(txtSoTien_36_Nguyen.Text); // Chuyển đổi về kiểu decimal (hoặc int)
             
             DateTime ngayThucHien = dateTimeChiTieu_36_Nguyen.Value;
             string moTa = richTextBoxChiTiet_36_Nguyen.Text;
 
             //Tính tiền còn lại
             txtTong.Text = String.Format("{0}", tongTien_36_Nguyen - soTien);
-            int tongTienConLai_36_Nguyen = tongTien_36_Nguyen - soTien;
+            decimal tongTienConLai_36_Nguyen = tongTien_36_Nguyen - soTien;
 
             // Tạo một chuỗi để hiển thị trong ListBox, .ToString("C") là để thêm đ vào sau tiền
             string item = $"Tổng tiền: {tongTien_36_Nguyen.ToString("C")} - " +
@@ -196,6 +206,6 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                 // Gọi phương thức xuất ListBox
                 xuatGhiFile(filePath, listBoxChiTieu_36_Nguyen);
             }
-        }
+        }      
     }
 }

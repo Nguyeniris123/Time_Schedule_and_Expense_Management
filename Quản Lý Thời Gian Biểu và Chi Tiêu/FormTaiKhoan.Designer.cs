@@ -44,6 +44,7 @@
             this.lbMatKhauNganHang = new System.Windows.Forms.Label();
             this.btnXuatFile = new System.Windows.Forms.Button();
             this.btnMoFile = new System.Windows.Forms.Button();
+            this.lbDsBank_36_Nguyen = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cbChonTaiKhoanNganHang
@@ -114,9 +115,9 @@
             this.ListTaiKhoanNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
             this.ListTaiKhoanNganHang.BackColor = System.Drawing.Color.MintCream;
             this.ListTaiKhoanNganHang.FormattingEnabled = true;
-            this.ListTaiKhoanNganHang.Location = new System.Drawing.Point(15, 158);
+            this.ListTaiKhoanNganHang.Location = new System.Drawing.Point(15, 184);
             this.ListTaiKhoanNganHang.Name = "ListTaiKhoanNganHang";
-            this.ListTaiKhoanNganHang.Size = new System.Drawing.Size(612, 173);
+            this.ListTaiKhoanNganHang.Size = new System.Drawing.Size(612, 147);
             this.ListTaiKhoanNganHang.TabIndex = 4;
             // 
             // btnXoaAll
@@ -126,9 +127,9 @@
             this.btnXoaAll.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoaAll.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnXoaAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaAll.Location = new System.Drawing.Point(453, 346);
+            this.btnXoaAll.Location = new System.Drawing.Point(382, 341);
             this.btnXoaAll.Name = "btnXoaAll";
-            this.btnXoaAll.Size = new System.Drawing.Size(79, 21);
+            this.btnXoaAll.Size = new System.Drawing.Size(113, 31);
             this.btnXoaAll.TabIndex = 5;
             this.btnXoaAll.Text = "Xoá tất cả";
             this.btnXoaAll.UseVisualStyleBackColor = false;
@@ -140,9 +141,9 @@
             this.btnXoa.BackColor = System.Drawing.Color.Lime;
             this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(548, 346);
+            this.btnXoa.Location = new System.Drawing.Point(514, 341);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(79, 21);
+            this.btnXoa.Size = new System.Drawing.Size(113, 31);
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "Xoá";
             this.btnXoa.UseVisualStyleBackColor = false;
@@ -212,9 +213,9 @@
             this.btnXuatFile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXuatFile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnXuatFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuatFile.Location = new System.Drawing.Point(15, 346);
+            this.btnXuatFile.Location = new System.Drawing.Point(15, 341);
             this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(101, 21);
+            this.btnXuatFile.Size = new System.Drawing.Size(113, 31);
             this.btnXuatFile.TabIndex = 13;
             this.btnXuatFile.Text = "Xuất danh sách";
             this.btnXuatFile.UseVisualStyleBackColor = false;
@@ -227,13 +228,24 @@
             this.btnMoFile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMoFile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnMoFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoFile.Location = new System.Drawing.Point(134, 346);
+            this.btnMoFile.Location = new System.Drawing.Point(145, 341);
             this.btnMoFile.Name = "btnMoFile";
-            this.btnMoFile.Size = new System.Drawing.Size(101, 21);
+            this.btnMoFile.Size = new System.Drawing.Size(113, 31);
             this.btnMoFile.TabIndex = 14;
             this.btnMoFile.Text = "Mở tệp";
             this.btnMoFile.UseVisualStyleBackColor = false;
             this.btnMoFile.Click += new System.EventHandler(this.btnMoFile_Click);
+            // 
+            // lbDsBank_36_Nguyen
+            // 
+            this.lbDsBank_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbDsBank_36_Nguyen.AutoSize = true;
+            this.lbDsBank_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDsBank_36_Nguyen.Location = new System.Drawing.Point(239, 164);
+            this.lbDsBank_36_Nguyen.Name = "lbDsBank_36_Nguyen";
+            this.lbDsBank_36_Nguyen.Size = new System.Drawing.Size(185, 17);
+            this.lbDsBank_36_Nguyen.TabIndex = 15;
+            this.lbDsBank_36_Nguyen.Text = "DANH SÁCH TÀI KHOẢN";
             // 
             // FormTaiKhoan
             // 
@@ -242,6 +254,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
             this.ClientSize = new System.Drawing.Size(642, 379);
+            this.Controls.Add(this.lbDsBank_36_Nguyen);
             this.Controls.Add(this.btnMoFile);
             this.Controls.Add(this.btnXuatFile);
             this.Controls.Add(this.lbMatKhauNganHang);
@@ -286,5 +299,6 @@
         private System.Windows.Forms.Label lbMatKhauNganHang;
         private System.Windows.Forms.Button btnXuatFile;
         private System.Windows.Forms.Button btnMoFile;
+        private System.Windows.Forms.Label lbDsBank_36_Nguyen;
     }
 }

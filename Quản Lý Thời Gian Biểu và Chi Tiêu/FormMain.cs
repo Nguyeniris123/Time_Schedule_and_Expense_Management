@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -27,15 +28,9 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             images.Add(Properties.Resources.laisuatall);
 
             // Bắt đầu đếm thời gian sau mỗi 3 giây
-            timer1_36_Nguyen.Start();
+            timerImg_36_Nguyen.Start();
+            timerDateTime_36_Nguyen.Start();
         }
-
-        //Menu-------------------------------------------------------------
-
-        
-
-
-
 
         //Main form---------------------------------------------------------------
         private void picAvatar_Click(object sender, EventArgs e)
@@ -82,7 +77,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             f.Show(); // Hiển thị form con
         }
 
-        private void timer1_36_Nguyen_Tick(object sender, EventArgs e)
+        private void timerImg_36_Nguyen_Tick(object sender, EventArgs e)
         {
             // Kiểm tra nếu đã đến ảnh cuối cùng trong danh sách, quay lại ảnh đầu tiên
             if (currentImageIndex_36_Nguyen == images.Count - 1)
@@ -98,6 +93,13 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             picQuangCao_36_Nguyen.Image = images[currentImageIndex_36_Nguyen];
         }
 
+        private void timerDateTime_36_Nguyen_Tick(object sender, EventArgs e)
+        {
+            // Cập nhật thời gian lên Label
+            lbDateTime_36_Nguyen.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
+        }
+
+        //Menu-------------------------------------------------------------
         private void newToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             gridBangThoiKhoaBieu.Rows.Clear();
@@ -106,7 +108,6 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                 gridBangThoiKhoaBieu.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
             }
         }
-
 
         //Mở bảng grid tkb mới
         private void openToolStripMenuItem2_Click(object sender, EventArgs e)
@@ -332,9 +333,10 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         //help content
         private void helpToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Vui lòng liên hệ qua hot Line: 092193213\n" +
+            MessageBox.Show("Vui lòng liên hệ qua HotLine: 0332636829\n" +
                 "hoặc qua email sau: nguyen.hochi2004@gmail.com", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
     }
 }
