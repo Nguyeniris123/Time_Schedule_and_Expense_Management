@@ -50,7 +50,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         // thêm row cho bảng thời khoá biểu khi form dc load
         private void FormMain_Load(object sender, EventArgs e)
         {
-            for (int i = 1; i <= 29; i++)
+            for (int i = 1; i <= 31; i++)
             {
                 gridBangThoiKhoaBieu.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
             }

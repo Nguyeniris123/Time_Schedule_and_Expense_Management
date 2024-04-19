@@ -138,7 +138,7 @@
             this.TaskBar = new System.Windows.Forms.Panel();
             this.btnTaiKhoanNganHang = new System.Windows.Forms.Button();
             this.btnTaiChinh = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbDuongKe = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lbDateTime_36_Nguyen = new System.Windows.Forms.Label();
             this.lbBangTin_36_Nguyen = new System.Windows.Forms.Label();
@@ -154,6 +154,7 @@
             this.ghiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.timerImg_36_Nguyen = new System.Windows.Forms.Timer(this.components);
             this.timerDateTime_36_Nguyen = new System.Windows.Forms.Timer(this.components);
+            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.TaskBar.SuspendLayout();
@@ -200,7 +201,7 @@
             this.newToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem2.Image")));
             this.newToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.newToolStripMenuItem2.Name = "newToolStripMenuItem2";
-            this.newToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
+            this.newToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem2.Text = "&New";
             this.newToolStripMenuItem2.Click += new System.EventHandler(this.newToolStripMenuItem2_Click);
             // 
@@ -209,35 +210,35 @@
             this.openToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem2.Image")));
             this.openToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.openToolStripMenuItem2.Name = "openToolStripMenuItem2";
-            this.openToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
+            this.openToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem2.Text = "&Open";
             this.openToolStripMenuItem2.Click += new System.EventHandler(this.openToolStripMenuItem2_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(177, 6);
             // 
             // saveToolStripMenuItem2
             // 
             this.saveToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem2.Image")));
             this.saveToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.saveToolStripMenuItem2.Name = "saveToolStripMenuItem2";
-            this.saveToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
+            this.saveToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem2.Text = "&Save";
             this.saveToolStripMenuItem2.Click += new System.EventHandler(this.saveToolStripMenuItem2_Click);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(177, 6);
             // 
             // printToolStripMenuItem2
             // 
             this.printToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem2.Image")));
             this.printToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printToolStripMenuItem2.Name = "printToolStripMenuItem2";
-            this.printToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
+            this.printToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.printToolStripMenuItem2.Text = "&Print";
             // 
             // printPreviewToolStripMenuItem2
@@ -245,18 +246,18 @@
             this.printPreviewToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem2.Image")));
             this.printPreviewToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.printPreviewToolStripMenuItem2.Name = "printPreviewToolStripMenuItem2";
-            this.printPreviewToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
+            this.printPreviewToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.printPreviewToolStripMenuItem2.Text = "Print Pre&view";
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(140, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(177, 6);
             // 
             // exitToolStripMenuItem2
             // 
             this.exitToolStripMenuItem2.Name = "exitToolStripMenuItem2";
-            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(143, 22);
+            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem2.Text = "E&xit";
             this.exitToolStripMenuItem2.Click += new System.EventHandler(this.exitToolStripMenuItem2_Click);
             // 
@@ -984,7 +985,7 @@
             this.TaskBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TaskBar.Controls.Add(this.btnTaiKhoanNganHang);
             this.TaskBar.Controls.Add(this.btnTaiChinh);
-            this.TaskBar.Controls.Add(this.label1);
+            this.TaskBar.Controls.Add(this.lbDuongKe);
             this.TaskBar.Controls.Add(this.lbId);
             this.TaskBar.Controls.Add(this.lbHoTen);
             this.TaskBar.Controls.Add(this.picAvatar);
@@ -1020,16 +1021,16 @@
             this.btnTaiChinh.UseVisualStyleBackColor = false;
             this.btnTaiChinh.Click += new System.EventHandler(this.btnTaiChinh_Click);
             // 
-            // label1
+            // lbDuongKe
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(5, 189);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "-----------------------------------------";
+            this.lbDuongKe.AutoSize = true;
+            this.lbDuongKe.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbDuongKe.ForeColor = System.Drawing.Color.Black;
+            this.lbDuongKe.Location = new System.Drawing.Point(5, 189);
+            this.lbDuongKe.Name = "lbDuongKe";
+            this.lbDuongKe.Size = new System.Drawing.Size(130, 13);
+            this.lbDuongKe.TabIndex = 4;
+            this.lbDuongKe.Text = "-----------------------------------------";
             // 
             // splitContainer1
             // 
@@ -1185,6 +1186,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
+            this.MinimumSize = new System.Drawing.Size(861, 474);
             this.Name = "FormMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thời Gian Biểu Và Chi Tiêu";
@@ -1244,7 +1246,7 @@
         private System.Windows.Forms.Label lbHoTen;
         private System.Windows.Forms.Label lbId;
         private System.Windows.Forms.Panel TaskBar;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbDuongKe;
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.DataGridView gridBangThoiKhoaBieu;
         private System.Windows.Forms.Button btnTaiKhoanNganHang;
@@ -1332,6 +1334,7 @@
         private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem1;
         private System.Windows.Forms.Label lbDateTime_36_Nguyen;
         private System.Windows.Forms.Timer timerDateTime_36_Nguyen;
+        private System.ComponentModel.BackgroundWorker backgroundWorker1;
     }
 }
 

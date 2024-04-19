@@ -83,7 +83,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-        //Ghi file tài khoản và mật khẩu ghi đăng kí (Sign Up)
+        //Ghi file tài khoản và mật khẩu khi đăng kí (Sign Up)
         private void btnSignUp_Click(object sender, EventArgs e)
         {
             string username = txtUser.Text;
@@ -144,6 +144,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             isEyeOpen = !isEyeOpen;
             ChangeEyeImage();
         }
+
         private void lbQuenMK_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Vui lòng liên hệ hỗ trợ qua email: " +

@@ -125,6 +125,8 @@
             // 
             // txtPassWord
             // 
+            this.txtPassWord.AcceptsReturn = true;
+            this.txtPassWord.AcceptsTab = true;
             this.txtPassWord.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassWord.Location = new System.Drawing.Point(26, 182);
@@ -138,6 +140,8 @@
             // 
             // txtUser
             // 
+            this.txtUser.AcceptsReturn = true;
+            this.txtUser.AcceptsTab = true;
             this.txtUser.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUser.Location = new System.Drawing.Point(26, 102);
