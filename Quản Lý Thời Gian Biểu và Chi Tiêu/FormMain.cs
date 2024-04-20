@@ -29,6 +29,8 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
 
             // Bắt đầu đếm thời gian sau mỗi 3 giây
             timerImg_36_Nguyen.Start();
+
+            // ngày giờ
             timerDateTime_36_Nguyen.Start();
         }
 
@@ -67,6 +69,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             f.Show(); // Hiển thị form con
         }
 
+        //Mở form tài chính
         private void btnTaiChinh_Click(object sender, EventArgs e)
         {
             FormTaiChinh f = new FormTaiChinh();    
@@ -100,6 +103,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //Menu-------------------------------------------------------------
+        //Làm mới bảng
         private void newToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             gridBangThoiKhoaBieu.Rows.Clear();
@@ -109,7 +113,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-        //Mở bảng grid tkb mới
+        //Mở bảng grid tkb
         private void openToolStripMenuItem2_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -337,6 +341,5 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                 "hoặc qua email sau: nguyen.hochi2004@gmail.com", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
     }
 }
