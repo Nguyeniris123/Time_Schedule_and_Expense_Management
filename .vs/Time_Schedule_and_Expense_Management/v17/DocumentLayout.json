@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Time_Schedule_and_Expense_Management.csproj|c:\\users\\nguyen\\time_schedule_and_expense_management\\qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formtaichinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Time_Schedule_and_Expense_Management.csproj|solutionrelative:qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formtaichinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Time_Schedule_and_Expense_Management.csproj|c:\\users\\nguyen\\time_schedule_and_expense_management\\qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Time_Schedule_and_Expense_Management.csproj|solutionrelative:qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Time_Schedule_and_Expense_Management.csproj|c:\\users\\nguyen\\time_schedule_and_expense_management\\qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formtaichinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Time_Schedule_and_Expense_Management.csproj|solutionrelative:qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formtaichinh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Time_Schedule_and_Expense_Management.csproj|c:\\users\\nguyen\\time_schedule_and_expense_management\\qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F0386D7E-860F-42E2-BAD5-69130174528F}|Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\Time_Schedule_and_Expense_Management.csproj|solutionrelative:qu\u1EA3n l\u00FD th\u1EDDi gian bi\u1EC3u v\u00E0 chi ti\u00EAu\\formtaikhoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FormTaiChinh.cs",
-              "DocumentMoniker": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiChinh.cs",
-              "RelativeDocumentMoniker": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiChinh.cs",
-              "ToolTip": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiChinh.cs",
-              "RelativeToolTip": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiChinh.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHcAAAAMAAAA",
+              "Title": "FormTaiKhoan.cs",
+              "DocumentMoniker": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiKhoan.cs",
+              "RelativeDocumentMoniker": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiKhoan.cs",
+              "ToolTip": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiKhoan.cs",
+              "RelativeToolTip": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiKhoan.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAMwD8AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T17:12:00.793Z",
+              "WhenOpened": "2024-04-21T03:29:39.612Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormTaiChinh.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiChinh.cs",
-              "RelativeDocumentMoniker": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiChinh.cs",
-              "ToolTip": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiChinh.cs [Design]",
-              "RelativeToolTip": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiChinh.cs [Design]",
+              "Title": "FormTaiKhoan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiKhoan.cs",
+              "RelativeDocumentMoniker": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiKhoan.cs",
+              "ToolTip": "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiKhoan.cs [Design]",
+              "RelativeToolTip": "Qu\u1EA3n L\u00FD Th\u1EDDi Gian Bi\u1EC3u v\u00E0 Chi Ti\u00EAu\\FormTaiKhoan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-20T17:11:58.812Z",
+              "WhenOpened": "2024-04-21T03:11:11.886Z",
               "EditorCaption": " [Design]"
             }
           ]

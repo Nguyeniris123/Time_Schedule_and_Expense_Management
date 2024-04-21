@@ -62,7 +62,6 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-
         private void txtNguonTien1_TextChanged(object sender, EventArgs e)
         {
             tinhTong();

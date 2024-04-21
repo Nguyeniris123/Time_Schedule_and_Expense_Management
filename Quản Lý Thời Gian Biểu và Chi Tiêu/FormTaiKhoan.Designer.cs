@@ -167,6 +167,7 @@
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(517, 20);
             this.txtTimKiem.TabIndex = 8;
+            this.txtTimKiem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txtMatKhauNganHang
             // 
