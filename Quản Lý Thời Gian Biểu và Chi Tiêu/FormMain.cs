@@ -14,18 +14,18 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
 
 namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu 
 {
-    public partial class FormMain : Form
+    public partial class FormMain_36_Nguyen : Form
     {
-        private SoundPlayer music; // thuộc tính để lưu nhạc
+        private SoundPlayer music_36_Nguyen; // thuộc tính để lưu nhạc
         private int currentImageIndex_36_Nguyen = 0;
-        private List<Image> images = new List<Image>(); // Danh sách các ảnh cần thay đổi
-        public FormMain()
+        private List<Image> images_36_Nguyen = new List<Image>(); // Danh sách các ảnh cần thay đổi
+        public FormMain_36_Nguyen()
         {           
             InitializeComponent();
             // Thêm các ảnh vào danh sách
-            images.Add(Properties.Resources.cake);
-            images.Add(Properties.Resources.gioiThieuCake);
-            images.Add(Properties.Resources.laisuatall);
+            images_36_Nguyen.Add(Properties.Resources.cake);
+            images_36_Nguyen.Add(Properties.Resources.gioiThieuCake);
+            images_36_Nguyen.Add(Properties.Resources.laisuatall);
 
             // Bắt đầu đếm thời gian sau mỗi 3 giây
             timerImg_36_Nguyen.Start();
@@ -35,55 +35,55 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //Main form---------------------------------------------------------------
-        private void picAvatar_Click(object sender, EventArgs e)
+        private void picAvatar_36_Nguyen_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFile = new OpenFileDialog();
+            OpenFileDialog openFile_36_Nguyen = new OpenFileDialog();
             //set tiêu đề
-            openFile.Title = "Mở ảnh đại diện";
+            openFile_36_Nguyen.Title = "Mở ảnh đại diện";
             //check điều kiện lọc file
-            openFile.Filter = "File anh|*.jpg;|All file|*.*";
+            openFile_36_Nguyen.Filter = "File anh|*.jpg;|All file|*.*";
             //check xem người dùng đã chọn file hay chưa
-            if (openFile.ShowDialog() == DialogResult.OK)
+            if (openFile_36_Nguyen.ShowDialog() == DialogResult.OK)
             {
-                picAvatar.Image = Image.FromFile(openFile.FileName);
+                picAvatar_36_Nguyen.Image = Image.FromFile(openFile_36_Nguyen.FileName);
             }
         }
 
         // thêm row cho bảng thời khoá biểu khi form dc load
-        private void FormMain_Load(object sender, EventArgs e)
+        private void FormMain_36_Nguyen_Load(object sender, EventArgs e)
         {
             for (int i = 1; i <= 31; i++)
             {
-                gridBangThoiKhoaBieu.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
+                gridBangThoiKhoaBieu_36_Nguyen.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
             }
         }
 
         //mở form các tài khoản ngân hàng
-        private void btnTaiKhoanNganHang_Click(object sender, EventArgs e)
+        private void btnTaiKhoanNganHang_36_Nguyen_Click(object sender, EventArgs e)
         {  
-            FormTaiKhoan f = new FormTaiKhoan();
-            f.TopLevel = false;
-            this.Controls.Add(f); // Thêm form con vào các điều khiển của form cha
-            f.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
-            f.BringToFront(); // Đưa form con lên phía trước
-            f.Show(); // Hiển thị form con
+            FormTaiKhoan_36_Nguyen f_36_Nguyen = new FormTaiKhoan_36_Nguyen();
+            f_36_Nguyen.TopLevel = false;
+            this.Controls.Add(f_36_Nguyen); // Thêm form con vào các điều khiển của form cha
+            f_36_Nguyen.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
+            f_36_Nguyen.BringToFront(); // Đưa form con lên phía trước
+            f_36_Nguyen.Show(); // Hiển thị form con
         }
 
         //Mở form tài chính
-        private void btnTaiChinh_Click(object sender, EventArgs e)
+        private void btnTaiChinh_36_Nguyen_Click(object sender, EventArgs e)
         {
-            FormTaiChinh f = new FormTaiChinh();    
-            f.TopLevel = false;
-            this.Controls.Add(f); // Thêm form con vào các điều khiển của form cha
-            f.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
-            f.BringToFront(); // Đưa form con lên phía trước
-            f.Show(); // Hiển thị form con
+            FormTaiChinh_36_Nguyen f_36_Nguyen = new FormTaiChinh_36_Nguyen();
+            f_36_Nguyen.TopLevel = false;
+            this.Controls.Add(f_36_Nguyen); // Thêm form con vào các điều khiển của form cha
+            f_36_Nguyen.Dock = DockStyle.Fill; // Đặt đầy đủ kích thước của form con
+            f_36_Nguyen.BringToFront(); // Đưa form con lên phía trước
+            f_36_Nguyen.Show(); // Hiển thị form con
         }
 
         private void timerImg_36_Nguyen_Tick(object sender, EventArgs e)
         {
             // Kiểm tra nếu đã đến ảnh cuối cùng trong danh sách, quay lại ảnh đầu tiên
-            if (currentImageIndex_36_Nguyen == images.Count - 1)
+            if (currentImageIndex_36_Nguyen == images_36_Nguyen.Count - 1)
             {
                 currentImageIndex_36_Nguyen = 0;
             }
@@ -93,7 +93,7 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
 
             // Hiển thị ảnh tương ứng trong Panel
-            picQuangCao_36_Nguyen.Image = images[currentImageIndex_36_Nguyen];
+            picQuangCao_36_Nguyen.Image = images_36_Nguyen[currentImageIndex_36_Nguyen];
         }
 
         private void timerDateTime_36_Nguyen_Tick(object sender, EventArgs e)
@@ -104,36 +104,36 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
 
         //Menu-------------------------------------------------------------
         //Làm mới bảng
-        private void newToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void newToolStripMenuItem2_36_Nguyen_Click(object sender, EventArgs e)
         {
-            gridBangThoiKhoaBieu.Rows.Clear();
-            for (int i = 1; i <= 29; i++)
+            gridBangThoiKhoaBieu_36_Nguyen.Rows.Clear();
+            for (int i = 1; i <= 31; i++)
             {
-                gridBangThoiKhoaBieu.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
+                gridBangThoiKhoaBieu_36_Nguyen.Rows.Add(i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ", i + ". ");
             }
         }
 
         //Mở bảng grid tkb
-        private void openToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void openToolStripMenuItem2_36_Nguyen_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-            openFileDialog.FilterIndex = 1; // mặc định chọn đuôi .txt
+            OpenFileDialog openFileDialog_36_Nguyen = new OpenFileDialog();
+            openFileDialog_36_Nguyen.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            openFileDialog_36_Nguyen.FilterIndex = 1; // mặc định chọn đuôi .txt
 
-            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            if (openFileDialog_36_Nguyen.ShowDialog() == DialogResult.OK)
             {
                 try
                 {
-                    gridBangThoiKhoaBieu.Rows.Clear();
-                    string filePath = openFileDialog.FileName;
+                    gridBangThoiKhoaBieu_36_Nguyen.Rows.Clear();
+                    string filePath_36_Nguyen = openFileDialog_36_Nguyen.FileName;
                     // Đọc dữ liệu từ tệp và hiển thị trên DataGridView
-                    string[] lines = File.ReadAllLines(filePath);
+                    string[] lines_36_Nguyen = File.ReadAllLines(filePath_36_Nguyen);
                     // Bỏ qua dòng đầu tiên
-                    lines = lines.Skip(1).ToArray();
-                    foreach (string line in lines)
+                    lines_36_Nguyen = lines_36_Nguyen.Skip(1).ToArray();
+                    foreach (string line in lines_36_Nguyen)
                     {
-                        string[] data = line.Split('\t'); // Giả sử dữ liệu được phân tách bằng tab (\t)
-                        gridBangThoiKhoaBieu.Rows.Add(data);
+                        string[] data_36_Nguyen = line.Split('\t'); // Giả sử dữ liệu được phân tách bằng tab (\t)
+                        gridBangThoiKhoaBieu_36_Nguyen.Rows.Add(data_36_Nguyen);
                     }
                     MessageBox.Show("Đã mở tệp thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -144,31 +144,32 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             }
         }
 
-        private void SaveToTextFile(DataGridView dataGridView, string filePath)
+        //hàm xử lí Lưu bảng thành file 
+        private void SaveToTextFile_36_Nguyen(DataGridView dataGridView, string filePath)
         {
             try
             {
-                using (StreamWriter writer = new StreamWriter(filePath))
+                using (StreamWriter writer_36_Nguyen = new StreamWriter(filePath))
                 {
                     // Ghi tiêu đề cột
                     for (int i = 0; i < dataGridView.Columns.Count; i++)
                     {
-                        writer.Write(dataGridView.Columns[i].HeaderText);
+                        writer_36_Nguyen.Write(dataGridView.Columns[i].HeaderText);
                         if (i < dataGridView.Columns.Count - 1)
-                            writer.Write("\t");
+                            writer_36_Nguyen.Write("\t");
                     }
-                    writer.WriteLine();
+                    writer_36_Nguyen.WriteLine();
 
                     // Ghi dữ liệu từ các dòng
                     foreach (DataGridViewRow row in dataGridView.Rows)
                     {
                         for (int i = 0; i < dataGridView.Columns.Count; i++)
                         {
-                            writer.Write(row.Cells[i].Value);
+                            writer_36_Nguyen.Write(row.Cells[i].Value);
                             if (i < dataGridView.Columns.Count - 1)
-                                writer.Write("\t");
+                                writer_36_Nguyen.Write("\t");
                         }
-                        writer.WriteLine();
+                        writer_36_Nguyen.WriteLine();
                     }
                 }
                 MessageBox.Show("Lưu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -180,105 +181,109 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //Lưu bảng thời khoá biểu thành txt
-        private void saveToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void saveToolStripMenuItem2_36_Nguyen_Click(object sender, EventArgs e)
         {
-            SaveFileDialog saveFileDialog = new SaveFileDialog();
-            saveFileDialog.Filter = "Text files (*.txt)|*.txt|File pdf|*.pdf |All files (*.*)|*.*";
-            saveFileDialog.FilterIndex = 1; //Xác định chỉ số của bộ lọc mặc định được chọn trong danh sách các bộ lọc
-            saveFileDialog.RestoreDirectory = true; //Khôi phục thư mục hiện tại khi hộp thoại đóng lại
+            SaveFileDialog saveFileDialog_36_Nguyen = new SaveFileDialog();
+            saveFileDialog_36_Nguyen.Filter = "Text files (*.txt)|*.txt|File pdf|*.pdf |All files (*.*)|*.*";
+            saveFileDialog_36_Nguyen.FilterIndex = 1; //Xác định chỉ số của bộ lọc mặc định được chọn trong danh sách các bộ lọc
+            saveFileDialog_36_Nguyen.RestoreDirectory = true; //Khôi phục thư mục hiện tại khi hộp thoại đóng lại
 
-            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            if (saveFileDialog_36_Nguyen.ShowDialog() == DialogResult.OK)
             {
-                SaveToTextFile(gridBangThoiKhoaBieu, saveFileDialog.FileName);
+                SaveToTextFile_36_Nguyen(gridBangThoiKhoaBieu_36_Nguyen, saveFileDialog_36_Nguyen.FileName);
             }
         }
 
         //Nhấn Exit để đóng app
-        private void exitToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem2_36_Nguyen_Click(object sender, EventArgs e)
         {
-            DialogResult traLoi;
-            traLoi = MessageBox.Show("Bạn có chắc muốn thoát ứng dụng không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (traLoi == DialogResult.OK)
+            DialogResult traLoi_36_Nguyen;
+            traLoi_36_Nguyen = MessageBox.Show("Bạn có chắc muốn thoát ứng dụng không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (traLoi_36_Nguyen == DialogResult.OK)
             {
                 Application.Exit();
             }
         }
 
         //FontDialog menu
-        private void fontEditToolStripMenuItem1_Click(object sender, EventArgs e)
+        //Chỉnh font chữ
+        private void fontEditToolStripMenuItem1_36_Nguyen_Click(object sender, EventArgs e)
         {
-            FontDialog dlg = new FontDialog();
-            dlg.ShowEffects = true;
+            FontDialog dlg_36_Nguyen = new FontDialog();
+            dlg_36_Nguyen.ShowEffects = true;
             //dlg.ShowColor = true;
-            dlg.ShowApply = true;
-            if (dlg.ShowDialog() == DialogResult.OK)
+            dlg_36_Nguyen.ShowApply = true;
+            if (dlg_36_Nguyen.ShowDialog() == DialogResult.OK)
             {
                 // Lặp qua tất cả các control trong Form
                 foreach (Control control in this.Controls)
                 {
                     // Thay đổi font cho mỗi control là Label, Button, TextBox, v.v.
-                    control.Font = dlg.Font;
+                    control.Font = dlg_36_Nguyen.Font;
                 }
             }
         }
 
         //ColorDialog menu
-        private void fontColorToolStripMenuItem1_Click(object sender, EventArgs e)
+        //Màu chữ   
+        private void fontColorToolStripMenuItem1_36_Nguyen_Click(object sender, EventArgs e)
         {
-            ColorDialog dlg = new ColorDialog();
-            dlg.FullOpen = true;    // Cho phép hiển thị tất cả các màu sắc
-            if (dlg.ShowDialog() == DialogResult.OK)
+            ColorDialog dlg_36_Nguyen = new ColorDialog();
+            dlg_36_Nguyen.FullOpen = true;    // Cho phép hiển thị tất cả các màu sắc
+            if (dlg_36_Nguyen.ShowDialog() == DialogResult.OK)
             {
                 foreach (Control control in this.Controls)
                 {
-                    control.ForeColor = dlg.Color;
+                    control.ForeColor = dlg_36_Nguyen.Color;
                 }
             }
         }
 
-        private void formColorToolStripMenuItem1_Click(object sender, EventArgs e)
+        //Màu form
+        private void formColorToolStripMenuItem1_36_Nguyen_Click(object sender, EventArgs e)
         {
-            ColorDialog dlg = new ColorDialog();
-            dlg.FullOpen = true; // Cho phép hiển thị tất cả các màu sắc
-            if (dlg.ShowDialog() == DialogResult.OK)
+            ColorDialog dlg_36_Nguyen = new ColorDialog();
+            dlg_36_Nguyen.FullOpen = true; // Cho phép hiển thị tất cả các màu sắc
+            if (dlg_36_Nguyen.ShowDialog() == DialogResult.OK)
             {
                 // Gán màu được chọn từ ColorDialog cho màu nền của Form
-                this.BackColor = dlg.Color;
+                this.BackColor = dlg_36_Nguyen.Color;
             }
         }
 
-        private void controlColorToolStripMenuItem1_Click(object sender, EventArgs e)
+        //Màu control
+        private void controlColorToolStripMenuItem1_36_Nguyen_Click(object sender, EventArgs e)
         {
-            ColorDialog dlg = new ColorDialog();
-            dlg.FullOpen = true;
-            if (dlg.ShowDialog() == DialogResult.OK)
+            ColorDialog dlg_36_Nguyen = new ColorDialog();
+            dlg_36_Nguyen.FullOpen = true;
+            if (dlg_36_Nguyen.ShowDialog() == DialogResult.OK)
             {
                 foreach (Control control in this.Controls)
                 {
-                    control.BackColor = dlg.Color;
+                    control.BackColor = dlg_36_Nguyen.Color;
                 }
             }
         }
 
         //Phát nhạc
-        private void playToolStripMenuItem1_Click(object sender, EventArgs e)
+        private void playToolStripMenuItem1_36_Nguyen_Click(object sender, EventArgs e)
         {
             try
             {
                 // Kiểm tra nếu âm thanh đã được khởi tạo trước đó
-                if (music != null)
+                if (music_36_Nguyen != null)
                 {
                     // Dừng phát âm thanh nếu đang phát
-                    music.Stop();
+                    music_36_Nguyen.Stop();
                     // Giải phóng tài nguyên
-                    music.Dispose();
+                    music_36_Nguyen.Dispose();
                 }
 
                 // Khởi tạo SoundPlayer với đường dẫn tới tệp âm thanh
-                music = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
+                music_36_Nguyen = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
 
                 // Phát âm thanh
-                music.Play();
+                music_36_Nguyen.Play();
             }
             catch (Exception ex)
             {
@@ -293,19 +298,19 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             try
             {
                 // Kiểm tra nếu âm thanh đã được khởi tạo trước đó
-                if (music != null)
+                if (music_36_Nguyen != null)
                 {
                     // Dừng phát âm thanh nếu đang phát
-                    music.Stop();
+                    music_36_Nguyen.Stop();
                     // Giải phóng tài nguyên
-                    music.Dispose();
+                    music_36_Nguyen.Dispose();
                 }
 
                 // Khởi tạo SoundPlayer với đường dẫn tới tệp âm thanh
-                music = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
+                music_36_Nguyen = new SoundPlayer(@"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\autumn-july.wav");
 
-                // Phát âm thanh
-                music.Stop();
+                // Dừng âm thanh
+                music_36_Nguyen.Stop();
             }
             catch (Exception ex)
             {
@@ -317,29 +322,29 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         //âm thanh được dừng khi form đóng
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
         {
-            music.Stop();
-        }
-
-        //nhấn vào Log out để ra màn hình đăng nhập
-        private void logOutToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            DialogResult traLoi;
-            traLoi = MessageBox.Show("Bạn có chắc muốn về màn hình Login không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-            if (traLoi == DialogResult.OK)
-            {
-                this.Hide();
-                FormLogin login = new FormLogin();
-                login.ShowDialog();
-                this.Close();
-            }
+            music_36_Nguyen.Stop();
         }
 
         //help content
-        private void helpToolStripMenuItem2_Click(object sender, EventArgs e)
+        private void helpToolStripMenuItem2_36_Nguyen_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Vui lòng liên hệ qua HotLine: 0332636829\n" +
                 "hoặc qua email sau: nguyen.hochi2004@gmail.com", "Thông báo",
                 MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        //nhấn vào Log out để ra màn hình đăng nhập
+        private void logOutToolStripMenuItem1_36_Nguyen_Click(object sender, EventArgs e)
+        {
+            DialogResult traLoi_36_Nguyen;
+            traLoi_36_Nguyen = MessageBox.Show("Bạn có chắc muốn về màn hình Login không?", "Trả lời", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (traLoi_36_Nguyen == DialogResult.OK)
+            {
+                this.Hide();
+                FormLogin_36_Nguyen login = new FormLogin_36_Nguyen();
+                login.ShowDialog();
+                this.Close();
+            }
         }
     }
 }

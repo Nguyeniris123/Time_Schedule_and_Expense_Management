@@ -2,13 +2,13 @@ C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Bi�
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\bin\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.exe
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\bin\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.pdb
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Time_Schedule_and_Expense_Management.csproj.AssemblyReference.cache
-C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormLogin.resources
-C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormMain.resources
-C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.IsRobot.resources
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties.Resources.resources
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Time_Schedule_and_Expense_Management.csproj.GenerateResource.cache
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Time_Schedule_and_Expense_Management.csproj.CoreCompileInputs.cache
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.exe
 C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản Lý Thời Gian Biểu và Chi Tiêu.pdb
-C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormTaiKhoan.resources
-C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormTaiChinh.resources
+C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormLogin_36_Nguyen.resources
+C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.IsRobot_36_Nguyen.resources
+C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormMain_36_Nguyen.resources
+C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormTaiChinh_36_Nguyen.resources
+C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\obj\Debug\Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.FormTaiKhoan_36_Nguyen.resources

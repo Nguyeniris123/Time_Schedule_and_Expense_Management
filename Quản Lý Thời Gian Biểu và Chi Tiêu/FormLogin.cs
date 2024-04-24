@@ -14,27 +14,27 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
 {
-    public partial class FormLogin : Form
+    public partial class FormLogin_36_Nguyen : Form
     {
-        private bool isEyeOpen = false;
-        public FormLogin()
+        private bool isEyeOpen_36_Nguyen = false;
+        public FormLogin_36_Nguyen()
         {
             InitializeComponent();
         }
 
         //Phương thức đọc file tài khoản (accounts) có tồn tại hay không
-        private bool CheckCredentials(string username, string password)
+        private bool CheckCredentials_36_Nguyen(string username, string password)
         {
             string filePath = "C:\\Users\\NGUYEN\\Time_Schedule_and_Expense_Management\\Quản Lý Thời Gian Biểu và Chi Tiêu\\resources\\accounts.txt";
             try
             {
                 if (File.Exists(filePath))
                 {
-                    string[] lines = File.ReadAllLines(filePath);
-                    foreach (string line in lines)
+                    string[] lines_36_Nguyen = File.ReadAllLines(filePath);
+                    foreach (string line in lines_36_Nguyen)
                     {
-                        string[] parts = line.Split(',');
-                        if (parts.Length == 2 && parts[0].Trim() == username && parts[1].Trim() == password)
+                        string[] parts_36_Nguyen = line.Split(',');
+                        if (parts_36_Nguyen.Length == 2 && parts_36_Nguyen[0].Trim() == username && parts_36_Nguyen[1].Trim() == password)
                         {
                             return true; // Tìm thấy tài khoản và mật khẩu trùng khớp
                         }
@@ -53,48 +53,49 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
             return false; // Không tìm thấy tài khoản hoặc mật khẩu
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        // login btn
+        private void btnLogin_36_Nguyen_Click(object sender, EventArgs e)
         {
-            string username = txtUser.Text;
-            string password = txtPassWord.Text;
-            bool isAuthenticated = CheckCredentials(username, password);
+            string username_36_Nguyen = txtUser_36_Nguyen.Text;
+            string password_36_Nguyen = txtPassWord_36_Nguyen.Text;
+            bool isAuthenticated = CheckCredentials_36_Nguyen(username_36_Nguyen, password_36_Nguyen);
             if (isAuthenticated)
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                FormMain frmMain = new FormMain();
+                FormMain_36_Nguyen frmMain = new FormMain_36_Nguyen();
                 frmMain.ShowDialog();
                 this.Close();
             }
-            else if (txtUser.Text == "Nguyen" && txtPassWord.Text == "36")
+            else if (txtUser_36_Nguyen.Text == "Nguyen" && txtPassWord_36_Nguyen.Text == "36")
             {
                 MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
-                FormMain frmMain = new FormMain();
+                FormMain_36_Nguyen frmMain = new FormMain_36_Nguyen();
                 frmMain.ShowDialog();
                 this.Close();
             }    
-            else if (txtUser.Text == "" || txtPassWord.Text == "")
+            else if (txtUser_36_Nguyen.Text == "" || txtPassWord_36_Nguyen.Text == "")
                 MessageBox.Show("Tài khoản hoặc mật khẩu để trống", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
                 MessageBox.Show("Không đúng tên người dùng / mật khẩu!!!", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtUser.Focus();
+                txtUser_36_Nguyen.Focus();
             }
         }
 
         //Ghi file tài khoản và mật khẩu khi đăng kí (Sign Up)
-        private void btnSignUp_Click(object sender, EventArgs e)
+        private void btnSignUp_36_Nguyen_Click(object sender, EventArgs e)
         {
-            string username = txtUser.Text;
-            string password = txtPassWord.Text;
-            bool isAuthenticated = CheckCredentials(username, password);
-            if (isAuthenticated)
+            string username_36_Nguyen = txtUser_36_Nguyen.Text;
+            string password_36_Nguyen = txtPassWord_36_Nguyen.Text;
+            bool isAuthenticated_36_Nguyen = CheckCredentials_36_Nguyen(username_36_Nguyen, password_36_Nguyen);
+            if (isAuthenticated_36_Nguyen)
             {
                 MessageBox.Show("Tài khoản đã tồn tại", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }        
-            else if (txtUser.Text == "" || txtPassWord.Text == "")
+            else if (txtUser_36_Nguyen.Text == "" || txtPassWord_36_Nguyen.Text == "")
                 MessageBox.Show("Tài khoản hoặc mật khẩu để trống", "Lỗi!!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else
             {
@@ -103,13 +104,13 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
                     // Đường dẫn đến tệp tin, khi sử dụng ký tự @, không cần escape các ký tự \ trong chuỗi đường dẫn
                     string filePath = @"C:\Users\NGUYEN\Time_Schedule_and_Expense_Management\Quản Lý Thời Gian Biểu và Chi Tiêu\resources\accounts.txt";
                     // Mở tệp tin để ghi
-                    using (StreamWriter sw = File.AppendText(filePath))
+                    using (StreamWriter sw_36_Nguyen = File.AppendText(filePath))
                     {
                         // Ghi tên người dùng và mật khẩu vào tệp tin
-                        sw.WriteLine(/*"\n" + */username + "," + password);
+                        sw_36_Nguyen.WriteLine(/*"\n" + */username_36_Nguyen + "," + password_36_Nguyen);
                     }
                     this.Hide();
-                    IsRobot robot = new IsRobot();
+                    IsRobot_36_Nguyen robot = new IsRobot_36_Nguyen();
                     robot.ShowDialog();
                     this.Close();
                 }
@@ -121,31 +122,31 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
         }
 
         //Phương thức thay đổi ảnh mật khẩu hiện và ẩn
-        private void ChangeEyeImage()
+        private void ChangeEyeImage_36_Nguyen()
         {
-            if (isEyeOpen)
+            if (isEyeOpen_36_Nguyen)
             {
-                picEye.Image = Properties.Resources.EyeOpen;
+                picEye_36_Nguyen.Image = Properties.Resources.EyeOpen;
             }
             else
             {
-                picEye.Image = Properties.Resources.Eye;
+                picEye_36_Nguyen.Image = Properties.Resources.Eye;
             }
         }
-        private void picEye_Click(object sender, EventArgs e)
+        private void picEye_36_Nguyen_Click (object sender, EventArgs e)
         {
             // Khi PictureBox picEye được nhấn, chuyển đổi hiển thị mật khẩu
-            if (txtPassWord.PasswordChar == '*')
-                txtPassWord.PasswordChar = '\0'; // Hiển thị mật khẩu
+            if (txtPassWord_36_Nguyen.PasswordChar == '*')
+                txtPassWord_36_Nguyen.PasswordChar = '\0'; // Hiển thị mật khẩu
             else
-                txtPassWord.PasswordChar = '*'; // Ẩn mật khẩu
+                txtPassWord_36_Nguyen.PasswordChar = '*'; // Ẩn mật khẩu
 
             // nếu isEyeOpen là false sẽ thành true và ngược lại
-            isEyeOpen = !isEyeOpen;
-            ChangeEyeImage();
+            isEyeOpen_36_Nguyen = !isEyeOpen_36_Nguyen;
+            ChangeEyeImage_36_Nguyen();
         }
 
-        private void lbQuenMK_Click(object sender, EventArgs e)
+        private void lbQuenMK_36_Nguyen_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Vui lòng liên hệ hỗ trợ qua email: " +
                 "nguyen.hochi2004@gmail.com\n" +
@@ -154,36 +155,36 @@ namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
 
         //CSS
         // in nghiêng ô quên mk khi hover
-        private void lbQuenMK_MouseHover(object sender, EventArgs e)
+        private void lbQuenMK_36_Nguyen_MouseHover(object sender, EventArgs e)
         {
-            lbQuenMK.Font = new Font(lbQuenMK.Font, FontStyle.Underline);
+            lbQuenMK_36_Nguyen.Font = new Font(lbQuenMK_36_Nguyen.Font, FontStyle.Underline);
         }
 
-        private void lbQuenMK_MouseLeave(object sender, EventArgs e)
+        private void lbQuenMK_36_Nguyen_MouseLeave(object sender, EventArgs e)
         {
-            lbQuenMK.Font = new Font(lbQuenMK.Font, FontStyle.Italic);
+            lbQuenMK_36_Nguyen.Font = new Font(lbQuenMK_36_Nguyen.Font, FontStyle.Italic);
         }
 
         //Hover vào có màu ở ô Đăng nhập
-        private void txtUser_MouseDown(object sender, MouseEventArgs e)
+        private void txtUser_36_Nguyen_MouseDown(object sender, MouseEventArgs e)
         {
-            txtUser.BackColor = Color.LightGreen;
+            txtUser_36_Nguyen.BackColor = Color.LightGreen;
         }
 
-        private void txtUser_MouseLeave(object sender, EventArgs e)
+        private void txtUser_36_Nguyen_MouseLeave(object sender, EventArgs e)
         {
-            txtUser.BackColor = Color.White;
+            txtUser_36_Nguyen.BackColor = Color.White;
         }
 
         //Hover vào có màu ở ô Mật khẩu
-        private void txtPassWork_MouseDown(object sender, MouseEventArgs e)
+        private void txtPassWork_36_Nguyen_MouseDown(object sender, MouseEventArgs e)
         {
-            txtPassWord.BackColor = Color.LightGreen;
+            txtPassWord_36_Nguyen.BackColor = Color.LightGreen;
         }
 
-        private void txtPassWork_MouseLeave(object sender, EventArgs e)
+        private void txtPassWork_36_Nguyen_MouseLeave(object sender, EventArgs e)
         {
-            txtPassWord.BackColor = Color.White;
+            txtPassWord_36_Nguyen.BackColor = Color.White;
         }
     }
 }

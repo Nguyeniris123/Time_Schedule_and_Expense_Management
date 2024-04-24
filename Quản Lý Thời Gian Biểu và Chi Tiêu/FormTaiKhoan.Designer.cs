@@ -1,6 +1,6 @@
 ﻿namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
 {
-    partial class FormTaiKhoan
+    partial class FormTaiKhoan_36_Nguyen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTaiKhoan));
-            this.cbChonTaiKhoanNganHang = new System.Windows.Forms.ComboBox();
-            this.lbQuanLyTaiKhoanBank = new System.Windows.Forms.Label();
-            this.lbChonNganHang = new System.Windows.Forms.Label();
-            this.btnThemNganHang = new System.Windows.Forms.Button();
-            this.ListTaiKhoanNganHang = new System.Windows.Forms.ListBox();
-            this.btnXoaAll = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.txtMatKhauNganHang = new System.Windows.Forms.TextBox();
-            this.txtTenTaiKhoanNganHang = new System.Windows.Forms.TextBox();
-            this.lbTenTaiKhoanNganHang = new System.Windows.Forms.Label();
-            this.lbMatKhauNganHang = new System.Windows.Forms.Label();
-            this.btnXuatFile = new System.Windows.Forms.Button();
-            this.btnMoFile = new System.Windows.Forms.Button();
-            this.lbDsBank_36_Nguyen = new System.Windows.Forms.Label();
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTaiKhoan_36_Nguyen));
+            this.cbChonTaiKhoanNganHang_36_Nguyen = new System.Windows.Forms.ComboBox();
+            this.lbQuanLyTaiKhoanBank_36_Nguyen = new System.Windows.Forms.Label();
+            this.lbChonNganHang_36_Nguyen = new System.Windows.Forms.Label();
+            this.btnThemNganHang_36_Nguyen = new System.Windows.Forms.Button();
+            this.btnXoaAll_36_Nguyen = new System.Windows.Forms.Button();
+            this.btnXoa_36_Nguyen = new System.Windows.Forms.Button();
+            this.btnTimKiem_36_Nguyen = new System.Windows.Forms.Button();
+            this.txtTimKiem_36_Nguyen = new System.Windows.Forms.TextBox();
+            this.txtMatKhauNganHang_36_Nguyen = new System.Windows.Forms.TextBox();
+            this.txtSoTaiKhoanNganHang_36_Nguyen = new System.Windows.Forms.TextBox();
+            this.lbSoTaiKhoanNganHang_36_Nguyen = new System.Windows.Forms.Label();
+            this.lbMatKhauNganHang_36_Nguyen = new System.Windows.Forms.Label();
+            this.btnXuatFile_36_Nguyen = new System.Windows.Forms.Button();
+            this.btnMoFile_36_Nguyen = new System.Windows.Forms.Button();
+            this.groupBoxDs_36_Nguyen = new System.Windows.Forms.GroupBox();
+            this.lvDanhSachNganHang_36_Nguyen = new System.Windows.Forms.ListView();
+            this.columnTenNH_36_Nguyen = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnSoTaiKhoan_36_Nguyen = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnMatKhau_36_Nguyen = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.errorProvider1_36_Nguyen = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnSua_36_Nguyen = new System.Windows.Forms.Button();
+            this.groupBoxDs_36_Nguyen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1_36_Nguyen)).BeginInit();
             this.SuspendLayout();
             // 
-            // cbChonTaiKhoanNganHang
+            // cbChonTaiKhoanNganHang_36_Nguyen
             // 
-            this.cbChonTaiKhoanNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.cbChonTaiKhoanNganHang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbChonTaiKhoanNganHang.FormattingEnabled = true;
-            this.cbChonTaiKhoanNganHang.Items.AddRange(new object[] {
+            this.cbChonTaiKhoanNganHang_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.cbChonTaiKhoanNganHang_36_Nguyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbChonTaiKhoanNganHang_36_Nguyen.FormattingEnabled = true;
+            this.cbChonTaiKhoanNganHang_36_Nguyen.Items.AddRange(new object[] {
             "Agribank",
             "Vietcombank",
             "Techcombank",
@@ -69,215 +77,262 @@
             "Momo",
             "ZaloPay",
             "VNPay"});
-            this.cbChonTaiKhoanNganHang.Location = new System.Drawing.Point(15, 79);
-            this.cbChonTaiKhoanNganHang.Name = "cbChonTaiKhoanNganHang";
-            this.cbChonTaiKhoanNganHang.Size = new System.Drawing.Size(144, 21);
-            this.cbChonTaiKhoanNganHang.TabIndex = 0;
+            this.cbChonTaiKhoanNganHang_36_Nguyen.Location = new System.Drawing.Point(15, 79);
+            this.cbChonTaiKhoanNganHang_36_Nguyen.Name = "cbChonTaiKhoanNganHang_36_Nguyen";
+            this.cbChonTaiKhoanNganHang_36_Nguyen.Size = new System.Drawing.Size(144, 21);
+            this.cbChonTaiKhoanNganHang_36_Nguyen.TabIndex = 0;
             // 
-            // lbQuanLyTaiKhoanBank
+            // lbQuanLyTaiKhoanBank_36_Nguyen
             // 
-            this.lbQuanLyTaiKhoanBank.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbQuanLyTaiKhoanBank.AutoSize = true;
-            this.lbQuanLyTaiKhoanBank.BackColor = System.Drawing.Color.Yellow;
-            this.lbQuanLyTaiKhoanBank.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbQuanLyTaiKhoanBank.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbQuanLyTaiKhoanBank.Location = new System.Drawing.Point(238, 9);
-            this.lbQuanLyTaiKhoanBank.Name = "lbQuanLyTaiKhoanBank";
-            this.lbQuanLyTaiKhoanBank.Size = new System.Drawing.Size(186, 24);
-            this.lbQuanLyTaiKhoanBank.TabIndex = 1;
-            this.lbQuanLyTaiKhoanBank.Text = "Ngân hàng của bạn";
-            this.lbQuanLyTaiKhoanBank.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.AutoSize = true;
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.BackColor = System.Drawing.Color.Yellow;
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.Location = new System.Drawing.Point(238, 9);
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.Name = "lbQuanLyTaiKhoanBank_36_Nguyen";
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.Size = new System.Drawing.Size(186, 24);
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.TabIndex = 1;
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.Text = "Ngân hàng của bạn";
+            this.lbQuanLyTaiKhoanBank_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbChonNganHang
+            // lbChonNganHang_36_Nguyen
             // 
-            this.lbChonNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbChonNganHang.AutoSize = true;
-            this.lbChonNganHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbChonNganHang.Location = new System.Drawing.Point(12, 53);
-            this.lbChonNganHang.Name = "lbChonNganHang";
-            this.lbChonNganHang.Size = new System.Drawing.Size(157, 13);
-            this.lbChonNganHang.TabIndex = 2;
-            this.lbChonNganHang.Text = "Chọn tài khoản ngân hàng";
+            this.lbChonNganHang_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbChonNganHang_36_Nguyen.AutoSize = true;
+            this.lbChonNganHang_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbChonNganHang_36_Nguyen.Location = new System.Drawing.Point(12, 53);
+            this.lbChonNganHang_36_Nguyen.Name = "lbChonNganHang_36_Nguyen";
+            this.lbChonNganHang_36_Nguyen.Size = new System.Drawing.Size(157, 13);
+            this.lbChonNganHang_36_Nguyen.TabIndex = 2;
+            this.lbChonNganHang_36_Nguyen.Text = "Chọn tài khoản ngân hàng";
             // 
-            // btnThemNganHang
+            // btnThemNganHang_36_Nguyen
             // 
-            this.btnThemNganHang.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnThemNganHang.Location = new System.Drawing.Point(559, 78);
-            this.btnThemNganHang.Name = "btnThemNganHang";
-            this.btnThemNganHang.Size = new System.Drawing.Size(68, 20);
-            this.btnThemNganHang.TabIndex = 3;
-            this.btnThemNganHang.Text = "Thêm";
-            this.btnThemNganHang.UseVisualStyleBackColor = true;
-            this.btnThemNganHang.Click += new System.EventHandler(this.btnThemNganHang_Click);
+            this.btnThemNganHang_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnThemNganHang_36_Nguyen.Location = new System.Drawing.Point(556, 75);
+            this.btnThemNganHang_36_Nguyen.Name = "btnThemNganHang_36_Nguyen";
+            this.btnThemNganHang_36_Nguyen.Size = new System.Drawing.Size(68, 29);
+            this.btnThemNganHang_36_Nguyen.TabIndex = 3;
+            this.btnThemNganHang_36_Nguyen.Text = "Thêm";
+            this.btnThemNganHang_36_Nguyen.UseVisualStyleBackColor = true;
+            this.btnThemNganHang_36_Nguyen.Click += new System.EventHandler(this.btnThemNganHang_36_Nguyen_Click);
             // 
-            // ListTaiKhoanNganHang
+            // btnXoaAll_36_Nguyen
             // 
-            this.ListTaiKhoanNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.ListTaiKhoanNganHang.BackColor = System.Drawing.Color.MintCream;
-            this.ListTaiKhoanNganHang.FormattingEnabled = true;
-            this.ListTaiKhoanNganHang.Location = new System.Drawing.Point(15, 184);
-            this.ListTaiKhoanNganHang.Name = "ListTaiKhoanNganHang";
-            this.ListTaiKhoanNganHang.Size = new System.Drawing.Size(612, 147);
-            this.ListTaiKhoanNganHang.TabIndex = 4;
+            this.btnXoaAll_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnXoaAll_36_Nguyen.BackColor = System.Drawing.Color.Lime;
+            this.btnXoaAll_36_Nguyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoaAll_36_Nguyen.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnXoaAll_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoaAll_36_Nguyen.Location = new System.Drawing.Point(394, 340);
+            this.btnXoaAll_36_Nguyen.Name = "btnXoaAll_36_Nguyen";
+            this.btnXoaAll_36_Nguyen.Size = new System.Drawing.Size(106, 31);
+            this.btnXoaAll_36_Nguyen.TabIndex = 5;
+            this.btnXoaAll_36_Nguyen.Text = "Xoá tất cả";
+            this.btnXoaAll_36_Nguyen.UseVisualStyleBackColor = false;
+            this.btnXoaAll_36_Nguyen.Click += new System.EventHandler(this.btnXoaAll_36_Nguyen_Click);
             // 
-            // btnXoaAll
+            // btnXoa_36_Nguyen
             // 
-            this.btnXoaAll.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnXoaAll.BackColor = System.Drawing.Color.Lime;
-            this.btnXoaAll.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoaAll.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnXoaAll.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoaAll.Location = new System.Drawing.Point(382, 341);
-            this.btnXoaAll.Name = "btnXoaAll";
-            this.btnXoaAll.Size = new System.Drawing.Size(113, 31);
-            this.btnXoaAll.TabIndex = 5;
-            this.btnXoaAll.Text = "Xoá tất cả";
-            this.btnXoaAll.UseVisualStyleBackColor = false;
-            this.btnXoaAll.Click += new System.EventHandler(this.btnXoaAll_Click);
+            this.btnXoa_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnXoa_36_Nguyen.BackColor = System.Drawing.Color.Lime;
+            this.btnXoa_36_Nguyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoa_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa_36_Nguyen.Location = new System.Drawing.Point(521, 341);
+            this.btnXoa_36_Nguyen.Name = "btnXoa_36_Nguyen";
+            this.btnXoa_36_Nguyen.Size = new System.Drawing.Size(106, 31);
+            this.btnXoa_36_Nguyen.TabIndex = 6;
+            this.btnXoa_36_Nguyen.Text = "Xoá";
+            this.btnXoa_36_Nguyen.UseVisualStyleBackColor = false;
+            this.btnXoa_36_Nguyen.Click += new System.EventHandler(this.btnXoa_36_Nguyen_Click);
             // 
-            // btnXoa
+            // btnTimKiem_36_Nguyen
             // 
-            this.btnXoa.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnXoa.BackColor = System.Drawing.Color.Lime;
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXoa.Location = new System.Drawing.Point(514, 341);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(113, 31);
-            this.btnXoa.TabIndex = 6;
-            this.btnXoa.Text = "Xoá";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            this.btnTimKiem_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btnTimKiem_36_Nguyen.Location = new System.Drawing.Point(556, 115);
+            this.btnTimKiem_36_Nguyen.Name = "btnTimKiem_36_Nguyen";
+            this.btnTimKiem_36_Nguyen.Size = new System.Drawing.Size(68, 29);
+            this.btnTimKiem_36_Nguyen.TabIndex = 7;
+            this.btnTimKiem_36_Nguyen.Text = "Tìm kiếm";
+            this.btnTimKiem_36_Nguyen.UseVisualStyleBackColor = true;
+            this.btnTimKiem_36_Nguyen.Click += new System.EventHandler(this.btnTimKiem_36_Nguyen_Click);
             // 
-            // btnTimKiem
+            // txtTimKiem_36_Nguyen
             // 
-            this.btnTimKiem.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btnTimKiem.Location = new System.Drawing.Point(556, 120);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(71, 20);
-            this.btnTimKiem.TabIndex = 7;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = true;
-            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            this.txtTimKiem_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtTimKiem_36_Nguyen.Location = new System.Drawing.Point(15, 120);
+            this.txtTimKiem_36_Nguyen.Name = "txtTimKiem_36_Nguyen";
+            this.txtTimKiem_36_Nguyen.Size = new System.Drawing.Size(517, 20);
+            this.txtTimKiem_36_Nguyen.TabIndex = 8;
+            this.txtTimKiem_36_Nguyen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // txtTimKiem
+            // txtMatKhauNganHang_36_Nguyen
             // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtTimKiem.Location = new System.Drawing.Point(15, 120);
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(517, 20);
-            this.txtTimKiem.TabIndex = 8;
-            this.txtTimKiem.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtMatKhauNganHang_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtMatKhauNganHang_36_Nguyen.Location = new System.Drawing.Point(382, 80);
+            this.txtMatKhauNganHang_36_Nguyen.Name = "txtMatKhauNganHang_36_Nguyen";
+            this.txtMatKhauNganHang_36_Nguyen.Size = new System.Drawing.Size(150, 20);
+            this.txtMatKhauNganHang_36_Nguyen.TabIndex = 9;
             // 
-            // txtMatKhauNganHang
+            // txtSoTaiKhoanNganHang_36_Nguyen
             // 
-            this.txtMatKhauNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtMatKhauNganHang.Location = new System.Drawing.Point(382, 80);
-            this.txtMatKhauNganHang.Name = "txtMatKhauNganHang";
-            this.txtMatKhauNganHang.Size = new System.Drawing.Size(150, 20);
-            this.txtMatKhauNganHang.TabIndex = 9;
+            this.txtSoTaiKhoanNganHang_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.txtSoTaiKhoanNganHang_36_Nguyen.Location = new System.Drawing.Point(201, 79);
+            this.txtSoTaiKhoanNganHang_36_Nguyen.Name = "txtSoTaiKhoanNganHang_36_Nguyen";
+            this.txtSoTaiKhoanNganHang_36_Nguyen.Size = new System.Drawing.Size(142, 20);
+            this.txtSoTaiKhoanNganHang_36_Nguyen.TabIndex = 10;
+            this.txtSoTaiKhoanNganHang_36_Nguyen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoTaiKhoanNganHang_36_Nguyen_KeyPress);
             // 
-            // txtTenTaiKhoanNganHang
+            // lbSoTaiKhoanNganHang_36_Nguyen
             // 
-            this.txtTenTaiKhoanNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.txtTenTaiKhoanNganHang.Location = new System.Drawing.Point(201, 79);
-            this.txtTenTaiKhoanNganHang.Name = "txtTenTaiKhoanNganHang";
-            this.txtTenTaiKhoanNganHang.Size = new System.Drawing.Size(142, 20);
-            this.txtTenTaiKhoanNganHang.TabIndex = 10;
+            this.lbSoTaiKhoanNganHang_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbSoTaiKhoanNganHang_36_Nguyen.AutoSize = true;
+            this.lbSoTaiKhoanNganHang_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSoTaiKhoanNganHang_36_Nguyen.Location = new System.Drawing.Point(198, 53);
+            this.lbSoTaiKhoanNganHang_36_Nguyen.Name = "lbSoTaiKhoanNganHang_36_Nguyen";
+            this.lbSoTaiKhoanNganHang_36_Nguyen.Size = new System.Drawing.Size(111, 13);
+            this.lbSoTaiKhoanNganHang_36_Nguyen.TabIndex = 11;
+            this.lbSoTaiKhoanNganHang_36_Nguyen.Text = "Nhập số tài khoản";
             // 
-            // lbTenTaiKhoanNganHang
+            // lbMatKhauNganHang_36_Nguyen
             // 
-            this.lbTenTaiKhoanNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbTenTaiKhoanNganHang.AutoSize = true;
-            this.lbTenTaiKhoanNganHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTenTaiKhoanNganHang.Location = new System.Drawing.Point(198, 53);
-            this.lbTenTaiKhoanNganHang.Name = "lbTenTaiKhoanNganHang";
-            this.lbTenTaiKhoanNganHang.Size = new System.Drawing.Size(116, 13);
-            this.lbTenTaiKhoanNganHang.TabIndex = 11;
-            this.lbTenTaiKhoanNganHang.Text = "Nhập tên tài khoản";
+            this.lbMatKhauNganHang_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lbMatKhauNganHang_36_Nguyen.AutoSize = true;
+            this.lbMatKhauNganHang_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMatKhauNganHang_36_Nguyen.Location = new System.Drawing.Point(379, 53);
+            this.lbMatKhauNganHang_36_Nguyen.Name = "lbMatKhauNganHang_36_Nguyen";
+            this.lbMatKhauNganHang_36_Nguyen.Size = new System.Drawing.Size(157, 13);
+            this.lbMatKhauNganHang_36_Nguyen.TabIndex = 12;
+            this.lbMatKhauNganHang_36_Nguyen.Text = "Nhập mật khẩu ngân hàng";
             // 
-            // lbMatKhauNganHang
+            // btnXuatFile_36_Nguyen
             // 
-            this.lbMatKhauNganHang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.lbMatKhauNganHang.AutoSize = true;
-            this.lbMatKhauNganHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMatKhauNganHang.Location = new System.Drawing.Point(379, 53);
-            this.lbMatKhauNganHang.Name = "lbMatKhauNganHang";
-            this.lbMatKhauNganHang.Size = new System.Drawing.Size(157, 13);
-            this.lbMatKhauNganHang.TabIndex = 12;
-            this.lbMatKhauNganHang.Text = "Nhập mật khẩu ngân hàng";
+            this.btnXuatFile_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnXuatFile_36_Nguyen.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnXuatFile_36_Nguyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXuatFile_36_Nguyen.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnXuatFile_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXuatFile_36_Nguyen.Location = new System.Drawing.Point(139, 341);
+            this.btnXuatFile_36_Nguyen.Name = "btnXuatFile_36_Nguyen";
+            this.btnXuatFile_36_Nguyen.Size = new System.Drawing.Size(106, 31);
+            this.btnXuatFile_36_Nguyen.TabIndex = 13;
+            this.btnXuatFile_36_Nguyen.Text = "Xuất danh sách";
+            this.btnXuatFile_36_Nguyen.UseVisualStyleBackColor = false;
+            this.btnXuatFile_36_Nguyen.Click += new System.EventHandler(this.btnXuatFile_36_Nguyen_Click);
             // 
-            // btnXuatFile
+            // btnMoFile_36_Nguyen
             // 
-            this.btnXuatFile.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnXuatFile.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnXuatFile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXuatFile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnXuatFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnXuatFile.Location = new System.Drawing.Point(15, 341);
-            this.btnXuatFile.Name = "btnXuatFile";
-            this.btnXuatFile.Size = new System.Drawing.Size(113, 31);
-            this.btnXuatFile.TabIndex = 13;
-            this.btnXuatFile.Text = "Xuất danh sách";
-            this.btnXuatFile.UseVisualStyleBackColor = false;
-            this.btnXuatFile.Click += new System.EventHandler(this.btnXuatFile_Click);
+            this.btnMoFile_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnMoFile_36_Nguyen.BackColor = System.Drawing.Color.PaleGreen;
+            this.btnMoFile_36_Nguyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnMoFile_36_Nguyen.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnMoFile_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMoFile_36_Nguyen.Location = new System.Drawing.Point(12, 341);
+            this.btnMoFile_36_Nguyen.Name = "btnMoFile_36_Nguyen";
+            this.btnMoFile_36_Nguyen.Size = new System.Drawing.Size(106, 31);
+            this.btnMoFile_36_Nguyen.TabIndex = 14;
+            this.btnMoFile_36_Nguyen.Text = "Mở tệp";
+            this.btnMoFile_36_Nguyen.UseVisualStyleBackColor = false;
+            this.btnMoFile_36_Nguyen.Click += new System.EventHandler(this.btnMoFile_36_Nguyen_Click);
             // 
-            // btnMoFile
+            // groupBoxDs_36_Nguyen
             // 
-            this.btnMoFile.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btnMoFile.BackColor = System.Drawing.Color.PaleGreen;
-            this.btnMoFile.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMoFile.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnMoFile.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMoFile.Location = new System.Drawing.Point(145, 341);
-            this.btnMoFile.Name = "btnMoFile";
-            this.btnMoFile.Size = new System.Drawing.Size(113, 31);
-            this.btnMoFile.TabIndex = 14;
-            this.btnMoFile.Text = "Mở tệp";
-            this.btnMoFile.UseVisualStyleBackColor = false;
-            this.btnMoFile.Click += new System.EventHandler(this.btnMoFile_Click);
+            this.groupBoxDs_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.groupBoxDs_36_Nguyen.Controls.Add(this.lvDanhSachNganHang_36_Nguyen);
+            this.groupBoxDs_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxDs_36_Nguyen.Location = new System.Drawing.Point(15, 173);
+            this.groupBoxDs_36_Nguyen.Name = "groupBoxDs_36_Nguyen";
+            this.groupBoxDs_36_Nguyen.Size = new System.Drawing.Size(611, 162);
+            this.groupBoxDs_36_Nguyen.TabIndex = 15;
+            this.groupBoxDs_36_Nguyen.TabStop = false;
+            this.groupBoxDs_36_Nguyen.Text = "Danh sách tài khoản";
             // 
-            // lbDsBank_36_Nguyen
+            // lvDanhSachNganHang_36_Nguyen
             // 
-            this.lbDsBank_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.lbDsBank_36_Nguyen.AutoSize = true;
-            this.lbDsBank_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbDsBank_36_Nguyen.Location = new System.Drawing.Point(239, 164);
-            this.lbDsBank_36_Nguyen.Name = "lbDsBank_36_Nguyen";
-            this.lbDsBank_36_Nguyen.Size = new System.Drawing.Size(185, 17);
-            this.lbDsBank_36_Nguyen.TabIndex = 15;
-            this.lbDsBank_36_Nguyen.Text = "DANH SÁCH TÀI KHOẢN";
+            this.lvDanhSachNganHang_36_Nguyen.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.lvDanhSachNganHang_36_Nguyen.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnTenNH_36_Nguyen,
+            this.columnSoTaiKhoan_36_Nguyen,
+            this.columnMatKhau_36_Nguyen});
+            this.lvDanhSachNganHang_36_Nguyen.FullRowSelect = true;
+            this.lvDanhSachNganHang_36_Nguyen.GridLines = true;
+            this.lvDanhSachNganHang_36_Nguyen.HideSelection = false;
+            this.lvDanhSachNganHang_36_Nguyen.Location = new System.Drawing.Point(0, 16);
+            this.lvDanhSachNganHang_36_Nguyen.Name = "lvDanhSachNganHang_36_Nguyen";
+            this.lvDanhSachNganHang_36_Nguyen.Size = new System.Drawing.Size(611, 145);
+            this.lvDanhSachNganHang_36_Nguyen.TabIndex = 0;
+            this.lvDanhSachNganHang_36_Nguyen.UseCompatibleStateImageBehavior = false;
+            this.lvDanhSachNganHang_36_Nguyen.View = System.Windows.Forms.View.Details;
+            this.lvDanhSachNganHang_36_Nguyen.SelectedIndexChanged += new System.EventHandler(this.lvDanhSachNganHang_36_Nguyen_SelectedIndexChanged);
             // 
-            // FormTaiKhoan
+            // columnTenNH_36_Nguyen
             // 
-            this.AcceptButton = this.btnThemNganHang;
+            this.columnTenNH_36_Nguyen.Text = "Ngân hàng";
+            this.columnTenNH_36_Nguyen.Width = 213;
+            // 
+            // columnSoTaiKhoan_36_Nguyen
+            // 
+            this.columnSoTaiKhoan_36_Nguyen.Text = "Số tài khoản";
+            this.columnSoTaiKhoan_36_Nguyen.Width = 179;
+            // 
+            // columnMatKhau_36_Nguyen
+            // 
+            this.columnMatKhau_36_Nguyen.Text = "Mật khẩu";
+            this.columnMatKhau_36_Nguyen.Width = 214;
+            // 
+            // errorProvider1_36_Nguyen
+            // 
+            this.errorProvider1_36_Nguyen.ContainerControl = this;
+            // 
+            // btnSua_36_Nguyen
+            // 
+            this.btnSua_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.btnSua_36_Nguyen.BackColor = System.Drawing.Color.SlateBlue;
+            this.btnSua_36_Nguyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSua_36_Nguyen.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnSua_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua_36_Nguyen.Location = new System.Drawing.Point(268, 341);
+            this.btnSua_36_Nguyen.Name = "btnSua_36_Nguyen";
+            this.btnSua_36_Nguyen.Size = new System.Drawing.Size(106, 31);
+            this.btnSua_36_Nguyen.TabIndex = 16;
+            this.btnSua_36_Nguyen.Text = "Sửa";
+            this.btnSua_36_Nguyen.UseVisualStyleBackColor = false;
+            this.btnSua_36_Nguyen.Click += new System.EventHandler(this.btnSua_36_Nguyen_Click);
+            // 
+            // FormTaiKhoan_36_Nguyen
+            // 
+            this.AcceptButton = this.btnThemNganHang_36_Nguyen;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightYellow;
             this.ClientSize = new System.Drawing.Size(642, 379);
-            this.Controls.Add(this.lbDsBank_36_Nguyen);
-            this.Controls.Add(this.btnMoFile);
-            this.Controls.Add(this.btnXuatFile);
-            this.Controls.Add(this.lbMatKhauNganHang);
-            this.Controls.Add(this.lbTenTaiKhoanNganHang);
-            this.Controls.Add(this.txtTenTaiKhoanNganHang);
-            this.Controls.Add(this.txtMatKhauNganHang);
-            this.Controls.Add(this.txtTimKiem);
-            this.Controls.Add(this.btnTimKiem);
-            this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnXoaAll);
-            this.Controls.Add(this.ListTaiKhoanNganHang);
-            this.Controls.Add(this.btnThemNganHang);
-            this.Controls.Add(this.lbChonNganHang);
-            this.Controls.Add(this.lbQuanLyTaiKhoanBank);
-            this.Controls.Add(this.cbChonTaiKhoanNganHang);
+            this.Controls.Add(this.btnSua_36_Nguyen);
+            this.Controls.Add(this.groupBoxDs_36_Nguyen);
+            this.Controls.Add(this.btnMoFile_36_Nguyen);
+            this.Controls.Add(this.btnXuatFile_36_Nguyen);
+            this.Controls.Add(this.lbMatKhauNganHang_36_Nguyen);
+            this.Controls.Add(this.lbSoTaiKhoanNganHang_36_Nguyen);
+            this.Controls.Add(this.txtSoTaiKhoanNganHang_36_Nguyen);
+            this.Controls.Add(this.txtMatKhauNganHang_36_Nguyen);
+            this.Controls.Add(this.txtTimKiem_36_Nguyen);
+            this.Controls.Add(this.btnTimKiem_36_Nguyen);
+            this.Controls.Add(this.btnXoa_36_Nguyen);
+            this.Controls.Add(this.btnXoaAll_36_Nguyen);
+            this.Controls.Add(this.btnThemNganHang_36_Nguyen);
+            this.Controls.Add(this.lbChonNganHang_36_Nguyen);
+            this.Controls.Add(this.lbQuanLyTaiKhoanBank_36_Nguyen);
+            this.Controls.Add(this.cbChonTaiKhoanNganHang_36_Nguyen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(658, 418);
-            this.Name = "FormTaiKhoan";
+            this.Name = "FormTaiKhoan_36_Nguyen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Tài khoản ngân hàng";
-            this.Load += new System.EventHandler(this.FormTaiKhoan_Load);
+            this.Load += new System.EventHandler(this.FormTaiKhoan_36_Nguyen_Load);
+            this.groupBoxDs_36_Nguyen.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1_36_Nguyen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -285,21 +340,26 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox cbChonTaiKhoanNganHang;
-        private System.Windows.Forms.Label lbQuanLyTaiKhoanBank;
-        private System.Windows.Forms.Label lbChonNganHang;
-        private System.Windows.Forms.Button btnThemNganHang;
-        private System.Windows.Forms.ListBox ListTaiKhoanNganHang;
-        private System.Windows.Forms.Button btnXoaAll;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.TextBox txtMatKhauNganHang;
-        private System.Windows.Forms.TextBox txtTenTaiKhoanNganHang;
-        private System.Windows.Forms.Label lbTenTaiKhoanNganHang;
-        private System.Windows.Forms.Label lbMatKhauNganHang;
-        private System.Windows.Forms.Button btnXuatFile;
-        private System.Windows.Forms.Button btnMoFile;
-        private System.Windows.Forms.Label lbDsBank_36_Nguyen;
+        private System.Windows.Forms.ComboBox cbChonTaiKhoanNganHang_36_Nguyen;
+        private System.Windows.Forms.Label lbQuanLyTaiKhoanBank_36_Nguyen;
+        private System.Windows.Forms.Label lbChonNganHang_36_Nguyen;
+        private System.Windows.Forms.Button btnThemNganHang_36_Nguyen;
+        private System.Windows.Forms.Button btnXoaAll_36_Nguyen;
+        private System.Windows.Forms.Button btnXoa_36_Nguyen;
+        private System.Windows.Forms.Button btnTimKiem_36_Nguyen;
+        private System.Windows.Forms.TextBox txtTimKiem_36_Nguyen;
+        private System.Windows.Forms.TextBox txtMatKhauNganHang_36_Nguyen;
+        private System.Windows.Forms.TextBox txtSoTaiKhoanNganHang_36_Nguyen;
+        private System.Windows.Forms.Label lbSoTaiKhoanNganHang_36_Nguyen;
+        private System.Windows.Forms.Label lbMatKhauNganHang_36_Nguyen;
+        private System.Windows.Forms.Button btnXuatFile_36_Nguyen;
+        private System.Windows.Forms.Button btnMoFile_36_Nguyen;
+        private System.Windows.Forms.GroupBox groupBoxDs_36_Nguyen;
+        private System.Windows.Forms.ListView lvDanhSachNganHang_36_Nguyen;
+        private System.Windows.Forms.ColumnHeader columnTenNH_36_Nguyen;
+        private System.Windows.Forms.ColumnHeader columnSoTaiKhoan_36_Nguyen;
+        private System.Windows.Forms.ColumnHeader columnMatKhau_36_Nguyen;
+        private System.Windows.Forms.ErrorProvider errorProvider1_36_Nguyen;
+        private System.Windows.Forms.Button btnSua_36_Nguyen;
     }
 }

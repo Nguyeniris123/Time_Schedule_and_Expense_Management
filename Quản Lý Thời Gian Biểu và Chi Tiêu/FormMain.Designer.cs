@@ -1,6 +1,6 @@
 ﻿namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
 {
-    partial class FormMain
+    partial class FormMain_36_Nguyen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,40 +29,40 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.fileToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.newToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.openToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain_36_Nguyen));
+            this.menuStrip1_36_Nguyen = new System.Windows.Forms.MenuStrip();
+            this.fileToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.newToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.openToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator12 = new System.Windows.Forms.ToolStripSeparator();
-            this.saveToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator13 = new System.Windows.Forms.ToolStripSeparator();
-            this.printToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.printPreviewToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.printToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.printPreviewToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator14 = new System.Windows.Forms.ToolStripSeparator();
-            this.exitToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.editToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.undoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.redoToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.editToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator15 = new System.Windows.Forms.ToolStripSeparator();
-            this.cutToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.copyToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.pasteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.cutToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.copyToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.pasteToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator16 = new System.Windows.Forms.ToolStripSeparator();
-            this.selectAllToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.settinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fontToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fontEditToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fontColorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.colorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.formColorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.selectAllToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.settinToolStripMenuItem_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontToolItem_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontEditToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.fontColorToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.colorToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.formColorToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.controlColorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.soundToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.playToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.stopToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.helpToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.soundToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.playToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.stopToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
+            this.helpToolStripMenuItem2_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator17 = new System.Windows.Forms.ToolStripSeparator();
-            this.logOutToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.logOutToolStripMenuItem1_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.fileToolStripMenuItem_36_Nguyen = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.openToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -131,19 +131,19 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.logOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.picAvatar = new System.Windows.Forms.PictureBox();
-            this.lbHoTen = new System.Windows.Forms.Label();
-            this.lbId = new System.Windows.Forms.Label();
-            this.TaskBar = new System.Windows.Forms.Panel();
-            this.btnTaiKhoanNganHang = new System.Windows.Forms.Button();
-            this.btnTaiChinh = new System.Windows.Forms.Button();
-            this.lbDuongKe = new System.Windows.Forms.Label();
+            this.contextMenuStrip1_36_Nguyen = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.picAvatar_36_Nguyen = new System.Windows.Forms.PictureBox();
+            this.lbHoTen_36_Nguyen = new System.Windows.Forms.Label();
+            this.lbId_36_Nguyen = new System.Windows.Forms.Label();
+            this.TaskBar_36_Nguyen = new System.Windows.Forms.Panel();
+            this.btnTaiKhoanNganHang_36_Nguyen = new System.Windows.Forms.Button();
+            this.btnTaiChinh_36_Nguyen = new System.Windows.Forms.Button();
+            this.lbDuongKe_36_Nguyen = new System.Windows.Forms.Label();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.lbDateTime_36_Nguyen = new System.Windows.Forms.Label();
-            this.lbBangTin_36_Nguyen = new System.Windows.Forms.Label();
+            this.lbBangTin_36_Nguyen_36_Nguyen = new System.Windows.Forms.Label();
             this.picQuangCao_36_Nguyen = new System.Windows.Forms.PictureBox();
-            this.gridBangThoiKhoaBieu = new System.Windows.Forms.DataGridView();
+            this.gridBangThoiKhoaBieu_36_Nguyen = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Thu3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Thu4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -155,278 +155,278 @@
             this.timerImg_36_Nguyen = new System.Windows.Forms.Timer(this.components);
             this.timerDateTime_36_Nguyen = new System.Windows.Forms.Timer(this.components);
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
-            this.TaskBar.SuspendLayout();
+            this.menuStrip1_36_Nguyen.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar_36_Nguyen)).BeginInit();
+            this.TaskBar_36_Nguyen.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picQuangCao_36_Nguyen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridBangThoiKhoaBieu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridBangThoiKhoaBieu_36_Nguyen)).BeginInit();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // menuStrip1_36_Nguyen
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem1,
-            this.editToolStripMenuItem1,
-            this.settinToolStripMenuItem,
-            this.helpToolStripMenuItem2,
-            this.logOutToolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(845, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1_36_Nguyen.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem1_36_Nguyen,
+            this.editToolStripMenuItem1_36_Nguyen,
+            this.settinToolStripMenuItem_36_Nguyen,
+            this.helpToolStripMenuItem2_36_Nguyen,
+            this.logOutToolStripMenuItem1_36_Nguyen});
+            this.menuStrip1_36_Nguyen.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1_36_Nguyen.Name = "menuStrip1_36_Nguyen";
+            this.menuStrip1_36_Nguyen.Size = new System.Drawing.Size(845, 24);
+            this.menuStrip1_36_Nguyen.TabIndex = 0;
+            this.menuStrip1_36_Nguyen.Text = "menuStrip1";
             // 
-            // fileToolStripMenuItem1
+            // fileToolStripMenuItem1_36_Nguyen
             // 
-            this.fileToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.newToolStripMenuItem2,
-            this.openToolStripMenuItem2,
+            this.fileToolStripMenuItem1_36_Nguyen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newToolStripMenuItem2_36_Nguyen,
+            this.openToolStripMenuItem2_36_Nguyen,
             this.toolStripSeparator12,
-            this.saveToolStripMenuItem2,
+            this.saveToolStripMenuItem2_36_Nguyen,
             this.toolStripSeparator13,
-            this.printToolStripMenuItem2,
-            this.printPreviewToolStripMenuItem2,
+            this.printToolStripMenuItem2_36_Nguyen,
+            this.printPreviewToolStripMenuItem2_36_Nguyen,
             this.toolStripSeparator14,
-            this.exitToolStripMenuItem2});
-            this.fileToolStripMenuItem1.Name = "fileToolStripMenuItem1";
-            this.fileToolStripMenuItem1.Size = new System.Drawing.Size(37, 20);
-            this.fileToolStripMenuItem1.Text = "&File";
+            this.exitToolStripMenuItem2_36_Nguyen});
+            this.fileToolStripMenuItem1_36_Nguyen.Name = "fileToolStripMenuItem1_36_Nguyen";
+            this.fileToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem1_36_Nguyen.Text = "&File";
             // 
-            // newToolStripMenuItem2
+            // newToolStripMenuItem2_36_Nguyen
             // 
-            this.newToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem2.Image")));
-            this.newToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.newToolStripMenuItem2.Name = "newToolStripMenuItem2";
-            this.newToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.newToolStripMenuItem2.Text = "&New";
-            this.newToolStripMenuItem2.Click += new System.EventHandler(this.newToolStripMenuItem2_Click);
+            this.newToolStripMenuItem2_36_Nguyen.Image = ((System.Drawing.Image)(resources.GetObject("newToolStripMenuItem2_36_Nguyen.Image")));
+            this.newToolStripMenuItem2_36_Nguyen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.newToolStripMenuItem2_36_Nguyen.Name = "newToolStripMenuItem2_36_Nguyen";
+            this.newToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(143, 22);
+            this.newToolStripMenuItem2_36_Nguyen.Text = "&New";
+            this.newToolStripMenuItem2_36_Nguyen.Click += new System.EventHandler(this.newToolStripMenuItem2_36_Nguyen_Click);
             // 
-            // openToolStripMenuItem2
+            // openToolStripMenuItem2_36_Nguyen
             // 
-            this.openToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem2.Image")));
-            this.openToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.openToolStripMenuItem2.Name = "openToolStripMenuItem2";
-            this.openToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.openToolStripMenuItem2.Text = "&Open";
-            this.openToolStripMenuItem2.Click += new System.EventHandler(this.openToolStripMenuItem2_Click);
+            this.openToolStripMenuItem2_36_Nguyen.Image = ((System.Drawing.Image)(resources.GetObject("openToolStripMenuItem2_36_Nguyen.Image")));
+            this.openToolStripMenuItem2_36_Nguyen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.openToolStripMenuItem2_36_Nguyen.Name = "openToolStripMenuItem2_36_Nguyen";
+            this.openToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(143, 22);
+            this.openToolStripMenuItem2_36_Nguyen.Text = "&Open";
+            this.openToolStripMenuItem2_36_Nguyen.Click += new System.EventHandler(this.openToolStripMenuItem2_36_Nguyen_Click);
             // 
             // toolStripSeparator12
             // 
             this.toolStripSeparator12.Name = "toolStripSeparator12";
-            this.toolStripSeparator12.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator12.Size = new System.Drawing.Size(140, 6);
             // 
-            // saveToolStripMenuItem2
+            // saveToolStripMenuItem2_36_Nguyen
             // 
-            this.saveToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem2.Image")));
-            this.saveToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.saveToolStripMenuItem2.Name = "saveToolStripMenuItem2";
-            this.saveToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.saveToolStripMenuItem2.Text = "&Save";
-            this.saveToolStripMenuItem2.Click += new System.EventHandler(this.saveToolStripMenuItem2_Click);
+            this.saveToolStripMenuItem2_36_Nguyen.Image = ((System.Drawing.Image)(resources.GetObject("saveToolStripMenuItem2_36_Nguyen.Image")));
+            this.saveToolStripMenuItem2_36_Nguyen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.saveToolStripMenuItem2_36_Nguyen.Name = "saveToolStripMenuItem2_36_Nguyen";
+            this.saveToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(143, 22);
+            this.saveToolStripMenuItem2_36_Nguyen.Text = "&Save";
+            this.saveToolStripMenuItem2_36_Nguyen.Click += new System.EventHandler(this.saveToolStripMenuItem2_36_Nguyen_Click);
             // 
             // toolStripSeparator13
             // 
             this.toolStripSeparator13.Name = "toolStripSeparator13";
-            this.toolStripSeparator13.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator13.Size = new System.Drawing.Size(140, 6);
             // 
-            // printToolStripMenuItem2
+            // printToolStripMenuItem2_36_Nguyen
             // 
-            this.printToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem2.Image")));
-            this.printToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printToolStripMenuItem2.Name = "printToolStripMenuItem2";
-            this.printToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.printToolStripMenuItem2.Text = "&Print";
+            this.printToolStripMenuItem2_36_Nguyen.Image = ((System.Drawing.Image)(resources.GetObject("printToolStripMenuItem2_36_Nguyen.Image")));
+            this.printToolStripMenuItem2_36_Nguyen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printToolStripMenuItem2_36_Nguyen.Name = "printToolStripMenuItem2_36_Nguyen";
+            this.printToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(143, 22);
+            this.printToolStripMenuItem2_36_Nguyen.Text = "&Print";
             // 
-            // printPreviewToolStripMenuItem2
+            // printPreviewToolStripMenuItem2_36_Nguyen
             // 
-            this.printPreviewToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem2.Image")));
-            this.printPreviewToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.printPreviewToolStripMenuItem2.Name = "printPreviewToolStripMenuItem2";
-            this.printPreviewToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.printPreviewToolStripMenuItem2.Text = "Print Pre&view";
+            this.printPreviewToolStripMenuItem2_36_Nguyen.Image = ((System.Drawing.Image)(resources.GetObject("printPreviewToolStripMenuItem2_36_Nguyen.Image")));
+            this.printPreviewToolStripMenuItem2_36_Nguyen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.printPreviewToolStripMenuItem2_36_Nguyen.Name = "printPreviewToolStripMenuItem2_36_Nguyen";
+            this.printPreviewToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(143, 22);
+            this.printPreviewToolStripMenuItem2_36_Nguyen.Text = "Print Pre&view";
             // 
             // toolStripSeparator14
             // 
             this.toolStripSeparator14.Name = "toolStripSeparator14";
-            this.toolStripSeparator14.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator14.Size = new System.Drawing.Size(140, 6);
             // 
-            // exitToolStripMenuItem2
+            // exitToolStripMenuItem2_36_Nguyen
             // 
-            this.exitToolStripMenuItem2.Name = "exitToolStripMenuItem2";
-            this.exitToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.exitToolStripMenuItem2.Text = "E&xit";
-            this.exitToolStripMenuItem2.Click += new System.EventHandler(this.exitToolStripMenuItem2_Click);
+            this.exitToolStripMenuItem2_36_Nguyen.Name = "exitToolStripMenuItem2_36_Nguyen";
+            this.exitToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(143, 22);
+            this.exitToolStripMenuItem2_36_Nguyen.Text = "E&xit";
+            this.exitToolStripMenuItem2_36_Nguyen.Click += new System.EventHandler(this.exitToolStripMenuItem2_36_Nguyen_Click);
             // 
-            // editToolStripMenuItem1
+            // editToolStripMenuItem1_36_Nguyen
             // 
-            this.editToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.undoToolStripMenuItem2,
-            this.redoToolStripMenuItem2,
+            this.editToolStripMenuItem1_36_Nguyen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoToolStripMenuItem2_36_Nguyen,
+            this.redoToolStripMenuItem2_36_Nguyen,
             this.toolStripSeparator15,
-            this.cutToolStripMenuItem2,
-            this.copyToolStripMenuItem2,
-            this.pasteToolStripMenuItem2,
+            this.cutToolStripMenuItem2_36_Nguyen,
+            this.copyToolStripMenuItem2_36_Nguyen,
+            this.pasteToolStripMenuItem2_36_Nguyen,
             this.toolStripSeparator16,
-            this.selectAllToolStripMenuItem2});
-            this.editToolStripMenuItem1.Name = "editToolStripMenuItem1";
-            this.editToolStripMenuItem1.Size = new System.Drawing.Size(39, 20);
-            this.editToolStripMenuItem1.Text = "&Edit";
+            this.selectAllToolStripMenuItem2_36_Nguyen});
+            this.editToolStripMenuItem1_36_Nguyen.Name = "editToolStripMenuItem1_36_Nguyen";
+            this.editToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(39, 20);
+            this.editToolStripMenuItem1_36_Nguyen.Text = "&Edit";
             // 
-            // undoToolStripMenuItem2
+            // undoToolStripMenuItem2_36_Nguyen
             // 
-            this.undoToolStripMenuItem2.Name = "undoToolStripMenuItem2";
-            this.undoToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
-            this.undoToolStripMenuItem2.Text = "&Undo";
+            this.undoToolStripMenuItem2_36_Nguyen.Name = "undoToolStripMenuItem2_36_Nguyen";
+            this.undoToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(122, 22);
+            this.undoToolStripMenuItem2_36_Nguyen.Text = "&Undo";
             // 
-            // redoToolStripMenuItem2
+            // redoToolStripMenuItem2_36_Nguyen
             // 
-            this.redoToolStripMenuItem2.Name = "redoToolStripMenuItem2";
-            this.redoToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
-            this.redoToolStripMenuItem2.Text = "&Redo";
+            this.redoToolStripMenuItem2_36_Nguyen.Name = "redoToolStripMenuItem2_36_Nguyen";
+            this.redoToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(122, 22);
+            this.redoToolStripMenuItem2_36_Nguyen.Text = "&Redo";
             // 
             // toolStripSeparator15
             // 
             this.toolStripSeparator15.Name = "toolStripSeparator15";
             this.toolStripSeparator15.Size = new System.Drawing.Size(119, 6);
             // 
-            // cutToolStripMenuItem2
+            // cutToolStripMenuItem2_36_Nguyen
             // 
-            this.cutToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem2.Image")));
-            this.cutToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.cutToolStripMenuItem2.Name = "cutToolStripMenuItem2";
-            this.cutToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
-            this.cutToolStripMenuItem2.Text = "Cu&t";
+            this.cutToolStripMenuItem2_36_Nguyen.Image = ((System.Drawing.Image)(resources.GetObject("cutToolStripMenuItem2_36_Nguyen.Image")));
+            this.cutToolStripMenuItem2_36_Nguyen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.cutToolStripMenuItem2_36_Nguyen.Name = "cutToolStripMenuItem2_36_Nguyen";
+            this.cutToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(122, 22);
+            this.cutToolStripMenuItem2_36_Nguyen.Text = "Cu&t";
             // 
-            // copyToolStripMenuItem2
+            // copyToolStripMenuItem2_36_Nguyen
             // 
-            this.copyToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem2.Image")));
-            this.copyToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.copyToolStripMenuItem2.Name = "copyToolStripMenuItem2";
-            this.copyToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
-            this.copyToolStripMenuItem2.Text = "&Copy";
+            this.copyToolStripMenuItem2_36_Nguyen.Image = ((System.Drawing.Image)(resources.GetObject("copyToolStripMenuItem2_36_Nguyen.Image")));
+            this.copyToolStripMenuItem2_36_Nguyen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.copyToolStripMenuItem2_36_Nguyen.Name = "copyToolStripMenuItem2_36_Nguyen";
+            this.copyToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(122, 22);
+            this.copyToolStripMenuItem2_36_Nguyen.Text = "&Copy";
             // 
-            // pasteToolStripMenuItem2
+            // pasteToolStripMenuItem2_36_Nguyen
             // 
-            this.pasteToolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem2.Image")));
-            this.pasteToolStripMenuItem2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.pasteToolStripMenuItem2.Name = "pasteToolStripMenuItem2";
-            this.pasteToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
-            this.pasteToolStripMenuItem2.Text = "&Paste";
+            this.pasteToolStripMenuItem2_36_Nguyen.Image = ((System.Drawing.Image)(resources.GetObject("pasteToolStripMenuItem2_36_Nguyen.Image")));
+            this.pasteToolStripMenuItem2_36_Nguyen.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.pasteToolStripMenuItem2_36_Nguyen.Name = "pasteToolStripMenuItem2_36_Nguyen";
+            this.pasteToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(122, 22);
+            this.pasteToolStripMenuItem2_36_Nguyen.Text = "&Paste";
             // 
             // toolStripSeparator16
             // 
             this.toolStripSeparator16.Name = "toolStripSeparator16";
             this.toolStripSeparator16.Size = new System.Drawing.Size(119, 6);
             // 
-            // selectAllToolStripMenuItem2
+            // selectAllToolStripMenuItem2_36_Nguyen
             // 
-            this.selectAllToolStripMenuItem2.Name = "selectAllToolStripMenuItem2";
-            this.selectAllToolStripMenuItem2.Size = new System.Drawing.Size(122, 22);
-            this.selectAllToolStripMenuItem2.Text = "Select &All";
+            this.selectAllToolStripMenuItem2_36_Nguyen.Name = "selectAllToolStripMenuItem2_36_Nguyen";
+            this.selectAllToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(122, 22);
+            this.selectAllToolStripMenuItem2_36_Nguyen.Text = "Select &All";
             // 
-            // settinToolStripMenuItem
+            // settinToolStripMenuItem_36_Nguyen
             // 
-            this.settinToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fontToolStripMenuItem,
-            this.colorToolStripMenuItem1,
-            this.soundToolStripMenuItem1});
-            this.settinToolStripMenuItem.Name = "settinToolStripMenuItem";
-            this.settinToolStripMenuItem.Size = new System.Drawing.Size(56, 20);
-            this.settinToolStripMenuItem.Text = "Setting";
+            this.settinToolStripMenuItem_36_Nguyen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fontToolItem_36_Nguyen,
+            this.colorToolStripMenuItem1_36_Nguyen,
+            this.soundToolStripMenuItem1_36_Nguyen});
+            this.settinToolStripMenuItem_36_Nguyen.Name = "settinToolStripMenuItem_36_Nguyen";
+            this.settinToolStripMenuItem_36_Nguyen.Size = new System.Drawing.Size(56, 20);
+            this.settinToolStripMenuItem_36_Nguyen.Text = "Setting";
             // 
-            // fontToolStripMenuItem
+            // fontToolItem_36_Nguyen
             // 
-            this.fontToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fontEditToolStripMenuItem1,
-            this.fontColorToolStripMenuItem1});
-            this.fontToolStripMenuItem.Name = "fontToolStripMenuItem";
-            this.fontToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
-            this.fontToolStripMenuItem.Text = "Font";
+            this.fontToolItem_36_Nguyen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fontEditToolStripMenuItem1_36_Nguyen,
+            this.fontColorToolStripMenuItem1_36_Nguyen});
+            this.fontToolItem_36_Nguyen.Name = "fontToolItem_36_Nguyen";
+            this.fontToolItem_36_Nguyen.Size = new System.Drawing.Size(108, 22);
+            this.fontToolItem_36_Nguyen.Text = "Font";
             // 
-            // fontEditToolStripMenuItem1
+            // fontEditToolStripMenuItem1_36_Nguyen
             // 
-            this.fontEditToolStripMenuItem1.Name = "fontEditToolStripMenuItem1";
-            this.fontEditToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
-            this.fontEditToolStripMenuItem1.Text = "Font Edit";
-            this.fontEditToolStripMenuItem1.Click += new System.EventHandler(this.fontEditToolStripMenuItem1_Click);
+            this.fontEditToolStripMenuItem1_36_Nguyen.Name = "fontEditToolStripMenuItem1_36_Nguyen";
+            this.fontEditToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(130, 22);
+            this.fontEditToolStripMenuItem1_36_Nguyen.Text = "Font Edit";
+            this.fontEditToolStripMenuItem1_36_Nguyen.Click += new System.EventHandler(this.fontEditToolStripMenuItem1_36_Nguyen_Click);
             // 
-            // fontColorToolStripMenuItem1
+            // fontColorToolStripMenuItem1_36_Nguyen
             // 
-            this.fontColorToolStripMenuItem1.Name = "fontColorToolStripMenuItem1";
-            this.fontColorToolStripMenuItem1.Size = new System.Drawing.Size(130, 22);
-            this.fontColorToolStripMenuItem1.Text = "Font Color";
-            this.fontColorToolStripMenuItem1.Click += new System.EventHandler(this.fontColorToolStripMenuItem1_Click);
+            this.fontColorToolStripMenuItem1_36_Nguyen.Name = "fontColorToolStripMenuItem1_36_Nguyen";
+            this.fontColorToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(130, 22);
+            this.fontColorToolStripMenuItem1_36_Nguyen.Text = "Font Color";
+            this.fontColorToolStripMenuItem1_36_Nguyen.Click += new System.EventHandler(this.fontColorToolStripMenuItem1_36_Nguyen_Click);
             // 
-            // colorToolStripMenuItem1
+            // colorToolStripMenuItem1_36_Nguyen
             // 
-            this.colorToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.formColorToolStripMenuItem1,
+            this.colorToolStripMenuItem1_36_Nguyen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.formColorToolStripMenuItem1_36_Nguyen,
             this.controlColorToolStripMenuItem1});
-            this.colorToolStripMenuItem1.Name = "colorToolStripMenuItem1";
-            this.colorToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
-            this.colorToolStripMenuItem1.Text = "Color";
+            this.colorToolStripMenuItem1_36_Nguyen.Name = "colorToolStripMenuItem1_36_Nguyen";
+            this.colorToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(108, 22);
+            this.colorToolStripMenuItem1_36_Nguyen.Text = "Color";
             // 
-            // formColorToolStripMenuItem1
+            // formColorToolStripMenuItem1_36_Nguyen
             // 
-            this.formColorToolStripMenuItem1.Name = "formColorToolStripMenuItem1";
-            this.formColorToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
-            this.formColorToolStripMenuItem1.Text = "Form Color";
-            this.formColorToolStripMenuItem1.Click += new System.EventHandler(this.formColorToolStripMenuItem1_Click);
+            this.formColorToolStripMenuItem1_36_Nguyen.Name = "formColorToolStripMenuItem1_36_Nguyen";
+            this.formColorToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(146, 22);
+            this.formColorToolStripMenuItem1_36_Nguyen.Text = "Form Color";
+            this.formColorToolStripMenuItem1_36_Nguyen.Click += new System.EventHandler(this.formColorToolStripMenuItem1_36_Nguyen_Click);
             // 
             // controlColorToolStripMenuItem1
             // 
             this.controlColorToolStripMenuItem1.Name = "controlColorToolStripMenuItem1";
             this.controlColorToolStripMenuItem1.Size = new System.Drawing.Size(146, 22);
             this.controlColorToolStripMenuItem1.Text = "Control Color";
-            this.controlColorToolStripMenuItem1.Click += new System.EventHandler(this.controlColorToolStripMenuItem1_Click);
+            this.controlColorToolStripMenuItem1.Click += new System.EventHandler(this.controlColorToolStripMenuItem1_36_Nguyen_Click);
             // 
-            // soundToolStripMenuItem1
+            // soundToolStripMenuItem1_36_Nguyen
             // 
-            this.soundToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.playToolStripMenuItem1,
-            this.stopToolStripMenuItem1});
-            this.soundToolStripMenuItem1.Name = "soundToolStripMenuItem1";
-            this.soundToolStripMenuItem1.Size = new System.Drawing.Size(108, 22);
-            this.soundToolStripMenuItem1.Text = "Sound";
+            this.soundToolStripMenuItem1_36_Nguyen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.playToolStripMenuItem1_36_Nguyen,
+            this.stopToolStripMenuItem1_36_Nguyen});
+            this.soundToolStripMenuItem1_36_Nguyen.Name = "soundToolStripMenuItem1_36_Nguyen";
+            this.soundToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(108, 22);
+            this.soundToolStripMenuItem1_36_Nguyen.Text = "Sound";
             // 
-            // playToolStripMenuItem1
+            // playToolStripMenuItem1_36_Nguyen
             // 
-            this.playToolStripMenuItem1.Name = "playToolStripMenuItem1";
-            this.playToolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
-            this.playToolStripMenuItem1.Text = "Play";
-            this.playToolStripMenuItem1.Click += new System.EventHandler(this.playToolStripMenuItem1_Click);
+            this.playToolStripMenuItem1_36_Nguyen.Name = "playToolStripMenuItem1_36_Nguyen";
+            this.playToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(98, 22);
+            this.playToolStripMenuItem1_36_Nguyen.Text = "Play";
+            this.playToolStripMenuItem1_36_Nguyen.Click += new System.EventHandler(this.playToolStripMenuItem1_36_Nguyen_Click);
             // 
-            // stopToolStripMenuItem1
+            // stopToolStripMenuItem1_36_Nguyen
             // 
-            this.stopToolStripMenuItem1.Name = "stopToolStripMenuItem1";
-            this.stopToolStripMenuItem1.Size = new System.Drawing.Size(98, 22);
-            this.stopToolStripMenuItem1.Text = "Stop";
-            this.stopToolStripMenuItem1.Click += new System.EventHandler(this.stopToolStripMenuItem1_Click);
+            this.stopToolStripMenuItem1_36_Nguyen.Name = "stopToolStripMenuItem1_36_Nguyen";
+            this.stopToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(98, 22);
+            this.stopToolStripMenuItem1_36_Nguyen.Text = "Stop";
+            this.stopToolStripMenuItem1_36_Nguyen.Click += new System.EventHandler(this.stopToolStripMenuItem1_Click);
             // 
-            // helpToolStripMenuItem2
+            // helpToolStripMenuItem2_36_Nguyen
             // 
-            this.helpToolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem2_36_Nguyen.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripSeparator17});
-            this.helpToolStripMenuItem2.Name = "helpToolStripMenuItem2";
-            this.helpToolStripMenuItem2.Size = new System.Drawing.Size(44, 20);
-            this.helpToolStripMenuItem2.Text = "&Help";
-            this.helpToolStripMenuItem2.Click += new System.EventHandler(this.helpToolStripMenuItem2_Click);
+            this.helpToolStripMenuItem2_36_Nguyen.Name = "helpToolStripMenuItem2_36_Nguyen";
+            this.helpToolStripMenuItem2_36_Nguyen.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem2_36_Nguyen.Text = "&Help";
+            this.helpToolStripMenuItem2_36_Nguyen.Click += new System.EventHandler(this.helpToolStripMenuItem2_36_Nguyen_Click);
             // 
             // toolStripSeparator17
             // 
             this.toolStripSeparator17.Name = "toolStripSeparator17";
             this.toolStripSeparator17.Size = new System.Drawing.Size(57, 6);
             // 
-            // logOutToolStripMenuItem1
+            // logOutToolStripMenuItem1_36_Nguyen
             // 
-            this.logOutToolStripMenuItem1.Name = "logOutToolStripMenuItem1";
-            this.logOutToolStripMenuItem1.Size = new System.Drawing.Size(60, 20);
-            this.logOutToolStripMenuItem1.Text = "Log out";
-            this.logOutToolStripMenuItem1.Click += new System.EventHandler(this.logOutToolStripMenuItem1_Click);
+            this.logOutToolStripMenuItem1_36_Nguyen.Name = "logOutToolStripMenuItem1_36_Nguyen";
+            this.logOutToolStripMenuItem1_36_Nguyen.Size = new System.Drawing.Size(60, 20);
+            this.logOutToolStripMenuItem1_36_Nguyen.Text = "Log out";
+            this.logOutToolStripMenuItem1_36_Nguyen.Click += new System.EventHandler(this.logOutToolStripMenuItem1_36_Nguyen_Click);
             // 
             // fileToolStripMenuItem_36_Nguyen
             // 
@@ -937,100 +937,100 @@
             this.logOutToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.logOutToolStripMenuItem.Text = "Log out";
             // 
-            // contextMenuStrip1
+            // contextMenuStrip1_36_Nguyen
             // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            this.contextMenuStrip1_36_Nguyen.Name = "contextMenuStrip1";
+            this.contextMenuStrip1_36_Nguyen.Size = new System.Drawing.Size(61, 4);
             // 
-            // picAvatar
+            // picAvatar_36_Nguyen
             // 
-            this.picAvatar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.picAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.picAvatar.Image = global::Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties.Resources.Avater;
-            this.picAvatar.Location = new System.Drawing.Point(24, 21);
-            this.picAvatar.Name = "picAvatar";
-            this.picAvatar.Size = new System.Drawing.Size(92, 94);
-            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.picAvatar.TabIndex = 1;
-            this.picAvatar.TabStop = false;
-            this.picAvatar.Click += new System.EventHandler(this.picAvatar_Click);
+            this.picAvatar_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.picAvatar_36_Nguyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.picAvatar_36_Nguyen.Image = global::Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu.Properties.Resources.Avater;
+            this.picAvatar_36_Nguyen.Location = new System.Drawing.Point(24, 21);
+            this.picAvatar_36_Nguyen.Name = "picAvatar_36_Nguyen";
+            this.picAvatar_36_Nguyen.Size = new System.Drawing.Size(92, 94);
+            this.picAvatar_36_Nguyen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picAvatar_36_Nguyen.TabIndex = 1;
+            this.picAvatar_36_Nguyen.TabStop = false;
+            this.picAvatar_36_Nguyen.Click += new System.EventHandler(this.picAvatar_36_Nguyen_Click);
             // 
-            // lbHoTen
+            // lbHoTen_36_Nguyen
             // 
-            this.lbHoTen.AutoSize = true;
-            this.lbHoTen.BackColor = System.Drawing.Color.Honeydew;
-            this.lbHoTen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbHoTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbHoTen.Location = new System.Drawing.Point(24, 133);
-            this.lbHoTen.Name = "lbHoTen";
-            this.lbHoTen.Size = new System.Drawing.Size(92, 15);
-            this.lbHoTen.TabIndex = 2;
-            this.lbHoTen.Text = "Hồ Chí Nguyên";
+            this.lbHoTen_36_Nguyen.AutoSize = true;
+            this.lbHoTen_36_Nguyen.BackColor = System.Drawing.Color.Honeydew;
+            this.lbHoTen_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbHoTen_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbHoTen_36_Nguyen.Location = new System.Drawing.Point(24, 133);
+            this.lbHoTen_36_Nguyen.Name = "lbHoTen_36_Nguyen";
+            this.lbHoTen_36_Nguyen.Size = new System.Drawing.Size(92, 15);
+            this.lbHoTen_36_Nguyen.TabIndex = 2;
+            this.lbHoTen_36_Nguyen.Text = "Hồ Chí Nguyên";
             // 
-            // lbId
+            // lbId_36_Nguyen
             // 
-            this.lbId.AutoSize = true;
-            this.lbId.BackColor = System.Drawing.Color.Honeydew;
-            this.lbId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbId.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbId.Location = new System.Drawing.Point(59, 159);
-            this.lbId.Name = "lbId";
-            this.lbId.Size = new System.Drawing.Size(23, 15);
-            this.lbId.TabIndex = 3;
-            this.lbId.Text = "36";
+            this.lbId_36_Nguyen.AutoSize = true;
+            this.lbId_36_Nguyen.BackColor = System.Drawing.Color.Honeydew;
+            this.lbId_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbId_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbId_36_Nguyen.Location = new System.Drawing.Point(59, 159);
+            this.lbId_36_Nguyen.Name = "lbId_36_Nguyen";
+            this.lbId_36_Nguyen.Size = new System.Drawing.Size(23, 15);
+            this.lbId_36_Nguyen.TabIndex = 3;
+            this.lbId_36_Nguyen.Text = "36";
             // 
-            // TaskBar
+            // TaskBar_36_Nguyen
             // 
-            this.TaskBar.BackColor = System.Drawing.Color.SpringGreen;
-            this.TaskBar.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TaskBar.Controls.Add(this.btnTaiKhoanNganHang);
-            this.TaskBar.Controls.Add(this.btnTaiChinh);
-            this.TaskBar.Controls.Add(this.lbDuongKe);
-            this.TaskBar.Controls.Add(this.lbId);
-            this.TaskBar.Controls.Add(this.lbHoTen);
-            this.TaskBar.Controls.Add(this.picAvatar);
-            this.TaskBar.Dock = System.Windows.Forms.DockStyle.Left;
-            this.TaskBar.Location = new System.Drawing.Point(0, 24);
-            this.TaskBar.Name = "TaskBar";
-            this.TaskBar.Size = new System.Drawing.Size(138, 411);
-            this.TaskBar.TabIndex = 4;
+            this.TaskBar_36_Nguyen.BackColor = System.Drawing.Color.SpringGreen;
+            this.TaskBar_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TaskBar_36_Nguyen.Controls.Add(this.btnTaiKhoanNganHang_36_Nguyen);
+            this.TaskBar_36_Nguyen.Controls.Add(this.btnTaiChinh_36_Nguyen);
+            this.TaskBar_36_Nguyen.Controls.Add(this.lbDuongKe_36_Nguyen);
+            this.TaskBar_36_Nguyen.Controls.Add(this.lbId_36_Nguyen);
+            this.TaskBar_36_Nguyen.Controls.Add(this.lbHoTen_36_Nguyen);
+            this.TaskBar_36_Nguyen.Controls.Add(this.picAvatar_36_Nguyen);
+            this.TaskBar_36_Nguyen.Dock = System.Windows.Forms.DockStyle.Left;
+            this.TaskBar_36_Nguyen.Location = new System.Drawing.Point(0, 24);
+            this.TaskBar_36_Nguyen.Name = "TaskBar_36_Nguyen";
+            this.TaskBar_36_Nguyen.Size = new System.Drawing.Size(138, 411);
+            this.TaskBar_36_Nguyen.TabIndex = 4;
             // 
-            // btnTaiKhoanNganHang
+            // btnTaiKhoanNganHang_36_Nguyen
             // 
-            this.btnTaiKhoanNganHang.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnTaiKhoanNganHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTaiKhoanNganHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiKhoanNganHang.Location = new System.Drawing.Point(8, 295);
-            this.btnTaiKhoanNganHang.Name = "btnTaiKhoanNganHang";
-            this.btnTaiKhoanNganHang.Size = new System.Drawing.Size(120, 29);
-            this.btnTaiKhoanNganHang.TabIndex = 6;
-            this.btnTaiKhoanNganHang.Text = "Ngân hàng";
-            this.btnTaiKhoanNganHang.UseVisualStyleBackColor = false;
-            this.btnTaiKhoanNganHang.Click += new System.EventHandler(this.btnTaiKhoanNganHang_Click);
+            this.btnTaiKhoanNganHang_36_Nguyen.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnTaiKhoanNganHang_36_Nguyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTaiKhoanNganHang_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiKhoanNganHang_36_Nguyen.Location = new System.Drawing.Point(8, 295);
+            this.btnTaiKhoanNganHang_36_Nguyen.Name = "btnTaiKhoanNganHang_36_Nguyen";
+            this.btnTaiKhoanNganHang_36_Nguyen.Size = new System.Drawing.Size(120, 29);
+            this.btnTaiKhoanNganHang_36_Nguyen.TabIndex = 6;
+            this.btnTaiKhoanNganHang_36_Nguyen.Text = "Ngân hàng";
+            this.btnTaiKhoanNganHang_36_Nguyen.UseVisualStyleBackColor = false;
+            this.btnTaiKhoanNganHang_36_Nguyen.Click += new System.EventHandler(this.btnTaiKhoanNganHang_36_Nguyen_Click);
             // 
-            // btnTaiChinh
+            // btnTaiChinh_36_Nguyen
             // 
-            this.btnTaiChinh.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btnTaiChinh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTaiChinh.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTaiChinh.Location = new System.Drawing.Point(8, 242);
-            this.btnTaiChinh.Name = "btnTaiChinh";
-            this.btnTaiChinh.Size = new System.Drawing.Size(120, 29);
-            this.btnTaiChinh.TabIndex = 5;
-            this.btnTaiChinh.Text = "Tài chính";
-            this.btnTaiChinh.UseVisualStyleBackColor = false;
-            this.btnTaiChinh.Click += new System.EventHandler(this.btnTaiChinh_Click);
+            this.btnTaiChinh_36_Nguyen.BackColor = System.Drawing.Color.LavenderBlush;
+            this.btnTaiChinh_36_Nguyen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnTaiChinh_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTaiChinh_36_Nguyen.Location = new System.Drawing.Point(8, 242);
+            this.btnTaiChinh_36_Nguyen.Name = "btnTaiChinh_36_Nguyen";
+            this.btnTaiChinh_36_Nguyen.Size = new System.Drawing.Size(120, 29);
+            this.btnTaiChinh_36_Nguyen.TabIndex = 5;
+            this.btnTaiChinh_36_Nguyen.Text = "Tài chính";
+            this.btnTaiChinh_36_Nguyen.UseVisualStyleBackColor = false;
+            this.btnTaiChinh_36_Nguyen.Click += new System.EventHandler(this.btnTaiChinh_36_Nguyen_Click);
             // 
-            // lbDuongKe
+            // lbDuongKe_36_Nguyen
             // 
-            this.lbDuongKe.AutoSize = true;
-            this.lbDuongKe.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.lbDuongKe.ForeColor = System.Drawing.Color.Black;
-            this.lbDuongKe.Location = new System.Drawing.Point(5, 189);
-            this.lbDuongKe.Name = "lbDuongKe";
-            this.lbDuongKe.Size = new System.Drawing.Size(130, 13);
-            this.lbDuongKe.TabIndex = 4;
-            this.lbDuongKe.Text = "-----------------------------------------";
+            this.lbDuongKe_36_Nguyen.AutoSize = true;
+            this.lbDuongKe_36_Nguyen.BackColor = System.Drawing.SystemColors.InactiveCaptionText;
+            this.lbDuongKe_36_Nguyen.ForeColor = System.Drawing.Color.Black;
+            this.lbDuongKe_36_Nguyen.Location = new System.Drawing.Point(5, 189);
+            this.lbDuongKe_36_Nguyen.Name = "lbDuongKe_36_Nguyen";
+            this.lbDuongKe_36_Nguyen.Size = new System.Drawing.Size(130, 13);
+            this.lbDuongKe_36_Nguyen.TabIndex = 4;
+            this.lbDuongKe_36_Nguyen.Text = "-----------------------------------------";
             // 
             // splitContainer1
             // 
@@ -1043,12 +1043,12 @@
             this.splitContainer1.Panel1.BackColor = System.Drawing.Color.Transparent;
             this.splitContainer1.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.splitContainer1.Panel1.Controls.Add(this.lbDateTime_36_Nguyen);
-            this.splitContainer1.Panel1.Controls.Add(this.lbBangTin_36_Nguyen);
+            this.splitContainer1.Panel1.Controls.Add(this.lbBangTin_36_Nguyen_36_Nguyen);
             this.splitContainer1.Panel1.Controls.Add(this.picQuangCao_36_Nguyen);
             // 
             // splitContainer1.Panel2
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.gridBangThoiKhoaBieu);
+            this.splitContainer1.Panel2.Controls.Add(this.gridBangThoiKhoaBieu_36_Nguyen);
             this.splitContainer1.Size = new System.Drawing.Size(707, 411);
             this.splitContainer1.SplitterDistance = 182;
             this.splitContainer1.TabIndex = 0;
@@ -1066,18 +1066,18 @@
             this.lbDateTime_36_Nguyen.Text = "Thời gian";
             this.lbDateTime_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbBangTin_36_Nguyen
+            // lbBangTin_36_Nguyen_36_Nguyen
             // 
-            this.lbBangTin_36_Nguyen.BackColor = System.Drawing.Color.Chartreuse;
-            this.lbBangTin_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.lbBangTin_36_Nguyen.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lbBangTin_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbBangTin_36_Nguyen.Location = new System.Drawing.Point(0, 0);
-            this.lbBangTin_36_Nguyen.Name = "lbBangTin_36_Nguyen";
-            this.lbBangTin_36_Nguyen.Size = new System.Drawing.Size(182, 40);
-            this.lbBangTin_36_Nguyen.TabIndex = 1;
-            this.lbBangTin_36_Nguyen.Text = "BẢNG TIN";
-            this.lbBangTin_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lbBangTin_36_Nguyen_36_Nguyen.BackColor = System.Drawing.Color.Chartreuse;
+            this.lbBangTin_36_Nguyen_36_Nguyen.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lbBangTin_36_Nguyen_36_Nguyen.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbBangTin_36_Nguyen_36_Nguyen.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbBangTin_36_Nguyen_36_Nguyen.Location = new System.Drawing.Point(0, 0);
+            this.lbBangTin_36_Nguyen_36_Nguyen.Name = "lbBangTin_36_Nguyen_36_Nguyen";
+            this.lbBangTin_36_Nguyen_36_Nguyen.Size = new System.Drawing.Size(182, 40);
+            this.lbBangTin_36_Nguyen_36_Nguyen.TabIndex = 1;
+            this.lbBangTin_36_Nguyen_36_Nguyen.Text = "BẢNG TIN";
+            this.lbBangTin_36_Nguyen_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // picQuangCao_36_Nguyen
             // 
@@ -1094,14 +1094,14 @@
             this.picQuangCao_36_Nguyen.TabIndex = 0;
             this.picQuangCao_36_Nguyen.TabStop = false;
             // 
-            // gridBangThoiKhoaBieu
+            // gridBangThoiKhoaBieu_36_Nguyen
             // 
-            this.gridBangThoiKhoaBieu.AllowUserToOrderColumns = true;
-            this.gridBangThoiKhoaBieu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.gridBangThoiKhoaBieu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
-            this.gridBangThoiKhoaBieu.BackgroundColor = System.Drawing.Color.LightYellow;
-            this.gridBangThoiKhoaBieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridBangThoiKhoaBieu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gridBangThoiKhoaBieu_36_Nguyen.AllowUserToOrderColumns = true;
+            this.gridBangThoiKhoaBieu_36_Nguyen.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridBangThoiKhoaBieu_36_Nguyen.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.gridBangThoiKhoaBieu_36_Nguyen.BackgroundColor = System.Drawing.Color.LightYellow;
+            this.gridBangThoiKhoaBieu_36_Nguyen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridBangThoiKhoaBieu_36_Nguyen.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.Thu3,
             this.Thu4,
@@ -1110,11 +1110,11 @@
             this.Thu7,
             this.ChuNhat,
             this.ghiChu});
-            this.gridBangThoiKhoaBieu.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridBangThoiKhoaBieu.Location = new System.Drawing.Point(0, 0);
-            this.gridBangThoiKhoaBieu.Name = "gridBangThoiKhoaBieu";
-            this.gridBangThoiKhoaBieu.Size = new System.Drawing.Size(521, 411);
-            this.gridBangThoiKhoaBieu.TabIndex = 1;
+            this.gridBangThoiKhoaBieu_36_Nguyen.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridBangThoiKhoaBieu_36_Nguyen.Location = new System.Drawing.Point(0, 0);
+            this.gridBangThoiKhoaBieu_36_Nguyen.Name = "gridBangThoiKhoaBieu_36_Nguyen";
+            this.gridBangThoiKhoaBieu_36_Nguyen.Size = new System.Drawing.Size(521, 411);
+            this.gridBangThoiKhoaBieu_36_Nguyen.TabIndex = 1;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -1173,7 +1173,7 @@
             // 
             this.timerDateTime_36_Nguyen.Tick += new System.EventHandler(this.timerDateTime_36_Nguyen_Tick);
             // 
-            // FormMain
+            // FormMain_36_Nguyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -1181,28 +1181,28 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(845, 435);
             this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.TaskBar);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.TaskBar_36_Nguyen);
+            this.Controls.Add(this.menuStrip1_36_Nguyen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.menuStrip1_36_Nguyen;
             this.MinimumSize = new System.Drawing.Size(861, 474);
-            this.Name = "FormMain";
+            this.Name = "FormMain_36_Nguyen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Thời Gian Biểu Và Chi Tiêu";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.FormMain_Load);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
-            this.TaskBar.ResumeLayout(false);
-            this.TaskBar.PerformLayout();
+            this.Load += new System.EventHandler(this.FormMain_36_Nguyen_Load);
+            this.menuStrip1_36_Nguyen.ResumeLayout(false);
+            this.menuStrip1_36_Nguyen.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar_36_Nguyen)).EndInit();
+            this.TaskBar_36_Nguyen.ResumeLayout(false);
+            this.TaskBar_36_Nguyen.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picQuangCao_36_Nguyen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridBangThoiKhoaBieu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridBangThoiKhoaBieu_36_Nguyen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1210,7 +1210,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip1_36_Nguyen;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
@@ -1234,7 +1234,7 @@
         private System.Windows.Forms.ToolStripMenuItem contentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem settingToolStripMenuItem;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1_36_Nguyen;
         private System.Windows.Forms.ToolStripMenuItem fontsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backgroundColorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem;
@@ -1242,15 +1242,15 @@
         private System.Windows.Forms.ToolStripMenuItem fontsColorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backFormToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem backControlToolStripMenuItem;
-        private System.Windows.Forms.PictureBox picAvatar;
-        private System.Windows.Forms.Label lbHoTen;
-        private System.Windows.Forms.Label lbId;
-        private System.Windows.Forms.Panel TaskBar;
-        private System.Windows.Forms.Label lbDuongKe;
+        private System.Windows.Forms.PictureBox picAvatar_36_Nguyen;
+        private System.Windows.Forms.Label lbHoTen_36_Nguyen;
+        private System.Windows.Forms.Label lbId_36_Nguyen;
+        private System.Windows.Forms.Panel TaskBar_36_Nguyen;
+        private System.Windows.Forms.Label lbDuongKe_36_Nguyen;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView gridBangThoiKhoaBieu;
-        private System.Windows.Forms.Button btnTaiKhoanNganHang;
-        private System.Windows.Forms.Button btnTaiChinh;
+        private System.Windows.Forms.DataGridView gridBangThoiKhoaBieu_36_Nguyen;
+        private System.Windows.Forms.Button btnTaiKhoanNganHang_36_Nguyen;
+        private System.Windows.Forms.Button btnTaiChinh_36_Nguyen;
         private System.Windows.Forms.ToolStripMenuItem soundsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem playSoundToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem stopSoundToolStripMenuItem;
@@ -1299,39 +1299,39 @@
         private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem;
         private System.Windows.Forms.Timer timerImg_36_Nguyen;
         private System.Windows.Forms.PictureBox picQuangCao_36_Nguyen;
-        private System.Windows.Forms.Label lbBangTin_36_Nguyen;
-        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem2;
+        private System.Windows.Forms.Label lbBangTin_36_Nguyen_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem1_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem newToolStripMenuItem2_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem2_36_Nguyen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator12;
-        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem2_36_Nguyen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator13;
-        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem printPreviewToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem2_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem printPreviewToolStripMenuItem2_36_Nguyen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator14;
-        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem2_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem editToolStripMenuItem1_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem undoToolStripMenuItem2_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem redoToolStripMenuItem2_36_Nguyen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator15;
-        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem cutToolStripMenuItem2_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem copyToolStripMenuItem2_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem pasteToolStripMenuItem2_36_Nguyen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator16;
-        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem selectAllToolStripMenuItem2_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem2_36_Nguyen;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator17;
-        private System.Windows.Forms.ToolStripMenuItem settinToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem fontToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem fontEditToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem fontColorToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem formColorToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem settinToolStripMenuItem_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem logOutToolStripMenuItem1_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem fontToolItem_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem fontEditToolStripMenuItem1_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem fontColorToolStripMenuItem1_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem colorToolStripMenuItem1_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem formColorToolStripMenuItem1_36_Nguyen;
         private System.Windows.Forms.ToolStripMenuItem controlColorToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem soundToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem playToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem soundToolStripMenuItem1_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem playToolStripMenuItem1_36_Nguyen;
+        private System.Windows.Forms.ToolStripMenuItem stopToolStripMenuItem1_36_Nguyen;
         private System.Windows.Forms.Label lbDateTime_36_Nguyen;
         private System.Windows.Forms.Timer timerDateTime_36_Nguyen;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;

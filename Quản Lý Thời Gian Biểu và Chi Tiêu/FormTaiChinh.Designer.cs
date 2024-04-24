@@ -1,6 +1,6 @@
 ﻿namespace Quản_Lý_Thời_Gian_Biểu_và_Chi_Tiêu
 {
-    partial class FormTaiChinh
+    partial class FormTaiChinh_36_Nguyen
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTaiChinh));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTaiChinh_36_Nguyen));
             this.lbTieuDeTaiChinh_36_Nguyen = new System.Windows.Forms.Label();
-            this.cbNguonTien1 = new System.Windows.Forms.ComboBox();
+            this.cbNguonTien1_36_Nguyen = new System.Windows.Forms.ComboBox();
             this.lbNguonTien1_36_Nguyen = new System.Windows.Forms.Label();
             this.lbNguonTien2_36_Nguyen = new System.Windows.Forms.Label();
-            this.cbNguonTien2 = new System.Windows.Forms.ComboBox();
+            this.cbNguonTien2_36_Nguyen = new System.Windows.Forms.ComboBox();
             this.lbNguonTien3_36_Nguyen = new System.Windows.Forms.Label();
-            this.cbNguonTien3 = new System.Windows.Forms.ComboBox();
+            this.cbNguonTien3_36_Nguyen = new System.Windows.Forms.ComboBox();
             this.lbNguonTien4_36_Nguyen = new System.Windows.Forms.Label();
-            this.cbNguonTien4 = new System.Windows.Forms.ComboBox();
-            this.txtNguonTien1 = new System.Windows.Forms.TextBox();
-            this.txtNguonTien4 = new System.Windows.Forms.TextBox();
-            this.txtNguonTien3 = new System.Windows.Forms.TextBox();
-            this.txtNguonTien2 = new System.Windows.Forms.TextBox();
+            this.cbNguonTien4_36_Nguyen = new System.Windows.Forms.ComboBox();
+            this.txtNguonTien1_36_Nguyen = new System.Windows.Forms.TextBox();
+            this.txtNguonTien4_36_Nguyen = new System.Windows.Forms.TextBox();
+            this.txtNguonTien3_36_Nguyen = new System.Windows.Forms.TextBox();
+            this.txtNguonTien2_36_Nguyen = new System.Windows.Forms.TextBox();
             this.lbTong_36_Nguyen = new System.Windows.Forms.Label();
-            this.txtTong = new System.Windows.Forms.TextBox();
+            this.txtTong_36_Nguyen = new System.Windows.Forms.TextBox();
             this.listBoxChiTieu_36_Nguyen = new System.Windows.Forms.ListBox();
             this.cbMucDich_36_Nguyen = new System.Windows.Forms.ComboBox();
             this.lbMucDich_36_Nguyen = new System.Windows.Forms.Label();
@@ -72,12 +72,12 @@
             this.lbTieuDeTaiChinh_36_Nguyen.Text = "Tài chính của bạn";
             this.lbTieuDeTaiChinh_36_Nguyen.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // cbNguonTien1
+            // cbNguonTien1_36_Nguyen
             // 
-            this.cbNguonTien1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbNguonTien1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbNguonTien1.FormattingEnabled = true;
-            this.cbNguonTien1.Items.AddRange(new object[] {
+            this.cbNguonTien1_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbNguonTien1_36_Nguyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbNguonTien1_36_Nguyen.FormattingEnabled = true;
+            this.cbNguonTien1_36_Nguyen.Items.AddRange(new object[] {
             "Agribank",
             "Vietcombank",
             "Techcombank",
@@ -94,10 +94,10 @@
             "Momo",
             "ZaloPay",
             "VNPay"});
-            this.cbNguonTien1.Location = new System.Drawing.Point(22, 81);
-            this.cbNguonTien1.Name = "cbNguonTien1";
-            this.cbNguonTien1.Size = new System.Drawing.Size(160, 21);
-            this.cbNguonTien1.TabIndex = 1;
+            this.cbNguonTien1_36_Nguyen.Location = new System.Drawing.Point(22, 81);
+            this.cbNguonTien1_36_Nguyen.Name = "cbNguonTien1_36_Nguyen";
+            this.cbNguonTien1_36_Nguyen.Size = new System.Drawing.Size(160, 21);
+            this.cbNguonTien1_36_Nguyen.TabIndex = 1;
             // 
             // lbNguonTien1_36_Nguyen
             // 
@@ -121,12 +121,12 @@
             this.lbNguonTien2_36_Nguyen.TabIndex = 4;
             this.lbNguonTien2_36_Nguyen.Text = "Nguồn tiền 2";
             // 
-            // cbNguonTien2
+            // cbNguonTien2_36_Nguyen
             // 
-            this.cbNguonTien2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbNguonTien2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbNguonTien2.FormattingEnabled = true;
-            this.cbNguonTien2.Items.AddRange(new object[] {
+            this.cbNguonTien2_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbNguonTien2_36_Nguyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbNguonTien2_36_Nguyen.FormattingEnabled = true;
+            this.cbNguonTien2_36_Nguyen.Items.AddRange(new object[] {
             "Agribank",
             "Vietcombank",
             "Techcombank",
@@ -143,10 +143,10 @@
             "Momo",
             "ZaloPay",
             "VNPay"});
-            this.cbNguonTien2.Location = new System.Drawing.Point(233, 81);
-            this.cbNguonTien2.Name = "cbNguonTien2";
-            this.cbNguonTien2.Size = new System.Drawing.Size(160, 21);
-            this.cbNguonTien2.TabIndex = 3;
+            this.cbNguonTien2_36_Nguyen.Location = new System.Drawing.Point(233, 81);
+            this.cbNguonTien2_36_Nguyen.Name = "cbNguonTien2_36_Nguyen";
+            this.cbNguonTien2_36_Nguyen.Size = new System.Drawing.Size(160, 21);
+            this.cbNguonTien2_36_Nguyen.TabIndex = 3;
             // 
             // lbNguonTien3_36_Nguyen
             // 
@@ -159,12 +159,12 @@
             this.lbNguonTien3_36_Nguyen.TabIndex = 6;
             this.lbNguonTien3_36_Nguyen.Text = "Nguồn tiền 3";
             // 
-            // cbNguonTien3
+            // cbNguonTien3_36_Nguyen
             // 
-            this.cbNguonTien3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbNguonTien3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbNguonTien3.FormattingEnabled = true;
-            this.cbNguonTien3.Items.AddRange(new object[] {
+            this.cbNguonTien3_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbNguonTien3_36_Nguyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbNguonTien3_36_Nguyen.FormattingEnabled = true;
+            this.cbNguonTien3_36_Nguyen.Items.AddRange(new object[] {
             "Agribank",
             "Vietcombank",
             "Techcombank",
@@ -181,10 +181,10 @@
             "Momo",
             "ZaloPay",
             "VNPay"});
-            this.cbNguonTien3.Location = new System.Drawing.Point(436, 81);
-            this.cbNguonTien3.Name = "cbNguonTien3";
-            this.cbNguonTien3.Size = new System.Drawing.Size(160, 21);
-            this.cbNguonTien3.TabIndex = 5;
+            this.cbNguonTien3_36_Nguyen.Location = new System.Drawing.Point(436, 81);
+            this.cbNguonTien3_36_Nguyen.Name = "cbNguonTien3_36_Nguyen";
+            this.cbNguonTien3_36_Nguyen.Size = new System.Drawing.Size(160, 21);
+            this.cbNguonTien3_36_Nguyen.TabIndex = 5;
             // 
             // lbNguonTien4_36_Nguyen
             // 
@@ -197,12 +197,12 @@
             this.lbNguonTien4_36_Nguyen.TabIndex = 8;
             this.lbNguonTien4_36_Nguyen.Text = "Nguồn tiền 4";
             // 
-            // cbNguonTien4
+            // cbNguonTien4_36_Nguyen
             // 
-            this.cbNguonTien4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.cbNguonTien4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbNguonTien4.FormattingEnabled = true;
-            this.cbNguonTien4.Items.AddRange(new object[] {
+            this.cbNguonTien4_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.cbNguonTien4_36_Nguyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbNguonTien4_36_Nguyen.FormattingEnabled = true;
+            this.cbNguonTien4_36_Nguyen.Items.AddRange(new object[] {
             "Agribank",
             "Vietcombank",
             "Techcombank",
@@ -219,58 +219,58 @@
             "Momo",
             "ZaloPay",
             "VNPay"});
-            this.cbNguonTien4.Location = new System.Drawing.Point(641, 81);
-            this.cbNguonTien4.Name = "cbNguonTien4";
-            this.cbNguonTien4.Size = new System.Drawing.Size(160, 21);
-            this.cbNguonTien4.TabIndex = 7;
+            this.cbNguonTien4_36_Nguyen.Location = new System.Drawing.Point(641, 81);
+            this.cbNguonTien4_36_Nguyen.Name = "cbNguonTien4_36_Nguyen";
+            this.cbNguonTien4_36_Nguyen.Size = new System.Drawing.Size(160, 21);
+            this.cbNguonTien4_36_Nguyen.TabIndex = 7;
             // 
-            // txtNguonTien1
+            // txtNguonTien1_36_Nguyen
             // 
-            this.txtNguonTien1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtNguonTien1.Location = new System.Drawing.Point(22, 114);
-            this.txtNguonTien1.Name = "txtNguonTien1";
-            this.txtNguonTien1.Size = new System.Drawing.Size(159, 20);
-            this.txtNguonTien1.TabIndex = 9;
-            this.txtNguonTien1.Text = "0";
-            this.txtNguonTien1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtNguonTien1.TextChanged += new System.EventHandler(this.txtNguonTien1_TextChanged);
-            this.txtNguonTien1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien1_KeyPress);
+            this.txtNguonTien1_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtNguonTien1_36_Nguyen.Location = new System.Drawing.Point(22, 114);
+            this.txtNguonTien1_36_Nguyen.Name = "txtNguonTien1_36_Nguyen";
+            this.txtNguonTien1_36_Nguyen.Size = new System.Drawing.Size(159, 20);
+            this.txtNguonTien1_36_Nguyen.TabIndex = 9;
+            this.txtNguonTien1_36_Nguyen.Text = "0";
+            this.txtNguonTien1_36_Nguyen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNguonTien1_36_Nguyen.TextChanged += new System.EventHandler(this.txtNguonTien1_36_Nguyen_TextChanged);
+            this.txtNguonTien1_36_Nguyen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien1_36_Nguyen_KeyPress);
             // 
-            // txtNguonTien4
+            // txtNguonTien4_36_Nguyen
             // 
-            this.txtNguonTien4.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtNguonTien4.Location = new System.Drawing.Point(641, 114);
-            this.txtNguonTien4.Name = "txtNguonTien4";
-            this.txtNguonTien4.Size = new System.Drawing.Size(159, 20);
-            this.txtNguonTien4.TabIndex = 10;
-            this.txtNguonTien4.Text = "0";
-            this.txtNguonTien4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtNguonTien4.TextChanged += new System.EventHandler(this.txtNguonTien4_TextChanged);
-            this.txtNguonTien4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien4_KeyPress);
+            this.txtNguonTien4_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtNguonTien4_36_Nguyen.Location = new System.Drawing.Point(641, 114);
+            this.txtNguonTien4_36_Nguyen.Name = "txtNguonTien4_36_Nguyen";
+            this.txtNguonTien4_36_Nguyen.Size = new System.Drawing.Size(159, 20);
+            this.txtNguonTien4_36_Nguyen.TabIndex = 10;
+            this.txtNguonTien4_36_Nguyen.Text = "0";
+            this.txtNguonTien4_36_Nguyen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNguonTien4_36_Nguyen.TextChanged += new System.EventHandler(this.txtNguonTien4_36_Nguyen_TextChanged);
+            this.txtNguonTien4_36_Nguyen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien4_36_Nguyen_KeyPress);
             // 
-            // txtNguonTien3
+            // txtNguonTien3_36_Nguyen
             // 
-            this.txtNguonTien3.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtNguonTien3.Location = new System.Drawing.Point(436, 114);
-            this.txtNguonTien3.Name = "txtNguonTien3";
-            this.txtNguonTien3.Size = new System.Drawing.Size(159, 20);
-            this.txtNguonTien3.TabIndex = 11;
-            this.txtNguonTien3.Text = "0";
-            this.txtNguonTien3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtNguonTien3.TextChanged += new System.EventHandler(this.txtNguonTien3_TextChanged);
-            this.txtNguonTien3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien3_KeyPress);
+            this.txtNguonTien3_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtNguonTien3_36_Nguyen.Location = new System.Drawing.Point(436, 114);
+            this.txtNguonTien3_36_Nguyen.Name = "txtNguonTien3_36_Nguyen";
+            this.txtNguonTien3_36_Nguyen.Size = new System.Drawing.Size(159, 20);
+            this.txtNguonTien3_36_Nguyen.TabIndex = 11;
+            this.txtNguonTien3_36_Nguyen.Text = "0";
+            this.txtNguonTien3_36_Nguyen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNguonTien3_36_Nguyen.TextChanged += new System.EventHandler(this.txtNguonTien3_36_Nguyen_TextChanged);
+            this.txtNguonTien3_36_Nguyen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien3_36_Nguyen_KeyPress);
             // 
-            // txtNguonTien2
+            // txtNguonTien2_36_Nguyen
             // 
-            this.txtNguonTien2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtNguonTien2.Location = new System.Drawing.Point(234, 114);
-            this.txtNguonTien2.Name = "txtNguonTien2";
-            this.txtNguonTien2.Size = new System.Drawing.Size(159, 20);
-            this.txtNguonTien2.TabIndex = 12;
-            this.txtNguonTien2.Text = "0";
-            this.txtNguonTien2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtNguonTien2.TextChanged += new System.EventHandler(this.txtNguonTien2_TextChanged);
-            this.txtNguonTien2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien2_KeyPress);
+            this.txtNguonTien2_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtNguonTien2_36_Nguyen.Location = new System.Drawing.Point(234, 114);
+            this.txtNguonTien2_36_Nguyen.Name = "txtNguonTien2_36_Nguyen";
+            this.txtNguonTien2_36_Nguyen.Size = new System.Drawing.Size(159, 20);
+            this.txtNguonTien2_36_Nguyen.TabIndex = 12;
+            this.txtNguonTien2_36_Nguyen.Text = "0";
+            this.txtNguonTien2_36_Nguyen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNguonTien2_36_Nguyen.TextChanged += new System.EventHandler(this.txtNguonTien2_36_Nguyen_TextChanged);
+            this.txtNguonTien2_36_Nguyen.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNguonTien2_36_Nguyen_KeyPress);
             // 
             // lbTong_36_Nguyen
             // 
@@ -283,16 +283,16 @@
             this.lbTong_36_Nguyen.TabIndex = 13;
             this.lbTong_36_Nguyen.Text = "Tổng số tiền có: ";
             // 
-            // txtTong
+            // txtTong_36_Nguyen
             // 
-            this.txtTong.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.txtTong.Location = new System.Drawing.Point(368, 157);
-            this.txtTong.Name = "txtTong";
-            this.txtTong.ReadOnly = true;
-            this.txtTong.Size = new System.Drawing.Size(431, 20);
-            this.txtTong.TabIndex = 14;
-            this.txtTong.Text = "0";
-            this.txtTong.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtTong_36_Nguyen.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.txtTong_36_Nguyen.Location = new System.Drawing.Point(368, 157);
+            this.txtTong_36_Nguyen.Name = "txtTong_36_Nguyen";
+            this.txtTong_36_Nguyen.ReadOnly = true;
+            this.txtTong_36_Nguyen.Size = new System.Drawing.Size(431, 20);
+            this.txtTong_36_Nguyen.TabIndex = 14;
+            this.txtTong_36_Nguyen.Text = "0";
+            this.txtTong_36_Nguyen.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // listBoxChiTieu_36_Nguyen
             // 
@@ -432,7 +432,7 @@
             this.btnXuatDanhSach_36_Nguyen.UseVisualStyleBackColor = false;
             this.btnXuatDanhSach_36_Nguyen.Click += new System.EventHandler(this.btnXuatDanhSach_36_Nguyen_Click);
             // 
-            // FormTaiChinh
+            // FormTaiChinh_36_Nguyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -450,28 +450,29 @@
             this.Controls.Add(this.lbMucDich_36_Nguyen);
             this.Controls.Add(this.cbMucDich_36_Nguyen);
             this.Controls.Add(this.listBoxChiTieu_36_Nguyen);
-            this.Controls.Add(this.txtTong);
+            this.Controls.Add(this.txtTong_36_Nguyen);
             this.Controls.Add(this.lbTong_36_Nguyen);
-            this.Controls.Add(this.txtNguonTien2);
-            this.Controls.Add(this.txtNguonTien3);
-            this.Controls.Add(this.txtNguonTien4);
-            this.Controls.Add(this.txtNguonTien1);
+            this.Controls.Add(this.txtNguonTien2_36_Nguyen);
+            this.Controls.Add(this.txtNguonTien3_36_Nguyen);
+            this.Controls.Add(this.txtNguonTien4_36_Nguyen);
+            this.Controls.Add(this.txtNguonTien1_36_Nguyen);
             this.Controls.Add(this.lbNguonTien4_36_Nguyen);
-            this.Controls.Add(this.cbNguonTien4);
+            this.Controls.Add(this.cbNguonTien4_36_Nguyen);
             this.Controls.Add(this.lbNguonTien3_36_Nguyen);
-            this.Controls.Add(this.cbNguonTien3);
+            this.Controls.Add(this.cbNguonTien3_36_Nguyen);
             this.Controls.Add(this.lbNguonTien2_36_Nguyen);
-            this.Controls.Add(this.cbNguonTien2);
+            this.Controls.Add(this.cbNguonTien2_36_Nguyen);
             this.Controls.Add(this.lbNguonTien1_36_Nguyen);
-            this.Controls.Add(this.cbNguonTien1);
+            this.Controls.Add(this.cbNguonTien1_36_Nguyen);
             this.Controls.Add(this.lbTieuDeTaiChinh_36_Nguyen);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(835, 516);
-            this.Name = "FormTaiChinh";
+            this.Name = "FormTaiChinh_36_Nguyen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Quản lí tài chính";
-            this.Load += new System.EventHandler(this.FormTaiChinh_Load);
+            this.Load += new System.EventHandler(this.FormTaiChinh_36_Nguyen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,20 +481,20 @@
         #endregion
 
         private System.Windows.Forms.Label lbTieuDeTaiChinh_36_Nguyen;
-        private System.Windows.Forms.ComboBox cbNguonTien1;
+        private System.Windows.Forms.ComboBox cbNguonTien1_36_Nguyen;
         private System.Windows.Forms.Label lbNguonTien1_36_Nguyen;
         private System.Windows.Forms.Label lbNguonTien2_36_Nguyen;
-        private System.Windows.Forms.ComboBox cbNguonTien2;
+        private System.Windows.Forms.ComboBox cbNguonTien2_36_Nguyen;
         private System.Windows.Forms.Label lbNguonTien3_36_Nguyen;
-        private System.Windows.Forms.ComboBox cbNguonTien3;
+        private System.Windows.Forms.ComboBox cbNguonTien3_36_Nguyen;
         private System.Windows.Forms.Label lbNguonTien4_36_Nguyen;
-        private System.Windows.Forms.ComboBox cbNguonTien4;
-        private System.Windows.Forms.TextBox txtNguonTien1;
-        private System.Windows.Forms.TextBox txtNguonTien4;
-        private System.Windows.Forms.TextBox txtNguonTien3;
-        private System.Windows.Forms.TextBox txtNguonTien2;
+        private System.Windows.Forms.ComboBox cbNguonTien4_36_Nguyen;
+        private System.Windows.Forms.TextBox txtNguonTien1_36_Nguyen;
+        private System.Windows.Forms.TextBox txtNguonTien4_36_Nguyen;
+        private System.Windows.Forms.TextBox txtNguonTien3_36_Nguyen;
+        private System.Windows.Forms.TextBox txtNguonTien2_36_Nguyen;
         private System.Windows.Forms.Label lbTong_36_Nguyen;
-        private System.Windows.Forms.TextBox txtTong;
+        private System.Windows.Forms.TextBox txtTong_36_Nguyen;
         private System.Windows.Forms.ListBox listBoxChiTieu_36_Nguyen;
         private System.Windows.Forms.ComboBox cbMucDich_36_Nguyen;
         private System.Windows.Forms.Label lbMucDich_36_Nguyen;
